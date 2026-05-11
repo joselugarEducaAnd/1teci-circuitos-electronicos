@@ -1,0 +1,368 @@
+<!doctype html>
+<html lang="es">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="exe_effects.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>3.1. Diodos | Circuitos electrónicos </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="Varios" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.9 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="exe_effects.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<link rel="stylesheet" type="text/css" href="udl-content.css" />
+<script type="text/javascript" src="udl-content.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<script
+  type="text/javascript" src="https://cdn.ckeditor.com/ckeditor5/36.0.0/classic/ckeditor.js">
+</script>
+<script>
+window.MathJax = {
+  loader: {load: ['[tex]/empheq'],load: ['[tex]/textmacros'],load: ['[tex]/color'],load: ['[tex]/cancel']}
+  tex: {
+    tags: "ams",
+    inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+    displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+    processEscapes: true,
+    packages: {'[+]': ['empheq']},
+    packages: {'[+]': ['textmacros']},
+    packages: {'[+]': ['color']},
+    packages: {'[+]': ['cancel']},
+    autoload: {empheq: [[], ['empheq']]}
+  },
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" id="MathJax-script">
+</script>
+
+<script type="text/javascript" async
+     src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
+     </script></head>
+<body class="exe-web-site" id="exe-node-66"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
+<header id="header" ><div id="headerContent">Circuitos electrónicos</div></header>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Circuitos electrónicos</a></li>
+   <li><a href="0_herramientas_bsicas.html" class="no-ch">0. Herramientas básicas</a></li>
+   <li><a href="1_resistencias_electrnicas.html" class="no-ch">1. Resistencias electrónicas</a></li>
+   <li><a href="2_condensadores.html" class="no-ch">2. Condensadores</a></li>
+   <li class="current-page-parent"><a href="3_elementos_semiconductores.html" class="current-page-parent daddy">3. Elementos semiconductores</a>
+   <ul>
+      <li id="active"><a href="31_diodos.html" class="active no-ch">3.1. Diodos</a></li>
+      <li><a href="32_transistores.html" class="no-ch">3.2. Transistores</a></li>
+      <li><a href="33_circuitos_integrados.html" class="no-ch">3.3. Circuitos integrados</a></li>
+   </ul>
+   </li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="3_elementos_semiconductores.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><span class="page-counter">Página <strong>6</strong> de <strong>8</strong></span> <span class="sep">| </span><a href="32_transistores.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">3.1. Diodos</h1></header>
+<article class="iDevice_wrapper UDLcontentIdevice em_iDevice" id="id509">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">La unión P-N, la base del diodo</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta509_733_2" class="block iDevice_content">
+<div class="exe-udlContent exe-udlContent-representation"><section class="exe-udlContent-block"><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p>Al <span style="color: #008000;"><strong>unir</strong></span> un semiconductor tipo N con uno tipo P formamos un componente denominado <span style="color: #008000;"><strong>diodo</strong></span>, que tiene un comportamiento muy particular.</p>
+<p>Al unirlos se produce una atracción entre los electrones del lado N y los huecos del lado P. Los electrones se desplazan hasta ocupar los huecos que tienen cerca y se crea una zona en el centro donde no hay ni electrones ni huecos, por lo que el material no permite el paso de corriente eléctrica. Se ha creado una <span style="color: #008000;"><strong>barrera de potencial (zona Z)</strong></span>&nbsp;que impide la conducción a través de la unión.</p>
+<p><img src="unionPN1.png" alt="" width="865" height="440" style="display: block; margin-left: auto; margin-right: auto;"></p>
+<p>La barrera de potencial se elimina o se aumenta en función de la <span style="color: #008000;"><strong>polarización</strong></span> de la alimentación eléctrica, permitiendo o no el paso de la corriente. Según esto podemos hablar de dos tipos de conexiones:</p>
+<div class="exe-fx exe-tabs">
+<h2>Polarización directa</h2>
+<table border="0" style="width: 90%; margin-left: auto; margin-right: auto;">
+<tbody>
+<tr>
+<td style="width: 54.9369%;">
+<h3></h3>
+<p>Al conectar el <span style="color: #008000;"><strong>polo negativo</strong></span> (cátodo) del generador con la <span style="color: #008000;"><strong>parte N</strong></span> del semiconductor y el <span style="color: #008000;"><strong>polo positivo</strong></span> (ánodo) con la <span style="color: #008000;"><strong>parte P</strong></span> se produce la <span style="color: #008000;"><strong>desaparición de la barrera de potencial</strong></span> y la corriente puede circular.</p>
+<p>Los electrones se ven atraídos por el positivo de la fuente, por lo que abandonan los huecos, que irán llenándose con otros electrones que "huyen" del negativo de la fuente. Se puede mantener este flujo de electrones a través de la unión, por lo que se establece una corriente eléctrica. En la figura se ha mostrado el sentido del movimiento real de los electrones en <span style="color: #00ff00;"><strong>verde</strong></span> y el sentido convencional de la corriente (el que usamos siempre) en <span style="color: #ff0000;"><strong>rojo</strong></span>.</p>
+<p>La unión P-N se comporta como si tuviéramos un <span style="color: #008000;"><strong>circuito cerrado</strong></span> (aunque presenta una ligera caída de tensión), por lo que <span style="color: #008000;"><strong>la lámpara se enciende</strong></span>.</p>
+</td>
+<td style="width: 45.0631%;"><img src="polarizDirecta.png" width="350" height="445" style="display: block; margin-left: auto; margin-right: auto;"></td>
+</tr>
+</tbody>
+</table>
+<h2>Polarización inversa</h2>
+<table border="0" style="width: 90%; margin-left: auto; margin-right: auto;">
+<tbody>
+<tr>
+<td style="width: 54.9369%;">
+<h3></h3>
+<p>Al conectar el <span style="color: #008000;"><strong>polo negativo</strong></span> (cátodo) de la pila con la <span style="color: #008000;"><strong>parte P</strong></span> del semiconductor y el <span style="color: #008000;"><strong>polo positivo</strong> </span>(ánodo) con la <span style="color: #008000;"><strong>parte N</strong> <strong>aumenta la barrera de potencial</strong></span>.</p>
+<p>Ahora, los electrones se ven atraídos por el positivo de la fuente hacia la izquierda, alejándose aún más de la unión, mientras que los huecos se verían atraídos hacia el polo negativo (derecha), alejándose también.</p>
+<p>La unión se hace aún más <span style="color: #008000;"><strong>aislante</strong></span>, por lo que <span style="color: #008000;"><strong>se comporta como un circuito abierto</strong></span> y la corriente no puede circular. <span style="color: #008000;"><strong>La lámpara permanecerá apagada.</strong></span></p>
+</td>
+<td style="width: 45.0631%;"><img src="polarizInversa.png" alt="" width="350" height="452" style="display: block; margin-left: auto; margin-right: auto;"></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Resumiendo, un diodo es un componente electrónico que, en polarización directa se comporta como un interruptor cerrado permitiendo el paso de la corriente mientras que en polarización inversa se comporta como un interruptor abierto o como un material aislante.</p>
+<p>Para tener un imagen más clara y completa de lo que realmente sucede en la unión P-N y como funciona el diodo, puedes ver este vídeo donde, además, se adelanta algún ejemplo de uso y se muestra cómo utilizar el polímetro para comprobar un diodo:</p>
+<p style="text-align: center;"><iframe width="560" height="314" src="https://www.youtube.com/embed/aPY3I8pG478"></iframe></p></div></div></section></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper UDLcontentIdevice em_iDevice" id="id492">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">Diodos rectificadores</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta492_734_2" class="block iDevice_content">
+<div class="exe-udlContent exe-udlContent-representation"><section class="exe-udlContent-block"><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p>Ya hemos visto que el diodo es un dispositivo electrónico que <span style="color: #008000;"><strong>solo deja pasar corriente en un sentido y no la deja pasar en sentido contrario.</strong>&nbsp;</span>Esto permite que se utilicen para <span style="color: #008000;"><strong>rectificar la corriente eléctrica</strong></span>, es decir, transformar corriente alterna (CA) en corriente continua (CC). Esta es la utilidad primordial de los diodos.</p>
+<p>Los diodos discretos son físicamente componentes cilíndricos. Suelen ser negros y tienen un extremo de color plateado:</p>
+<p><img src="diodos.jpg" alt="" width="310" height="170" style="display: block; margin-left: auto; margin-right: auto;"></p>
+<p>Los terminales del diodo se llaman <span style="color: #008000;"><strong>ánodo</strong></span> y <span style="color: #008000;"><strong>cátodo</strong></span> y hay que conectarlos correctamente a la alimentación para que el diodo deje pasar la corriente a través suyo. Según lo conectemos, tendremos las dos posibilidades:</p>
+<ul>
+<li><span style="color: #008000;"><strong>Polarización directa:</strong></span> positivo en el ánodo y negativo en el cátodo. El diodo <span style="color: #008000;"><strong>deja pasar</strong></span> la corriente eléctrica.</li>
+<li><span style="color: #008000;"><strong>Polarización inversa:</strong></span> positivo en el cátodo y negativo en el ánodo. El diodo <span style="color: #008000;"><strong>interrumpe</strong></span> el paso de la corriente eléctrica.</li>
+</ul>
+<p>Para poder saber cuál es el ánodo y cuál el cátodo (imprescindible para que funcione como queremos) está el extremo plateado del diodo: <span style="color: #008000;"><strong>su extremo plateado marca siempre el lado del cátodo</strong></span>.</p>
+<p><img src="anodocatod.png" width="198" height="57" style="display: block; margin-left: auto; margin-right: auto;">Su símbolo para circuitos eléctricos es el siguiente:</p>
+<p><img src="simbolo_diodo.png" alt="" width="301" height="67" style="display: block; margin-left: auto; margin-right: auto;"></p>
+<p>Si la corriente va en el sentido de la “flecha” del símbolo, el diodo la dejará pasar. Si intenta ir en contra, no habrá ninguna corriente porque el diodo se comportará como un interruptor abierto. En resumen:</p>
+<p><img src="polarizacion_diodo.png" alt="" width="800" height="417" style="display: block; margin-left: auto; margin-right: auto;"></p>
+<h1><span style="color: #008000;">RECTIFICADOR DE MEDIA ONDA</span></h1>
+<p>Una <span style="color: #008000;"><strong>corriente alterna (CA)</strong></span> es aquella que <span style="color: #008000;"><strong>cambia constantemente de sentido</strong></span> y además normalmente tiene forma de onda senoidal:</p>
+<p><img src="vAlterna.png" width="501" height="322" style="display: block; margin-left: auto; margin-right: auto;">Por otro lado, la <span style="color: #008000;"><strong>corriente continua (CC)</strong> </span>es aquella que <span style="color: #008000;"><strong>siempre va en el mismo sentido</strong></span> y además el voltaje suele ser constante, aunque <span style="color: #008000;"><strong>no tiene por que ser siempre así</strong></span>. Existen algunos tipos de corriente continua en los que el voltaje puede incluso anularse en ciertos momentos:</p>
+<p><img src="cContinuas.png" width="899" height="294" style="display: block; margin-left: auto; margin-right: auto;"></p>
+<p>Mira lo que ocurre cuando colocamos un diodo a la salida de una fuente de tensión alterna:</p>
+<p><img src="rectMedia1.png" alt="" width="400" height="214" style="display: block; margin-left: auto; margin-right: auto;"></p>
+<p>Cuando la corriente alterna pasa por el diodo sólo lo puede hacer cuando es positiva, mientras que cuando es negativa y viene en sentido contrario no puede pasar, de manera que <span style="color: #008000;"><strong>a la resistencia solo le llega corriente en un solo sentido, por lo tanto la corriente es continua.</strong></span> En este caso es una corriente que va a intervalos, lo que se denomina <span style="color: #008000;"><strong>corriente continua pulsante.</strong></span> Por lo tanto, <span style="color: #008000;"><strong>un circuito rectificador de media onda es, en su forma más simple, un único diodo.</strong></span></p>
+<p>La corriente continua pulsante es poco útil, ya que va a pulsos, y no serviría ni para cargar el móvil ni para otros muchos usos que le damos a la corriente continua. Para mejorar la señal de salida es necesario <span style="color: #008000;"><strong>añadir al circuito un condensador en paralelo con la resistencia</strong></span>, de manera que cuando la corriente pase por el diodo y llegue a la resistencia el condensador también se cargue. Así <span style="color: #008000;"><strong>cuando la corriente sea negativa y no pueda pasar por el diodo el&nbsp;</strong></span><span style="font-size: 1.05em;"><span style="color: #008000;"><strong>condensador se descargará y mantendrá el flujo de corriente</strong></span>, que no será 0 amperios en ningún momento.</span></p>
+<p><span style="font-size: 1.05em;"><img src="rectMedia2.png" alt="" width="799" height="303" style="display: block; margin-left: auto; margin-right: auto;">El condensador se carga directamente desde la fuente, por lo que lo hace muy rápidamente. Para descargarse hace pasar su corriente por la carga, que es una resistencia, por lo que su constante de tiempo es mayor y, por tanto, se descarga más lentamente manteniendo el voltaje a un valor aceptable antes de que llegue el siguiente ciclo positivo de la fuente.</span></p>
+<p><span style="font-size: 1.05em;">Te dejo el circuito del rectificador de media onda simulado, con un <span style="color: #008000;"><strong>interruptor</strong></span> con el que puedes conectar o desconectar el condensador y ver cómo afecta a la tensión de salida (<span style="color: #008000;"><strong>Vsalida</strong></span>):</span></p>
+<p><span style="font-size: 1.05em;"><iframe width="800" height="600" src="https://www.falstad.com/circuit/circuitjs.html?ctz=CQAgjCAMB0l3BWcBmWBOA7AFjA5AmMSADjGIDYIEkbIQEBTAWjDACgA3cMfEAu1rzTko4EFjpI606AjYAncWBHClI-qPIS2AE25CROFSN46GAMwCGAVwA2AFzYB3fX3x0jb6WwDGfZCYk-iYYvDLwkGhR0TGxaHyy2AQI5BjEkRgIGBgiMHDsLsgB4PjEaiCqkM7BIPih5RpVAM41PGVFgWXSIFa2TQxsAPaaWKISUfRQ0BB0YXxDYlpjkfFSsDxIELwQyCAAak2WtgCWOpZsQA"></iframe><br></span></p>
+<h1><span style="font-size: 1.05em; color: #008000;">RECTIFICADOR DE ONDA COMPLETA</span></h1>
+<p><span style="font-size: 1.05em;">El rectificador de media onda es un circuito muy simple y que sirve para muchas aplicaciones. Sin embargo, en ocasiones necesitamos que la tensión rectificada no tenga tanto "rizado", sino que sea lo más constante posible. Para estos casos podemos utilizar un circuito algo más completo que es el <span style="color: #008000;"><strong>rectificador de onda completa</strong></span>. En este caso necesitamos cuatro diodos, que se conectan en una configuración que se denomina <span style="color: #008000;"><strong>puente de diodos</strong></span> y que tiene esta forma:</span></p>
+<p><span style="font-size: 1.05em;"><img src="rectCompl1.png" alt="" width="500" height="247" style="display: block; margin-left: auto; margin-right: auto;"></span></p>
+<p><span style="font-size: 1.05em;">El circuito funciona de la siguiente manera:</span></p>
+<ul>
+<li><span style="font-size: 1.05em;"><span style="color: #008000;"><strong>Semionda positiva:</strong> </span>la corriente circula por D1, atraviesa la carga de arriba a abajo y vuelve a la fuente por el diodo D3.</span></li>
+</ul>
+<p style="padding-left: 30px;"><span style="font-size: 1.05em;"><img src="rectCompl2.png" width="400" height="240" style="display: block; margin-left: auto; margin-right: auto;"></span></p>
+<ul>
+<li><span style="font-size: 1.05em;"><span style="color: #008000;"><strong>Semionda negativa:</strong></span> la corriente circula por D2, atraviesa la carga de arriba a abajo y vuelve a la fuente por el diodo D4.</span></li>
+</ul>
+<p style="padding-left: 30px;"><span style="font-size: 1.05em;"><img src="rectCompl3.png" alt="" width="400" height="239" style="display: block; margin-left: auto; margin-right: auto;"></span></p>
+<p><span style="font-size: 1.05em;">Así, tanto en la semionda positiva como en la negativa llega tensión a la carga y, <span style="color: #008000;"><strong>en ambas semiondas, el sentido de la corriente es el mismo</strong></span> (de arriba a abajo), <span style="color: #008000;"><strong>por lo que la corriente es continua</strong></span>.</span></p>
+<p><span style="font-size: 1.05em;">De nuevo, podemos mejorar mucho el rizado de la tensión añadiendo un condensador en paralelo con la carga:</span></p>
+<p><span style="font-size: 1.05em;"><img src="rectCompl4.png" width="800" height="219" style="display: block; margin-left: auto; margin-right: auto;"></span></p>
+<p><span style="font-size: 1.05em;">Como en el caso del rectificador de media onda, te dejo una simulación del circuito rectificador de onda completa para que puedas experimentar a poner o quitar el condensador (con el interruptor) o a cambiar la capacidad del condensador para ver cómo varía el rizado de la tensión de salida (Vsalida):</span></p>
+<p><span style="font-size: 1.05em;"><iframe width="800" height="600" src="https://www.falstad.com/circuit/circuitjs.html?ctz=CQAgjCAMB0l5YCcyWrQDhAZmmA7AGxbIBMW6BY6VWALCAKySMi2YMCmAtGGAFAA3EIgLYsoka0zMItZgyiKYDPgHdhotiBIl6WyGu26pR+rxJQ+AE1PgwFkukz5RWEFY4AzAIYBXADYALta2usyOzoTY7l5+QSFgBDJROmb20R4+AcE2icmiqdpyGbHZhoVhtljiluqF1RKuNQbqeeBRbSR4Fi3aTu1Noi614Ena3WIFEwYAxpNVNV09ULBwYJAWOHgU6FgMjgyIeIi8FCtrhg0DrInXvVdLN1M9fABOT9e0t4-MtFgGAA9WAwIGQLAwGAU9qxRiB-AB7bxWPgAZ3m9Rqw2YzB8-hRHD48MU0lYkEQ7HO8COBEhJAU4UUWEJ4AUJLkyBYMAQdPA2hZ0QAaijvP4AJZWbx8IA"></iframe><br></span></p>
+<p><span style="font-size: 1.05em;">Fíjate que la tensión de salida es aproximadamente de 3,8 V, mientras que la fuente es de 5 V. Hay que tener en cuenta que la corriente siempre está pasando por dos diodos en serie, por lo que se suman las caidas de tensión que presentan ambos diodos al conducir y supone más de un voltio. Esto hay que tenerlo en cuenta al diseñar una fuente de alimentación y lo comprobaréis al hacer la tarea de esta sección.</span></p>
+<p><span style="font-size: 1.05em;">Como resumen, en este vídeo tienes explicados los circuitos rectificadores con animaciones muy didácticas:</span></p>
+<p style="text-align: center;"><span style="font-size: 1.05em;"><iframe width="560" height="314" src="https://www.youtube.com/embed/jzibrKq4ing"></iframe><br></span></p></div></div></section></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper UDLcontentIdevice em_iDevice" id="id773">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">Diodos emisores de luz (LED)</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta773_734_2" class="block iDevice_content">
+<div class="exe-udlContent exe-udlContent-representation"><section class="exe-udlContent-block"><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p>Son un tipo especial de diodo que, <span style="color: #008000;"><strong>cuando permite el paso de la corriente, emite una luz de un color determinado</strong></span>.</p>
+<p>Los LEDs que usaremos nosotros tendrán este aspecto:</p>
+<p><img src="leds.jpg" alt="" width="450" height="225" style="display: block; margin-left: auto; margin-right: auto;"></p>
+<p>Para que un diodo LED funcione y se encienda, tenemos que alimentarlo con el <span style="color: #008000;"><strong>voltaje positivo en el ánodo</strong></span> y el <span style="color: #008000;"><strong>negativo en el cátodo</strong></span>. Si lo hacemos al revés, no conducirá la corriente y permanecerá apagado.</p>
+<p>Para poder saber cuál es el ánodo y cuál es el cátodo, tenemos dos “pistas”.</p>
+<ul>
+<li>La pata del <span style="color: #008000;"><strong>cátodo</strong></span> se distingue porque en ese lado la cápsula del LED tiene una parte <span style="color: #008000;"><strong>plana</strong></span>.</li>
+<li>Si las patas son de distinto tamaño, <span style="color: #008000;"><strong>la más larga es el ánodo</strong></span> y la más corta el cátodo.</li>
+</ul>
+<p><img src="anodocatodoled.png" alt="" width="150" height="165" style="display: block; margin-left: auto; margin-right: auto;">En el caso del simulador de TinkerCAD puedes distinguir el <span style="color: #008000;"><strong>ánodo</strong></span> porque es la pata que está un poco “<span style="color: #008000;"><strong>doblada</strong></span>”. Además, si tienes dudas, al poner el ratón sobre una de las dos patas te aparecerá un cartelito que te dirá si es el ánodo o el cátodo.</p>
+<p><img src="led_tc.png" alt="" width="242" height="200" style="display: block; margin-left: auto; margin-right: auto;"></p>
+<p>El símbolo eléctrico del LED es como el del diodo convencional, pero con un par de flechas que representan la luz que emite este diodo:</p>
+<p><img src="simbolo_led.png" width="150" height="129" style="display: block; margin-left: auto; margin-right: auto;">Como ya vimos antes, <span style="color: #008000;"><strong>siempre que usemos un LED con Arduino tendremos que conectarle una resistencia en serie de unos 220 ohmios</strong></span>. Si no hacemos esto, el LED se destruirá y ya no nos servirá.</p>
+<h1><span style="color: #008000;">LED RGB</span></h1>
+<p>Hay un tipo de LED que combina interiormente tres LEDs de diferentes colores: <span style="color: #ff0000;"><strong>rojo</strong></span>, <span style="color: #339966;"><strong>verde</strong></span> y <span style="color: #0000ff;"><strong>azul</strong></span>. Exteriormente tiene cuatro terminales: un terminal que sirve de <strong>cátodo común</strong> (y que habrá que conectar al negativo de la fuente de alimentación o a tierra) y otros tres terminales que sirven de ánodos para cada uno de los tres LEDs (<span style="color: #ff0000;"><strong>rojo</strong></span>, <span style="color: #339966;"><strong>verde</strong></span> y <span style="color: #0000ff;"><strong>azul</strong></span>). Su aspecto es este:</p>
+<p><img src="RGB_LED.jpg" width="301" height="200" style="display: block; margin-left: auto; margin-right: auto;"></p>
+<p>En este tipo de LEDs, <span style="color: #008000;"><strong>el terminal más largo es el cátodo</strong></span>. En el caso de TinkerCAD, el LED RGB lo puedes encontrar entre los componentes básicos y puedes ver a qué color pertenece cada terminal pasando por encima el puntero del ratón. De todas formas, te enseño aquí cuál es cada uno:</p>
+<p><img src="LED_RGB_TC.png" width="150" height="229" style="display: block; margin-left: auto; margin-right: auto;"></p>
+<p>Si se iluminan los tres colores a la vez, se obtiene una luz blanca. Si se iluminan con diferentes intensidades los tres, podremos obtener muchísimos otros colores como mezcla de los tres primarios.</p></div></div></section></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper UDLcontentIdevice em_iDevice" id="id515">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">Diodos Zener</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta515_776_2" class="block iDevice_content">
+<div class="exe-udlContent exe-udlContent-representation"><section class="exe-udlContent-block"><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p>El Zener consiste en una&nbsp;unión PN especial, <span style="color: #008000;"><strong>muy dopada</strong></span>, diseñada para <span style="color: #008000;"><strong>conducir en la dirección inversa (diodo polarizado inversamente)</strong> </span>cuando se alcanza un determinado voltaje especificado, llamado&nbsp;voltaje o <span style="color: #008000;"><strong>tensión Zener</strong></span>.</p>
+<p>Una vez alcanzada la tensión Zener, el diodo es capaz de conducir una corriente importante en dirección inversa (de cátodo a ánodo) mientras que <span style="color: #008000;"><strong>la tensión en los terminales del Zener no varía, permanece prácticamente constante aunque aumente la tensión de alimentación. </strong></span>Por esto, el diodo Zener es un componente esencial de los&nbsp;<span style="color: #008000;"><strong>reguladores de tensión</strong></span>, manteniendo la tensión casi constante con independencia de que se presenten grandes variaciones de la tensión de red, de la&nbsp;resistencia&nbsp;de carga o de la temperatura.</p>
+<p>En esta imagen puedes ver el aspecto de un diodo Zener:</p>
+<p><img src="zener.jpg" width="351" height="263" style="display: block; margin-left: auto; margin-right: auto;"></p>
+<p>Si un diodo Zener se polariza directamente, toma las características de un&nbsp;diodo rectificador básico&nbsp;(la mayoría de casos), pero si se polariza inversamente, el diodo mantendrá una tensión constante. No actúa como rectificador sino como un <span style="color: #008000;"><strong>estabilizador de tensión</strong></span>. Variando la tensión V a valores mayores que la tensión de ruptura del Zener, Vz se mantiene constante.</p>
+<p>Aquí puedes ver la <span style="color: #008000;"><strong>curva característica de tensión-intensidad</strong></span> para un diodo Zener:</p>
+<p><img src="caractZener.jpeg" width="500" height="410" style="display: block; margin-left: auto; margin-right: auto;"></p>
+<p>Analizando la curva V-I del diodo&nbsp;se ve que conforme se va aumentando negativamente el voltaje aplicado al diodo, la corriente que pasa por él aumenta muy poco, pero una vez se llega a un determinado voltaje (tensión Zener, Vz), el aumento del voltaje (siempre negativamente) es muy pequeño, pudiendo considerarse constante.&nbsp;Para este voltaje, la corriente que atraviesa el diodo, puede variar en un gran rango de valores. A esta región se le llama la <span style="color: #008000;"><strong>zona operativa</strong></span> y es la característica del&nbsp;diodo Zener&nbsp;que se aprovecha para que funcione como regulador de voltaje, pues <span style="color: #008000;"><strong>el voltaje se mantiene prácticamente constante para una gran variación de corriente.</strong></span></p>
+<p>Fíjate que la tensión Zener (de varios voltios) es muy superior a la tensión que aparece cuando se polariza de forma directa (V<sub>D</sub>, que suele rondar los 0,7 voltios).</p>
+<p>El <span style="color: #008000;"><strong>símbolo eléctrico</strong></span> del diodo Zener es parecido al de un diodo normal pero tiene dos trazos a los lados que simbolizan la forma de su curva característica:</p>
+<p><img src="simboloZener.svg" alt="" width="100" height="44" style="display: block; margin-left: auto; margin-right: auto;"></p>
+<h1><span style="color: #008000;">APLICACIONES DEL DIODO ZENER</span></h1>
+<p>Una de las aplicaciones más usadas del diodo Zener es como <span style="color: #008000;"><strong>referencia de voltaje</strong></span>, y como tal se usa en muchos circuitos. Otras aplicaciones son:</p>
+<div class="exe-fx exe-accordion">
+<h2>Regulador de voltaje</h2>
+<p>Un regulador de voltaje con diodo Zener ideal mantiene un voltaje predeterminado fijo a su salida, sin importar las variaciones de voltaje en la&nbsp;fuente de alimentación&nbsp;y/o las variaciones de corriente en la carga. Recuerda que <span style="color: #008000;"><strong>las fuentes reales tienen una resistencia interna</strong></span>, por lo que el voltaje disponible puede disminuir si aumenta la corriente en la carga y viceversa. Esas fluctuaciones las podría controlar un Zener.</p>
+<p>En este circuito de ejemplo, la fuente de alimentación va fluctuando su valor&nbsp;(<span style="color: #008000;"><strong>Vfuente</strong></span>) constantemente entre 5,7 y 7,7 voltios, pero la tensión del Zener (<span style="color: #008000;"><strong>Vzener</strong></span>) se mantiene prácticamente constante al estar polarizado en inversa, por lo que mantiene prácticamente constante la tensión que ve la carga de salida (<span style="color: #008000;"><strong>Vsalida</strong></span>).</p>
+<p><iframe width="800" height="600" src="https://www.falstad.com/circuit/circuitjs.html?ctz=CQAgjCAMB0l3BWcMBMcUHYMGZIA4UA2ATmIxAQBYKLIKBTAWjDACgAlETFcQulFNTB8o4EJToRC0cnRgJWALxDZshLnjwq1vOthAATegDMAhgFcANgBdGi+gDt6AJ1YBzbepSbPKyNTlWAHdfYTpKYV0oVmdxSLC4rx9JeEh3RI0tCPVcAOjY7ijVdQS6BDhWAHtRQjyJYi0wOVhIbDAUJH5RfQA1Y3NHa3oq8RBa0XrG5vhsYkhCDrEeal6AZ1NLAEsDUxGpOshSZCgWhaQeHghe+ydXIA"></iframe></p>
+<h2>Recortador de tensión (clipper)</h2>
+<p>En este caso dos diodos Zener se colocan <span style="color: #008000;"><strong>contrapuestos conectados por los ánodos</strong></span> y nos recortará la onda de la fuente de tensión de entrada:</p>
+<p><iframe width="800" height="600" src="https://www.falstad.com/circuit/circuitjs.html?ctz=CQAgjCAMB0l3BWcMBMcUHYMGZIA4UA2ATmIxAQBYKLIKBTAWjDACgAlETFcQulFNTB8o4WslF0YCVgC8Q2bIS6CFS3nWwgAJvQBmAQwCuAGwAujWfQB29AE6sA5muUo8eFwsjUprAO6ewnSUwhpQrHYgIcpBUaFuHnRg8JBOca7u6V4+4ZHcYYoxInQIcHKeAtSFXJlauoamFla2DgD2ooQ5lJDEHslQsJDYYChI-KJaAGp6RjZm9Kzt1J2i3b0SMPDYxJCEo2I8VSCTAM4GJgCW2gasQA"></iframe></p>
+<p>En este circuito de ejemplo, la <span style="color: #008000;"><strong>Vfuente</strong></span> oscila entre -10 y +10 voltios, mientras que las tensiones Zener son de alrededor de 5,5 voltios. El circuito recortará la salida a un voltaje máximo establecido por el voltaje Vz del diodo Zener que esté en inversa más 0.7 voltios aproximadamente del diodo Zener en directa. Por eso la tensión de salida se recorta a aproximadamente&nbsp;± 6,2 voltios.</p>
+<h2>Desplazador de voltaje</h2>
+<p>Este circuito <span style="color: #008000;"><strong>reduce el voltaje que se pone en su entrada en la cantidad de voltios que tiene el zener.</strong></span> Si el voltaje de entrada es de 12 voltios y el voltaje del Zener es de 5,5 voltios, el voltaje en la salida es de unos 6,5 voltios.</p>
+<p><iframe width="800" height="600" src="https://www.falstad.com/circuit/circuitjs.html?ctz=CQAgjCAMB0l3BWcMBMcUHYMGZIA4UA2ATmIxAQBYKLIKBTAWjDACgAvEbbQ8QulJTph+XEABN6AMwCGAVwA2AF0bt6AO3oAnVgHMuPECjx4DvXNTqRWAdzN862BCgdRWW+yMeHjp4fGsANyMhIxMQ4VErEFCwF2iYBD0IsNNBR0hLNwB7GJBCLKFiNKtoCAE87BAANSk5DSV6Vly6AqgYyFJkKFhIMARCFCQIeLFqtU0dXKq2uiLibpg4fsGkFxcqquqAZxkFAEtxGVYgA"></iframe></p>
+<p>Si el voltaje de entrada varía, también variará el voltaje de salida. Prueba a cambiar el valor de <span style="color: #008000;"><strong>Vfuente</strong></span> y comprueba como varía en consecuencia el voltaje en la carga,&nbsp;<span style="color: #008000;"><strong>Vsalida</strong></span>.</p>
+</div></div></div></section></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper UDLcontentIdevice em_iDevice" id="id516">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">TAREA 4 - DISEÑO CIRCUITO RECTIFICADOR DE 5 VOLTIOS</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta516_777_2" class="block iDevice_content">
+<div class="exe-udlContent exe-udlContent-expression"><section class="exe-udlContent-block"><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p>En esta tarea tendréis que seguir los pasos que os voy a indicar para <span style="color: #008000;"><strong>diseñar un circuito que rectifique la tensión de la red (230 V y 50 Hz de CA) y genere una tensión de salida compatible con un puerto USB (5 V de CC)</strong></span>. Esta es una tarea <span style="color: #008000;"><strong>individual</strong></span>.</p>
+<p>Para <span style="color: #008000;"><strong>diseñar</strong></span> y <span style="color: #008000;"><strong>simular</strong></span> nuestro circuito vamos a utilizar el programa "<span style="color: #008000;"><strong>Circuit Simulator</strong></span>" de Paul Falstad. Es un simulador online por lo que no tenemos que instalar nada en el ordenador y podemos usarlo en cualquier dispositivo con acceso a Internet. Podéis encontrarlo&nbsp;<a href="https://www.falstad.com/circuit/" target="_blank" rel="noopener">en este enlace</a>.</p>
+<p>Cuando accedes por primera vez a la página del enlace anterior, el programa aparece simulando un circuito de ejemplo. Lo primero que tenéis que hacer es detener la simulación para evitar distracciones durante el diseño (y ahorrar memoria en el navegador web). Simplemente haced clic en el botón "<span style="color: #008000;"><strong>Parar</strong></span>":</p>
+<p><img src="tar4-00.png" alt="" width="320" height="283" style="display: block; margin-left: auto; margin-right: auto;"></p>
+<p>Ahora hay que empezar un proyecto nuevo para comenzar con el espacio de trabajo completamente limpio. Para ello, seleccionad el menú <span style="color: #008000;"><strong>"Archivo"</strong></span> y luego la primera opción <span style="color: #008000;"><strong>"New Blank Circuit"</strong></span>:</p>
+<p><img src="praRect1.png" alt="" width="400" height="245" style="display: block; margin-left: auto; margin-right: auto;"></p>
+<p>Para guardar vuestro trabajo (por si tenéis que continuar otro día) podéis usar el menú <span style="color: #008000;"><strong>"Archivo"&nbsp;→ "Salvar como..."</strong></span> y descargar un fichero que os podéis enviar por email para mantenerlo a salvo. Recordad que los ordenadores del centro pierden toda la información al apagarlos.</p>
+<p><img src="tar4-000.png" alt="" width="350" height="268" style="display: block; margin-left: auto; margin-right: auto;"></p>
+<p>Voy a explicaros paso a paso lo que vamos a ir haciendo para que vayáis aprendiendo poco a poco a manejar el programa y. además, veáis la utilidad de cada parte del circuito.</p>
+<p>Para realizar un circuito rectificador que haga todo lo que queremos, necesitamos diseñar varias etapas:</p>
+<p><img src="praRect0.png" width="852" height="245" style="display: block; margin-left: auto; margin-right: auto;"></p>
+<p>Vamos a ir diseñando el circuito etapa a etapa:</p>
+<div class="exe-fx exe-accordion">
+<h2>Transformación (transformador)</h2>
+<p>Lo primero que tenemos que hacer es <span style="color: #008000;"><strong>adaptar el nivel de tensión de entrada</strong></span> (en este caso, 230 V), <span style="color: #008000;"><strong>al nivel de salida que queremos obtener</strong></span> (en este caso, 5 V). Para modificar el voltaje utilizamos una máquina eléctrica denominada <span style="color: #008000;"><strong>transformador</strong></span>.</p>
+<p>EL transformador es una máquina que<span style="color: #008000;"><strong> funciona en CA</strong></span>, por eso es lo primero que vamos a incluir en nuestro circuito. Tenemos que transformar la tensión <span style="color: #008000;"><strong>antes</strong></span> de rectificar la corriente.</p>
+<p>Un transformador utiliza el fenómeno de la <span style="color: #008000;"><strong>inducción electromagnética</strong></span> para variar el voltaje de una onda de CA. Consta de dos <span style="color: #008000;"><strong>devanados</strong></span> o bobinas de cable (llamados primario y secundario), que están arrollados sobre un mismo <span style="color: #008000;"><strong>núcleo</strong></span> de material ferromagnético (normalmente formado por <span style="color: #008000;"><strong>chapas de acero al silicio</strong></span>).</p>
+<p><img src="esquemaTrafo.jpeg" width="600" height="496" style="display: block; margin-left: auto; margin-right: auto;"></p>
+<p>Cuando la corriente circula por el devanado primario,. aparece un flujo magnético. Este flujo magnético recorre muy fácilmente el núcleo de hierro del transformador, llegando al devanado secundario. En este último tiene lugar el efecto contrario: al atravesar el flujo magnético el interior del devanado, aparece una corriente eléctrica en el cable de la bobina secundaria.</p>
+<p>Si controlamos el número de vueltas de cable que tienen la bobina primaria (N<sub>1</sub>) y la secundaria (N<sub>2</sub>), podemos controlar la variación de la tensión entre ambas bobinas. En concreto, en un transformador ideal se cumple que:</p>
+<table border="0" style="width: 0%; margin-left: auto; margin-right: auto;">
+<tbody>
+<tr>
+<td style="width: 100%;">\[\frac{N_{1}}{N_{2}}=\frac{V_{1}}{V_{2}}=\frac{I_{2}}{I_{1}}\]</td>
+</tr>
+</tbody>
+</table>
+<p>Donde:</p>
+<ul>
+<li><span style="color: #008000;"><strong>V<sub>1</sub>:</strong> </span>tensión del primario</li>
+<li><span style="color: #008000;"><strong>V<sub>2</sub>:</strong></span> tensión en el secundario</li>
+<li><span style="color: #008000;"><strong>N<sub>1</sub>:</strong> </span>número de espiras del devanado primario</li>
+<li><span style="color: #008000;"><strong>N<sub>2</sub>:</strong></span> número de espiras del devanado secundario</li>
+</ul>
+<p>Al cociente N1/N2 se le conoce como <span style="color: #008000;"><strong>relación de transformación</strong></span> del transformador. En nuestro caso, V1 valdrá 230 voltios. Podríamos pensar que la relación de transmisión de nuestro transformador debería ser 230/5 para obtener 5 voltios de salida, pero hay que tener en cuenta que, tras el transformador, tendremos un puente de diodos que introducirá una caída de tensión. Por lo tanto, tendremos que obtener algo más de 5 vloltios enb el secundario del transformador. ¿Cuánto más? Pues tú lo vas a estimar ayudándote de la simulación del circuito. La ventaja de las simulaciones es que puedes ir variando parámetros hasta obtener lo que quieras en la salida. Cuando tengas todo el circuito montado, podrás ajustar la relación de transformación necesaria.</p>
+<p>Para empezar a trabajar en una primera aproximación, podemos considerar por ejemplo una relación de transmisión de 230/6. Te voy a enseñar cómo añadir un transformador con esta relación de transformación.</p>
+<p>Para añadir componentes, tienes que usar el menú "<span style="color: #008000;"><strong>Dibujar</strong></span>". El transformador es un componente pasivo, por lo que tienes que desplegar el submenú "<span style="color: #008000;"><strong>Componentes Pasivos</strong></span>" para encontrarlo:</p>
+<p><img src="tar4-0.png" alt="" width="699" height="431" style="display: block; margin-left: auto; margin-right: auto;"></p>
+<p>Fíjate que aparece una "T" al lado de "Transformador". Eso significa que también puedes añadir un transformador en cualquier momento pulsando la tecla "T", sin necesidad de desplegar los menús (<em>OJO, que es la "<strong><span style="color: #008000;">T" mayúscula</span></strong>. Si pulsas la <strong><span style="color: #008000;">"t" minúscula</span></strong>, lo que añadirás a tu circuito será una etiqueta de texto, no un transformador</em>). Las teclas abreviadas nos vendrán muy bien para añadir componentes que se repitan mucho, nos ahorrará tiempo en el diseño.</p>
+<p>Añade el transformador a tu proyecto y colócalo en la parte izquierda:</p>
+<p><img src="tar4-1.png" alt="" width="750" height="534" style="display: block; margin-left: auto; margin-right: auto;"></p>
+<p>Ahora vamos a establecer la relación de transformación del transformador. <span style="color: #008000;"><strong>Para seleccionar un dispositivo de tu circuito, tienes que presionar la tecla "Espacio", para que el cursor cambie de una cruz a una flecha.</strong></span> Entonces podrás hacer doble clic sobre el transformador para sacar su ventana de propiedades. La que nos interesa es la que pone "Razón (N1/N2)", que es la relación de transformación. Como hemos pensado poner 230/6 para empezar, podremos 38 para redondear (230/6 = 38,333). Pulsa OK cuando hayas terminado para que se guarde:</p>
+<p><img src="tar4-2.png" alt="" width="530" height="379" style="display: block; margin-left: auto; margin-right: auto;"></p>
+<p>Para finalizar con esta etapa del circuito y poder probarlo, vamos a añadir una fuente de alimentación de CA de 230 V y 50 Hz al primario del transformador. Las fuentes de alimentación las puedes encontrar en el menú <span style="color: #008000;"><strong>"Dibujar"&nbsp;→ "Entradas y Fuentes"</strong></span>. En este caso queremos una fuente de CA de dos terminales.</p>
+<p><img src="tarea4-2.5.png" alt="" width="651" height="414" style="display: block; margin-left: auto; margin-right: auto;"></p>
+<p>Cuando la dibujes en tu proyecto, debes luego conectarla al transformador. Para ello, <span style="color: #008000;"><strong>acuérdate de pulsar la tecla espacio una vez dibujada la fuente para pasar al modo selección y poder arrastrarla por tu esquema.</strong></span> También puedes arrastrar uno de sus terminales para ajustarlo y conectarlo con el correspondiente del transformador. Aquí te dejo un ejemplo de cómo colocar la fuente:</p>
+<p><img src="tar4-3.gif" alt="" width="808" height="554" style="display: block; margin-left: auto; margin-right: auto;"></p>
+<p>Una vez colocada, hay que darle los valores correctos. En este caso un voltaje de 230 voltios y una frecuencia de 50 Hz. Doble clic sobre la fuente para sacar su ventana de propiedades y cambias estas:</p>
+<p><img src="tar4-4.png" alt="" width="530" height="402" style="display: block; margin-left: auto; margin-right: auto;"></p>
+<h2>Rectificación (diodo rectificador)</h2>
+<p>Una vez reducido el nivel de tensión a aproximadamente 6 voltios, llega el momento de pasar de CA a CC. Para eso vamos a utilizar un puente de diodos para hacer un rectificador de onda completa como ya hemos visto.</p>
+<p>Para añadir un diodo tenemos que ir en esta ocasión al submenú de <span style="color: #008000;"><strong>"Componentes Activos"&nbsp;</strong></span>(o pulsar la tecla "d" minúscula):</p>
+<p><img src="tar4-5.png" alt="" width="520" height="511" style="display: block; margin-left: auto; margin-right: auto;"></p>
+<p>Tendrás que <span style="color: #008000;"><strong>añadir</strong></span> 4 diodos y <span style="color: #008000;"><strong>conectarlos</strong></span> en forma de puente. Una vez los tengas conectados, puedes seleccionarlos todos dibujando un rectángulo con el ratón y moverlos a la vez para recolocarlos donde necesites. Te dejo una animación para que veas cómo hacerlo (<em>recuerda <strong>pulsar el espacio</strong> cuando tengas los cuatro diodos dibujados, para pasar al modo selección y poder moverlos y recolocarlos a tu gusto</em>).</p>
+<p><img src="tar4-6.gif" alt="" width="808" height="554" style="display: block; margin-left: auto; margin-right: auto;"></p>
+<p>Una vez dibujado el puente, conéctalo al secundario del transformador. La conexión del transformador hay que hacerla con los vértices superior e inferior del puente, para lo que necesitarás dibujar cables de conexión. Los cables están en el menú <span style="color: #008000;"><strong>"Dibujar" → "Conexión Eléctrica"</strong></span> (o tecla "w") y solo tienes que pulsar el ratón y arrastrar para dibujarlos. Como es la primera vez que vas a dibujar los cables, te dejo también una animación para que veas cómo hacerlo. Te debería quedar algo así:</p>
+<p><img src="tar4-7.gif" alt="" width="808" height="554" style="display: block; margin-left: auto; margin-right: auto;"></p>
+<h2>Filtrado (condensador)</h2>
+<p>Con el circuito actual obtendríamos una salida de CA pero todavía habría puntos en los que la tensión caería hasta 0 voltios. Como hemos visto también, pondremos ahora un condensador para mantener la tensión y no dejar que caiga tanto. Para este ejemplo, vamos a utilizar un condensador electrolítico (por tanto, polarizado) de 47 μF, que es bastante común en electrónica.</p>
+<p>Puedes encontrar los condensadores de nuevo entre los "<span style="color: #008000;"><strong>Elementos Pasivos</strong></span>". Selecciona el condensador polarizado (también puedes usar la letra "<span style="color: #008000;"><strong>C</strong></span>" mayúscula) y añádelo a tu circuito:</p>
+<p><img src="tar4-8.png" alt="" width="530" height="363" style="display: block; margin-left: auto; margin-right: auto;"></p>
+<p>Pasa a <span style="color: #008000;"><strong>modo selección</strong></span> (pulsando la <span style="color: #008000;"><strong>barra espaciadora</strong></span>) y haz doble clic sobre el condensador para modificar su capacidad a 47 μF. El prefijo micro (μ) se escribe como una letra "u" minúscula. Lo demás, déjalo tal y como está:</p>
+<p><img src="tar4-9.png" width="240" height="332" style="display: block; margin-left: auto; margin-right: auto;"></p>
+<p>Conecta el condensador a la salida del puente de diodos, con el positivo hacia arriba conectado al vértice derecho del puente y el negativo hacia abajo, conectado al vértice izquierdo. Te debería quedar algo así:</p>
+<p><img src="tar4-10.png" width="500" height="334" style="display: block; margin-left: auto; margin-right: auto;"></p>
+<p>En este punto, vamos a <span style="color: #008000;"><strong>probar cómo funcionaría nuestro circuito.</strong></span> Vamos a añadir una carga en forma de resistencia a la salida del condensador y vamos a ver cómo variaría el voltaje en esa carga.</p>
+<p>Para eso, añadimos primero una <span style="color: #008000;"><strong>resistencia eléctrica</strong></span> al circuito. Es un componente tan común que no es necesario abrir el submenú de los componentes pasivos para encontrarla. La han puesto directamente en el&nbsp; primer nivel:</p>
+<p><img src="tar4-11.png" alt="" width="400" height="414" style="display: block; margin-left: auto; margin-right: auto;"></p>
+<p>Colocamos la resistencia en paralelo con el condensador y la conectamos con cables (<span style="color: #008000;"><strong>Conexión eléctrica - w</strong></span>):</p>
+<p><img src="tar4-12.gif" width="700" height="502" style="display: block; margin-left: auto; margin-right: auto;"></p>
+<p>Para visualizar la tensión y la corriente en la carga, vamos a añadir una vista de osciloscopio a esa resistencia que acabamos de añadir. Las vistas de osciloscopio se pueden añadir haciendo <span style="color: #008000;"><strong>clic derecho</strong></span> en el componente que sea (en este caso, la resistencia) y seleccionando la opción "<span style="color: #008000;"><strong>View in New Scope</strong></span>" del menú que aparece:</p>
+<p><img src="tar4-13.png" width="449" height="260" style="display: block; margin-left: auto; margin-right: auto;"></p>
+<p>Aparecerá una gráfica de osciloscopio en la parte inferior de la pantalla de diseño, donde veremos las curvas de voltaje e intensidad de corriente frente al tiempo en la resistencia.</p>
+<p>Ha llegado el momento de <span style="color: #008000;"><strong>simular el circuito</strong></span>. Para empezar la simulación, solo hay que hacer clic en el botón "Continuar", a la derecha de la pantalla de diseño:</p>
+<p><img src="tar4-14.png" alt="" width="300" height="265" style="display: block; margin-left: auto; margin-right: auto;"></p>
+<p>Si habéis seguido correctamente las instrucciones, el osciloscopio de la resistencia tendrá que mostrar esto:</p>
+<p><img src="tar4-15.gif" width="599" height="449" style="display: block; margin-left: auto; margin-right: auto;"></p>
+<p>La curva verde corresponde al voltaje y la amarilla a la intensidad de corriente en la resistencia de carga. Aunque el resultado es prometedor, podemos ver que, aunque el<span style="font-size: 1.05em;">&nbsp;voltaje se mantiene siempre positivo, no es perfectamente estable y aparece un </span><span style="color: #008000;"><strong>rizado importante</strong></span><span style="font-size: 1.05em;">&nbsp;en la onda.</span></p>
+<p>Para solucionar este problema, añadiremos un último elemento para estabilizar la tensión: un <span style="color: #008000;"><strong>diodo zener</strong></span>.</p>
+<h2>Estabilización (diodo Zener)</h2>
+<p>En esta última etapa hay que añadir un diodo zener a nuestro circuito para eliminar del todo el rizado. Hay que añadir, además del zener, una resistencia que soporte el resto de la tensión que está estabilizando el zener. Pondremos en este caso una resistencia de 100 ohmios.</p>
+<p>Aquí os dejo una animación de cómo añadir estos elementos al circuito:</p>
+<p><img src="tar4-16.gif" alt="" width="700" height="470" style="display: block; margin-left: auto; margin-right: auto;"></p>
+<p>Para que nuestra fuente estabilice a 5 voltios, tenemos que utilizar un zener que tenga esa tensión de ruptura. El diodo zener que aparece por defecto tiene una tensión de ruptura algo superior (5,6 voltios), pero podemos cambiarla sin problema editando el componente con doble clic. Aquí tenéis cómo hacerlo:</p>
+<p><img src="tar4-17.gif" alt="" width="500" height="499" style="display: block; margin-left: auto; margin-right: auto;"></p>
+<p>Si simuláis ahora el circuito, veréis que <span style="color: #008000;"><strong>aún</strong></span>&nbsp;<span style="color: #008000;"><strong>no hemos solucionado el problema:</strong></span></p>
+<p><span style="color: #008000;"><strong><img src="tar4-18.png" alt="" width="550" height="398" style="display: block; margin-left: auto; margin-right: auto;"></strong></span></p>
+<p>El rizado sigue ahí, ¿por qué?. Si os fijáis bien, el voltaje en la resistencia de carga ahora es aún menor que antes (en concreto, es de 4,479 V), por lo que <span style="color: #008000;"><strong>el zener no entra en su zona de ruptura</strong></span>. Tenemos que asegurarnos de que le lleguen más de 5 voltios al zener para entre en la zona de ruptura y estabilice la tensión. Este es el momento en el que tenéis que <span style="color: #008000;"><strong>reducir la relación de transformación del transformador</strong></span> hasta que tengáis un valor que haga funcionar al zener y produzca la estabilización de la corriente continua. Probad valores hasta que consigáis un resultado parecido a esto:</p>
+<p><img src="tar4-19.gif" alt="" width="601" height="439" style="display: block; margin-left: auto; margin-right: auto;"></p>
+<p>Como veis, hemos conseguido un circuito que transforma corriente alterna de 230 V y 50 Hz en corriente continua de 5,04 V prácticamente constante. El diseño del circuito ya está terminado y solo hay que <span style="color: #008000;"><strong>compartirlo en la tarea de Moodle</strong></span>.</p>
+</div>
+<h1><span style="color: #008000;">Entrega de la tarea</span></h1>
+<p>Para entregar la tarea tendréis que compartir el modelo simulado de dos formas distintas:</p>
+<ul>
+<li><span style="color: #008000;"><strong>Fichero de texto:</strong></span> guardar el fichero con <span style="color: #008000;"><strong>"Archivo"&nbsp;→ "Salvar como..."&nbsp;</strong></span>poniéndole el nombre <span style="color: #008000;"><strong>"TAREA 4 - NOMBRE Y APELLIDOS.circuitjs.txt"</strong></span>&nbsp;y añadirlo a la tarea de Moodle</li>
+<li><span style="color: #008000;"><strong>Enlace directo al modelo:</strong></span> utilizar la opción del menú&nbsp;<span style="color: #008000;"><strong>"Archivo"&nbsp;→ "Exportar como Link..."</strong></span> y copiar el enlace y pegarlo en la tarea de Moodle.</li>
+</ul></div></div></section></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-nc-sa">
+<p><span>Obra publicada con</span> <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Licencia Creative Commons Reconocimiento No comercial Compartir igual 4.0</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="3_elementos_semiconductores.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><span class="page-counter">Página <strong>6</strong> de <strong>8</strong></span> <span class="sep">| </span><a href="32_transistores.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+</div>
+<p id="made-with-eXe"><a href="https://exelearning.net/" target="_blank" rel="noopener"><span>Creado con eXeLearning<span> (Ventana nueva)</span></span></a></p><script type="text/javascript" src="_style_js.js"></script></body></html>
