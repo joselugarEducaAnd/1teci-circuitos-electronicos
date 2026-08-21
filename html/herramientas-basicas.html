@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="es" id="exe-page-msszgrsv-3ti70kkin">
+<head>
+<meta charset="utf-8">
+<meta name="generator" content="eXeLearning v4.0.3">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="license" type="text/html" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">
+<title>Herramientas básicas | Circuitos electrónicos</title>
+<link rel="icon" type="image/x-icon" href="../libs/favicon.ico">
+<meta name="description" content="Circuitos electrónicos. Tecnología e Ingeniería 1º Bachillerato">
+<script>document.querySelector("html").classList.add("js");</script><script src="../libs/jquery/jquery.min.js"> </script><script src="../libs/common_i18n.js"> </script><script src="../libs/common.js"> </script><script src="../libs/exe_export.js"> </script><script>window.exeXapi={"odeId":"202608141528574JZTPS","packageTitle":"Circuitos electrónicos","language":"es"};</script><script src="../libs/xapi/exe_xapi.js"> </script><script src="../libs/bootstrap/bootstrap.bundle.min.js"> </script><link rel="stylesheet" href="../libs/bootstrap/bootstrap.min.css">
+<script src="../idevices/udl-content/udl-content.js"></script><link rel="stylesheet" href="../idevices/udl-content/udl-content.css">
+<script src="../libs/exe_effects/exe_effects.js"> </script>
+<link rel="stylesheet" href="../libs/exe_effects/exe_effects.css">
+<link rel="stylesheet" href="../content/css/base.css"><script src="../theme/style.js"> </script><link rel="stylesheet" href="../theme/style.css"><link rel="stylesheet" href="../theme/zzz-majuelo.css">
+<script
+  type="text/javascript" src="https://cdn.ckeditor.com/ckeditor5/36.0.0/classic/ckeditor.js">
+</script>
+<script>
+window.MathJax = {
+  loader: {load: ['[tex]/empheq'],load: ['[tex]/textmacros'],load: ['[tex]/color'],load: ['[tex]/cancel']}
+  tex: {
+    tags: "ams",
+    inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+    displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+    processEscapes: true,
+    packages: {'[+]': ['empheq']},
+    packages: {'[+]': ['textmacros']},
+    packages: {'[+]': ['color']},
+    packages: {'[+]': ['cancel']},
+    autoload: {empheq: [[], ['empheq']]}
+  },
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" id="MathJax-script">
+</script>
+<script type="text/javascript" async
+src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+</head>
+<body class="exe-export exe-web-site">
+<script>document.body.className+=" js"</script>
+<div class="exe-content exe-export pre-js siteNav-hidden"><a href="#page-msszgrsv-3ti70kkin" id="skipNav">Skip to content</a> <nav id="siteNav">
+<ul>
+<li> <a href="../index.html" class="main-node no-ch">Circuitos electrónicos</a>
+</li>
+<li class="active"> <a href="../html/herramientas-basicas.html" class="active no-ch">Herramientas básicas</a>
+</li>
+<li> <a href="../html/resistencias-electronicas.html" class="no-ch">Resistencias electrónicas</a>
+</li>
+<li> <a href="../html/condensadores.html" class="no-ch">Condensadores</a>
+</li>
+<li> <a href="../html/elementos-semiconductores.html" class="daddy">Elementos semiconductores</a>
+<ul class="other-section">
+<li> <a href="../html/diodos.html" class="no-ch">Diodos</a>
+</li>
+<li> <a href="../html/transistores.html" class="no-ch">Transistores</a>
+</li>
+<li> <a href="../html/circuitos-integrados.html" class="no-ch">Circuitos integrados</a>
+</li>
+</ul>
+</li>
+</ul>
+</nav><main id="page-msszgrsv-3ti70kkin" class="page"> 
+<header class="main-header"> <p class="page-counter"> <span class="page-counter-label">Página </span><span class="page-counter-content"> <strong class="page-counter-current-page">2</strong><span class="page-counter-sep">/</span><strong class="page-counter-total">8</strong></span></p>
+
+<div class="package-header"><p class="package-title">Circuitos electrónicos</p></div>
+<div class="page-header"><h1 class="page-title">Herramientas básicas</h1></div>
+</header><div id="page-content-page-msszgrsv-3ti70kkin" class="page-content">
+<article id="block-msszgrsv-s6o358v9k" class="box">
+<header class="box-head no-icon">
+<h1 class="box-title">Simulando circuitos con TinkerCAD</h1>
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="idevice-msszgrsv-6pi0y70m8" class="idevice_node udl-content" data-idevice-path="../idevices/udl-content/" data-idevice-type="udl-content">
+<div class="bloque bloque-nota"><p class="bloque-titulo">Sesión 1</p></div>
+<div class="exe-udlContent exe-udlContent-representation"><section class="exe-udlContent-block"><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p>Para poder trabajar más cómodamente, podemos simular los circuitos electrónicos para comprobar si funcionan correctamente, antes de proceder a montarlos con los componentes físicos.</p>
+<p>Existen multitud de simuladores electrónicos, pero nosotros este curso vamos a utilizar uno llamado TinkerCAD porque es muy sencillo de manejar y porque podemos ver imágenes de los componentes virtuales en vez de únicamente sus símbolos.</p>
+<p>Para entrar correctamente en TinkerCAD <a href="https://www.tinkercad.com/joinclass/M4PQDBEYP" target="_blank" rel="noopener">tienes que utilizar siempre este enlace</a>, pues te llevará directamente a nuestra clase. En la pantalla que aparece, tienes que pulsar en "<span style="color: #008000;"><strong>Unirse con apodo</strong></span>":</p>
+<p><img src="../content/resources/unirse_con_codigo1.png" width="360" height="528" style="display: block; margin-left: auto; margin-right: auto;"></p>
+<p>Por último, en la pantalla que pone "<span style="color: #008000;"><strong>escribe tu alias</strong></span>", tienes que escribir tu <span style="color: #008000;"><strong>usuario IdEA</strong></span> (el mismo que usas para entrar en Moodle Centros)</p>
+<p><img src="../content/resources/unirse_con_codigo2.png" width="361" height="528" style="display: block; margin-left: auto; margin-right: auto;"></p>
+<p>Cuando pulses en el botón ¡Soy yo! estarás en tu página de TinkerCAD y ya podrás crear tus proyectos.</p></div></div></section></div>
+</div>
+</div>
+</article><article id="block-msszgrsv-a05usgakm" class="box">
+<header class="box-head no-icon">
+<h1 class="box-title">La placa de pruebas (protoboard)</h1>
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="idevice-msszgrsv-vyi5d6k1q" class="idevice_node udl-content" data-idevice-path="../idevices/udl-content/" data-idevice-type="udl-content">
+<div class="exe-udlContent exe-udlContent-representation"><section class="exe-udlContent-block"><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p>La <span style="color: #008000;"><strong>placa de pruebas</strong></span> (se suele llamar también <span style="color: #008000;"><strong>breadboard</strong></span> o <span style="color: #008000;"><strong>protoboard</strong></span>) es, a primera vista, un simple rectángulo de plástico con muchos orificios. La particularidad de estas placas es que <span style="color: #008000;"><strong>esos orificios están conectados eléctricamente en su interior.</strong></span> En concreto, los orificios se conectan de esta forma:</p>
+<p><img src="../content/resources/conexiones_protoboard.png" width="775" height="302" style="display: block; margin-left: auto; margin-right: auto;"></p>
+<p>Estas conexiones internas permiten introducir cables y componentes electrónicos en orificios concretos y <span style="color: #008000;"><strong>será como si los soldáramos</strong></span> (estarán en contacto eléctrico), pero será una conexión mucho más rápida que soldando y, además, podremos desmontarlo todo cuando queramos.</p>
+<p>Por lo tanto, una breadboard sirve básicamente para <span style="color: #008000;"><strong>conectar dispositivos electrónicos y cables entre sí, formando circuitos electrónicos.</strong> </span>La comodidad que ofrece conectar y desconectar los dispositivos de esta forma hace que la breadboard sea un elemento imprescindible cuando estemos haciendo pruebas, ya que estaremos constantemente modificando las conexiones hasta que todo funcione perfectamente.</p>
+<p>Las placas de pruebas pueden encontrarse en diferentes tamaños, aunque el funcionamiento es el mismo para todas y, si aprendes a usar una, podrás utilizar cualquiera. En el simulador de circuitos de TinkerCAD tenemos disponibles tres tamaños de placas de prueba, que puedes ver en esta imagen:</p>
+<p><img src="../content/resources/protoboards_tinkercad.png" width="600" height="399" style="display: block; margin-left: auto; margin-right: auto;">La placa completa es muy grande y se utiliza solo en circuitos muy complejos o que incluyan dispositivos de gran tamaño que necesiten espacio. La más pequeña no tiene las hileras para alimentación arriba y abajo (las que tienen el “+” y el “-“) que vienen muy bien para organizar físicamente los componentes. Por lo tanto, <span style="color: #008000;"><strong>la que utilizaremos siempre será la de tamaño mediano</strong> </span>(en TinkerCAD se llama “placa de pruebas pequeña”).</p>
+<p>Centrándonos en la placa mediana, podemos distinguir tres zonas básicas:</p>
+<p><img src="../content/resources/zonas_protoboard.png" width="651" height="271" style="display: block; margin-left: auto; margin-right: auto;"></p>
+<div class="exe-fx exe-accordion">
+<h2>Buses o raíles de alimentación</h2>
+<p>Son las filas superiores e inferiores, marcadas con el signo + y el signo -. Están unidos todos los orificios de cada fila. Aquí podemos conectar los cables que vengan de nuestra fuente de alimentación y tendremos disponible la energía eléctrica en cualquiera de las columnas de la placa.</p>
+<p><img src="../content/resources/buses_proto.png" width="413" height="270" style="display: block; margin-left: auto; margin-right: auto;"></p>
+<h2>Tiras de conectores</h2>
+<p>Son grupos de 5 orificios que están conectados entre sí como puedes ver en la imagen. Hay que tener cuidado de no introducir los dos terminales de un mismo componente en agujeros del mismo grupo porque sería como unirlos entre sí, no tiene sentido; la corriente debe entrar por un terminal y salir por el otro, por lo que no pueden estar unidos entre sí.</p>
+<img src="../content/resources/tiras_proto.png" width="414" height="272" style="display: block; margin-left: auto; margin-right: auto;"></div>
+<h3><span style="color: #008000;">USO DE LA PLACA</span></h3>
+<p>Vamos a ver un ejemplo de uso de la placa con un circuito bastante simple: una pila de 9 V que alimenta a un LED y una resistencia en serie de 220&nbsp;Ω para proteger al LED del exceso de tensión. El circuito eléctrico expresado con símbolos sería el siguiente:</p>
+<p><img src="../content/resources/circuito_LED.png" width="300" height="256" style="display: block; margin-left: auto; margin-right: auto;">Si montamos este circuito con <span style="color: #008000;"><strong>conectores</strong></span> para no tener que soldar los cables, tendríamos una cosa así:</p>
+<p><img src="../content/resources/conexion_cables.png" width="800" height="281" style="display: block; margin-left: auto; margin-right: auto;">Si utilizamos la <span style="color: #008000;"><strong>placa de pruebas</strong></span>, nos podemos ahorrar los conectores y tenemos muchos menos cables, con lo que el circuito queda mucho más limpio:</p>
+<p><img src="../content/resources/conexion_proto.png" width="800" height="246" style="display: block; margin-left: auto; margin-right: auto;">Para aprender a usar la protoboard de una forma visual e intuitiva, te recomiendo ver el siguiente vídeo:</p>
+<p style="text-align: center;"><iframe width="560" height="314" src="https://www.youtube.com/embed/ulsv7uxDZoc" referrerpolicy="strict-origin-when-cross-origin"></iframe></p>
+<h3 style="text-align: left;"><span style="color: #008000;">CABLEADO DE LA PLACA</span></h3>
+<p>Aunque la placa de pruebas nos permite eliminar muchos cables y conectores, no podemos olvidar que los orificios están conectados solo con los que tienen al lado. En algunas ocasiones, necesitaremos conectar orificios que están lejos entre sí y las patas del componente no serán suficientemente largas. Para esos casos, utilizaremos “cables puente” para la conexión.</p>
+<p>En TinkerCAD podemos unir dos orificios mediante un cable simplemente haciendo clic con el ratón en ambos. Para los montajes reales tendrás en tu kit de materiales varios cables de colores listos ya para “pincharse” en los agujeros de la protoboard, así que no tendrás que preocuparte por pelarlos o cortarlos.</p>
+<p>Estos cables que ya vienen preparados para usar en las Protoboards se conocen como <span style="color: #008000;"><strong>cables de puente</strong></span> o “<span style="color: #008000;"><strong>jumpers</strong></span>” y tienen en los extremos unos alambres compatibles con unos conectores muy usados en electrónica (llamados <span style="color: #008000;"><strong>conectores DuPont</strong></span>) que entran perfectamente en las breadboards. Por eso a veces los encontrarás con el nombre de “cables DuPont”.</p>
+<p><img src="../content/resources/cables_dupont.png" width="500" height="446" style="display: block; margin-left: auto; margin-right: auto;"></p></div></div></section></div>
+</div>
+</div>
+</article><article id="block-msszgrsv-9t44nrqb2" class="box">
+<header class="box-head no-icon">
+<h1 class="box-title">Midiendo con el multímetro</h1>
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="idevice-msszgrsv-7k447o2h3" class="idevice_node udl-content" data-idevice-path="../idevices/udl-content/" data-idevice-type="udl-content">
+<div class="exe-udlContent exe-udlContent-representation"><section class="exe-udlContent-block"><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p>Ya hemos visto que cada magnitud eléctrica se mide con un dispositivo diferente. Esto es lógico debido a su distinta naturaleza y así ha sido tradicionalmente. Sin embargo, era conveniente no depender de diferentes dispositivos para realizar las diferentes medidas, por lo que se desarrolló <span style="color: #008000;"><strong>un aparato de medida capaz de medir todas las magnitudes fundamentales a la vez</strong> </span>(e incluso más cosas), llamado <span style="color: #008000;"><strong>multímetro</strong></span> o <span style="color: #008000;"><strong>polímetro</strong></span>.</p>
+<p>Realizaremos algunas pruebas midiendo magnitudes con el polímetro, pero para ello debes aprender a utilizarlo. Te dejo aquí un enlace a una web que explica con mucho detalle el uso del polímetro para realizar diversas medidas:</p>
+<p><a href="https://programarfacil.com/blog/arduino-blog/como-utilizar-un-multimetro/" target="_blank" rel="noopener">https://programarfacil.com/blog/arduino-blog/como-utilizar-un-multimetro/</a></p>
+<p><span style="color: #0000ff;"><em>En esta página vienen algunos ejemplos de medida y uno de ellos es con una placa Arduino. Es una buena oportunidad para ir introduciendo esta placa que usaremos durante el resto del curso.</em></span></p>
+<p>Por último, tienes aquí un vídeo que muestra de forma más directa como se usa el multímetro. Además, nos muestra cómo medir diodos (lo utilizaremos cuando lleguemos al apartado de los diodos) y también nos muestra el uso de un aparato que se utiliza cuando queremos medir la intensidad de corriente alterna que circula a través de un conductor sin tener que cortar ni desconectar dicho conductor para intercalar el multímetro. En el vídeo se le llama "multímetro de gancho" pero es más correcto utilizar "<span style="color: #008000;"><strong>pinza amperimétrica</strong></span>".</p>
+<p style="text-align: center;"><iframe width="560" height="314" src="https://www.youtube.com/embed/ZP8TggP0wL4" referrerpolicy="strict-origin-when-cross-origin"></iframe></p></div></div></section></div>
+</div>
+</div>
+</article><article id="block-msszgrsv-fxndfezbw" class="box">
+<header class="box-head no-icon">
+<h1 class="box-title">PRÁCTICA GUIADA 1</h1>
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="idevice-msszgrsv-z9z9x3fun" class="idevice_node udl-content" data-idevice-path="../idevices/udl-content/" data-idevice-type="udl-content">
+<div class="exe-udlContent exe-udlContent-engagement"><section class="exe-udlContent-block"><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p>En esta primera práctica guiada vas a aprender a:</p>
+<ul>
+<li>Crear proyectos de tipo "Circuito" en TinkerCAD y darles un nombre.</li>
+<li>Añadir componentes a tus diseños.</li>
+<li>Modificar los valores que traen por defecto los componentes.</li>
+<li>Conectar componentes en un circuito utilizando una protoboard.</li>
+<li>Usar un multímetro virtual y mostrar anotaciones en tus circuitos virtuales.</li>
+</ul>
+<p>La práctica consistirá en <span style="color: #008000;"><strong>simular</strong> <strong>en TinkerCAD</strong></span> este circuito:</p>
+<p><img src="../content/resources/pra1-0.jpg" width="696" height="510" style="display: block; margin-left: auto; margin-right: auto;"></p>
+<p>Al simularlo, seremos capaces de conocer el valor de todas las tensiones eléctricas que vienen representadas (V<sub>1</sub>, V<sub>2</sub>, V<sub>3</sub> y V<sub>4</sub>) midiéndolos mediante un <span style="color: #008000;"><strong>multímetro virtual</strong></span>.</p>
+<p>Sigue los pasos detenidamente y en orden para aprender a hacerlo bien, porque la tarea que tendrás que hacer será muy parecida a esta práctica:</p>
+<div class="exe-fx exe-accordion">
+<h2>1 - Crear el proyecto</h2>
+<p><span style="color: #008000;"><strong style="color: #008000;">Crea un nuevo proyecto en TinkerCAD de tipo circuito.&nbsp;</strong></span>Para ello, pulsa sobre el botón "<span style="color: #008000;"><strong>+ Crear</strong></span>" y selecciona "<span style="color: #008000;"><strong>Circuito</strong></span>":</p>
+<p><img src="../content/resources/crear_circuito_TC.png" width="237" height="316" style="display: block; margin-left: auto; margin-right: auto;"></p>
+<h2>2 - Renombrar proyecto</h2>
+<p>Cambia el nombre del proyecto a "<span style="color: #008000;"><strong>Práctica guiada 1</strong></span>". TinkerCAD le pone siempre un nombre aleatorio a cada proyecto nuevo y es importante cambiarlo para saber a qué tarea corresponde. Puedes cambiar el nombre <span style="color: #008000;"><strong>haciendo clic sobre el nombre aleatorio</strong></span> que le ha puesto TinkerCAD y que se encuentra en la parte <span style="color: #008000;"><strong>superior izquierda</strong></span> de la página.</p>
+<p><img src="../content/resources/cambiar_nombre_TC.png" width="621" height="204" style="display: block; margin-left: auto; margin-right: auto;"></p>
+<h2>3 - Añadir componentes básicos</h2>
+<p>Añade a tu proyecto una "<span style="color: #008000;"><strong>placa de pruebas pequeña</strong></span>" y las <span style="color: #008000;"><strong>6 resistencias</strong></span> que necesitarás. Las encontrarás entre los componentes básicos a la derecha de la pantalla. Simplemente arrástralas a tu zona de trabajo:</p>
+<p><img src="../content/resources/pra1-1.gif" width="1126" height="692"></p>
+<h2>4 - Modificar nombres y valores de componentes</h2>
+<p>Modifica los nombres y los valores de las resistencias para que sean los que aparecen en el diagrama del circuito. Aquí te enseño a cambiar R1. Repite lo mismo para dar los valores al resto de las resistencias:</p>
+<p><img src="../content/resources/pra1-2.gif" width="644" height="420" style="display: block; margin-left: auto; margin-right: auto;"></p>
+<p>Fíjate que, al modificar el valor de una resistencia, sus bandas de colores cambian para mostrar el valor real, como hemos visto. Cuando cambies todos los valores, te deberán quedar así:</p>
+<p><img src="../content/resources/pra1-3.png" width="666" height="344" style="display: block; margin-left: auto; margin-right: auto;"></p>
+<h2>5 - Añadir otros componentes</h2>
+<p>Añade la <span style="color: #008000;"><strong>fuente de alimentación</strong></span> del circuito. Como necesitamos una fuente de 21 voltios, no podemos usar las pilas que vienen entre los componentes básicos (solo hay de 9 V, de 3 V y de 1,5 V). Utilizaremos un componente llamado "<span style="color: #008000;"><strong>Suministro de energía</strong></span>". Para localizarlo deberás mostrar todos los componentes de TinkerCAD, no solo los básicos. En esta animación puedes ver cómo hacerlo. ¡Recuerda cambiar el nombre del componente a "<span style="color: #008000;"><strong>V</strong></span>" y su valor de tensión a <span style="color: #008000;"><strong>21 voltios</strong></span>!</p>
+<p><img src="../content/resources/pra1-4.gif" width="836" height="746" style="display: block; margin-left: auto; margin-right: auto;"></p>
+<h2>6 - Realizar conexiones mediante cables virtuales</h2>
+<p><span style="color: #008000;"><strong>Conecta la fuente a la protoboard mediante cables.</strong></span>&nbsp;Cuando no tengamos más remedio, usaremos cables virtuales para conectar dispositivos entre sí.</p>
+<p>Para poner un cable virtual, solo hay que hacer clic con el ratón en un terminal de un componente y volver a hacer clic en otro para que queden unidos por un cable. Si vas haciendo clic por el camino, puedes hacer que el cable se vaya doblando y quede más organizado todo (<em>si te queda algún tramo torcido, siempre puedes arrastrar los puntos de giro para que quede todo derecho</em>). Además, puedes cambiar los colores de los cables para que te sea más sencillo identificarlos cuando tengas muchos. Te voy a enseñar a hacer todo esto haciendo lo siguiente:</p>
+<ul>
+<li>Conecto el terminal positivo (<span style="color: #ff0000;"><strong>rojo</strong></span>) de la fuente a cualquier orificio del bus positivo <span style="color: #ff0000;"><strong>(+)</strong></span> de la parte de <span style="color: #008000;"><strong>arriba</strong></span> de la protoboard, utilizando un <span style="color: #ff0000;"><strong>cable rojo</strong></span>.</li>
+<li>Conecto el terminal negativo (<strong>negro</strong>) de la fuente a cualquier orificio del bus negativo <strong>(-)</strong> de la parte de <span style="color: #008000;"><strong>abajo</strong></span> de la protoboard, utilizando un <strong>cable negro</strong>.</li>
+</ul>
+<p><img src="../content/resources/pra1-5.gif" width="662" height="382" style="display: block; margin-left: auto; margin-right: auto;">Fíjate cómo podemos enderezar fácilmente los tramos que nos hayan quedado torcidos.</p>
+<h2>7 - Realizar conexiones mediante la protoboard</h2>
+<p><span style="color: #008000;"><strong>Conecta todos las resistencias entre sí para formar el circuito.</strong></span> Para hacer las conexiones vamos a <span style="color: #008000;"><strong>usar la placa protoboard siempre que sea posible&nbsp;</strong></span>(recuerda que, con los componentes reales, no podemos unir los cables con sus patillas directamente).</p>
+<p>Como esta es la parte más complicada de toda la práctica, lo vamos a ir haciendo por partes. Yo te propongo una posible solución, pero <span style="color: #008000;"><strong>puede haber muchas otras también válidas</strong></span>. Lo importante es que vayas entendiendo cómo se conectan entre sí por dentro de la protoboard para que seas capaz de montar cualquier circuito.</p>
+<p><span style="color: #008000;"><strong>No es necesario que utilices exactamente los mismos orificios</strong> </span>de la placa que te muestro en los ejemplos. Lo importante es que coincidan los que estén en la misma vertical (o en la misma horizontal en el caso de los orificios de los buses de alimentación)</p>
+<ul>
+<li><span style="color: #008000;"><strong>Conexión de R<sub>1</sub> y R<sub>2</sub></strong></span>. Estas dos resistencias están conectadas al terminal positivo de la fuente por un lado y conectadas entre sí por el otro. Podemos hacer esa conexión así (he añadido un cable verde para conectarlas entre sí, para que sea más fácil de entender, pero se podrían conectar sin cables utilizando orificios en la misma tira de la placa, colocados en vertical):</li>
+</ul>
+<p style="padding-left: 30px;"><img src="../content/resources/pra1-6.png" width="546" height="462" style="display: block; margin-left: auto; margin-right: auto;"></p>
+<ul>
+<li><span style="color: #008000;"><strong>Conexión de R<sub>3</sub> y R<sub>4</sub>.</strong> </span>En este caso, R<sub>3</sub> está conectada a la conexión de R<sub>1</sub> y R<sub>2</sub> por un lado y a R<sub>4</sub> por el otro. Por su parte, R<sub>4</sub> está conectada al negativo de la fuente de alimentación. Una posible conexión sería esta:</li>
+</ul>
+<p><img src="../content/resources/pra1-7.png" width="684" height="371" style="display: block; margin-left: auto; margin-right: auto;"></p>
+<p style="padding-left: 30px;">Fíjate que ahora hemos conectado todo&nbsp;sin necesidad de usar cables. Solo con las conexiones internas de la protoboard.</p>
+<ul>
+<li><span style="color: #008000;"><strong>Conexión de R<sub>5</sub> y R<sub>6</sub></strong></span>. Para conectar estas resistencias sí vamos a utilizar cables, para poder separar los componentes y que sea más cómodo el montaje en la protoboard. Te indico en la imagen a qué conexión corresponde cada cable:</li>
+</ul>
+<p style="padding-left: 30px;"><img src="../content/resources/pra1-8.png" width="666" height="367" style="display: block; margin-left: auto; margin-right: auto;"></p>
+<p style="padding-left: 30px;">Fíjate que he utilizado el color negro para todos los cables que van al negativo de la fuente. Esto es algo que deberás intentar respetar siempre. Solemos usar el color rojo para las conexiones al positivo y negro para las conexiones al negativo. Para todo lo demás, puedes usar el color que quieras (excepto rojo y negro).</p>
+<p>Te dejo el aspecto final que tendrá el circuito, pero es importante que <span style="color: #008000;"><strong>no te limites a copiarlo sin más</strong></span>, sino que debes intentar comprender por qué hemos colocado así los componentes. Si tienes dudas, pregúntamelas en clase, pero <span style="color: #008000;"><strong>es muy importante que comprendas bien este paso para poder hacer bien la tarea que viene a continuación</strong></span>.</p>
+<p><img src="../content/resources/pra1-9.png" width="675" height="359" style="display: block; margin-left: auto; margin-right: auto;"></p>
+<p>Si nos fijamos sólo en las partes de la protoboard que conducen la electricidad, veremos más claramente el circuito que hemos montado:</p>
+<p><img src="../content/resources/pra1-9-2.png" alt="" width="371" height="284" style="display: block; margin-left: auto; margin-right: auto;"></p>
+<h2>8 - Simular el circuito</h2>
+<p>Ha llegado el momento de simular el circuito para ver los valores del mismo. Para iniciar la simulación en TinkerCAD solo tienes que pulsar el botón Iniciar simulación, que tienes en la parte superior derecha de la pantalla:</p>
+<p><img src="../content/resources/iniciar_simulacion_TC.png" width="544" height="380" style="display: block; margin-left: auto; margin-right: auto;"></p>
+<p>En este ejemplo, al iniciar la simulación lo que verás es que la fuente de alimentación muestra 21 voltios de tensión y 2,33 amperios de intensidad de corriente. Si el valor de la intensidad no es 2,33 o recibes algún error, es que no has conectado correctamente el circuito o no le has dado el valor correcto a las resistencias. Revisa todo bien antes de seguir.</p>
+<p><img src="../content/resources/pra1-10.png" width="361" height="310" style="display: block; margin-left: auto; margin-right: auto;"></p>
+<h2>9 - Medir las magnitudes eléctricas</h2>
+<p>Este es, por fin, el último paso de esta práctica guiada. Vamos a medir los valores de V1, V2, V3 y V4 directamente en el circuito. Para hacerlo, utilizaremos un multímetro, que puedes encontrar al final de los componentes básicos de TinkerCAD.</p>
+<p>El multímetro puede medir <span style="color: #008000;"><strong>voltaje</strong></span> (V), <span style="color: #008000;"><strong>resistencia</strong></span> (R) o <span style="color: #008000;"><strong>intensidad de corriente</strong> </span>(A - amperaje). Para elegir qué queremos medir, basta con seleccionarlo y desplegar el menú llamado "Modo". El dibujo del dispositivo cambiará para marcar la A, la V o la R según sea su modo de funcionamiento:</p>
+<p><img src="../content/resources/pra1-11.gif" width="538" height="224" style="display: block; margin-left: auto; margin-right: auto;"></p>
+<p>Para medir los voltajes que nos piden, conectaremos los cables del multímetro a los puntos entre los que queremos medir el voltaje.</p>
+<p>Por ejemplo, para medir V<sub>1</sub>, tenemos que conectar los extremos del multímetro a los extremos de R<sub>2</sub> (o de R<sub>1</sub>). El conector rojo del multímetro lo conectaremos al extremo de R<sub>2</sub> que va al positivo de la fuente y el negro al otro (si los conectamos al revés, lo único que pasará es que el valor medido por el multímetro saldrá negativo en vez de positivo). Te enseño aquí como medir V1:</p>
+<p><img src="../content/resources/pra1-12.gif" width="850" height="562" style="display: block; margin-left: auto; margin-right: auto;"></p>
+<p>Fíjate que he cambiado el color de los cables para que sean el mismo que el de cada terminal. Esto no es obligatorio pero <span style="color: #008000;"><strong>siempre es recomendable hacerlo</strong></span>.</p>
+<p>Recuerda pulsar "Iniciar simulación" para ver el valor medido. <span style="color: #008000;"><strong>Si tienes que hacer cambios en tu circuito, primero debes para la simulación.</strong></span></p>
+<p><span style="color: #008000;"></span>Para medir V<sub>2</sub> solo tenemos que quitar los cables de donde están y colocarlos en los extremos de R<sub>6</sub>. Aquí te enseño cómo hacerlo:</p>
+<p><img src="../content/resources/pra1-13.gif" width="850" height="562" style="display: block; margin-left: auto; margin-right: auto;"></p>
+<p><span style="color: #0000ff;"><strong></strong></span><span style="color: #0000ff;"><strong>Intenta medir por tu cuenta los otros voltajes V<sub>3</sub> y V<sub>4</sub>, a ver qué valores obtienes.</strong></span></p>
+<p>Podemos indicar los valores que vayamos obteniendo mediante una <span style="color: #008000;"><strong>nota de texto</strong></span>. Puedes añadir las notas de texto que desees a tus circuitos de TinkerCAD utilizando este botón de la barra de herramientas:</p>
+<p><img src="../content/resources/notas_de_texto.png" width="573" height="170" style="display: block; margin-left: auto; margin-right: auto;">Una vez añadida la nota, puedes editarla cuando quieras para escribir lo que quieras. Por ejemplo, los valores de los voltajes V<sub>1</sub> y V<sub>2</sub> los podríamos escribir así en una nota:</p>
+<p><img src="../content/resources/pra1-14.png" width="651" height="511" style="display: block; margin-left: auto; margin-right: auto;"></p>
+<p><span style="color: #0000ff;"><strong>¡Completa tu nota con los valores de V<sub>3</sub> y V<sub>4</sub>!</strong></span></p>
+</div></div></div></section></div>
+</div>
+</div>
+</article><article id="block-msszgrsw-2n3k7azgp" class="box">
+<header class="box-head no-icon">
+<h1 class="box-title">TAREA 1 - CONEXIONES EN LA PROTOBOARD</h1>
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="idevice-msszgrsw-bw9d0jq2l" class="idevice_node udl-content" data-idevice-path="../idevices/udl-content/" data-idevice-type="udl-content">
+<div class="exe-udlContent exe-udlContent-expression"><section class="exe-udlContent-block"><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p>Para realizar esta tarea tienes que hacer lo mismo que has hecho en la práctica guiada anterior, pero en este caso para este circuito:</p>
+<p><img src="../content/resources/tarea_1-1.jpeg" alt="" width="800" height="576" style="display: block; margin-left: auto; margin-right: auto;">Tendrás que <span style="color: #008000;"><strong>montar el circuito en un proyecto de TinkerCAD llamado "TAREA 1 - CONEXIONES"</strong></span>.</p>
+<p>Cuando hayas conectado todo, tienes que simular el circuito y anotar el valor de la intensidad que da la fuente de alimentación (<span style="color: #008000;"><strong>I</strong></span>).</p>
+<p><span style="color: #0000ff;"><strong><em>ATENCIÓN: cuando cambies el valor de la fuente de tensión a 24 voltios, modifica también el valor de la corriente máxima y ponlo en un valor suficientemente alto (por ejemplo, 25 amperios). Si no lo haces, la fuente bloqueará la corriente a 5 amperios (su valor por defecto) y no te dará la tensión de 24 voltios que necesitas. </em></strong></span></p>
+<p>También deberás usar un multímetro y medir (y anotar) los valores de todas las tensiones que vienen indicadas en el esquema del circuito (desde <span style="color: #008000;"><strong>V<sub>1</sub></strong></span> hasta <span style="color: #008000;"><strong>V<sub>9</sub></strong></span>). <span style="color: #008000;"><strong>Anota todos esos valores en una nota de texto al lado de tu circuito</strong></span>.</p>
+<p>Cuando hayas terminado, realiza una <span style="color: #008000;"><strong>captura de pantalla</strong></span> donde se vea todo el circuito y las notas de texto y entrégala en la <span style="color: #008000;"><strong>TAREA 1 de Moodle.</strong></span></p>
+<p><span style="color: #008000;"></span></p></div></div></section></div>
+</div>
+</div>
+</article>
+</div></main><div class="nav-buttons">
+<a href="../index.html" title="Anterior" class="nav-button nav-button-left"><span>Anterior</span></a>
+<a href="../html/resistencias-electronicas.html" title="Siguiente" class="nav-button nav-button-right"><span>Siguiente</span></a>
+</div>
+<footer id="siteFooter"><div id="siteFooterContent"> <div id="packageLicense" class="cc cc-by-nc-sa"> <p> <span class="license-label">Licencia: </span><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" class="license">Creative Commons: Reconocimiento - no comercial - compartir igual 4.0</a></p>
+</div>
+</div></footer>
+</div>
+<p id="made-with-eXe"> <a href="https://exelearning.net/" target="_blank" rel="noopener"> <span>Creado con eXeLearning <span>(Ventana nueva)</span></span></a></p>
+</body>
+</html>

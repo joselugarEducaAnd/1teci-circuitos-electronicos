@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<html lang="es" id="exe-page-msszgrsv-724iqwzab"><head>
+<meta charset="utf-8">
+<meta name="generator" content="eXeLearning v4.0.3">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="license" type="text/html" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">
+<title>Transistores | Circuitos electrónicos</title>
+<link rel="icon" type="image/x-icon" href="../libs/favicon.ico">
+<meta name="description" content="Circuitos electrónicos. Tecnología e Ingeniería 1º Bachillerato">
+<script>document.querySelector("html").classList.add("js");</script><script src="../libs/jquery/jquery.min.js"> </script><script src="../libs/common_i18n.js"> </script><script src="../libs/common.js"> </script><script src="../libs/exe_export.js"> </script><script>window.exeXapi={"odeId":"202608141528574JZTPS","packageTitle":"Circuitos electrónicos","language":"es"};</script><script src="../libs/xapi/exe_xapi.js"> </script><script src="../libs/bootstrap/bootstrap.bundle.min.js"> </script><link rel="stylesheet" href="../libs/bootstrap/bootstrap.min.css">
+<script src="../idevices/udl-content/udl-content.js"></script><link rel="stylesheet" href="../idevices/udl-content/udl-content.css">
+<script src="../idevices/file-attachment/file-attachment.js"></script><link rel="stylesheet" href="../idevices/file-attachment/file-attachment.css">
+<script src="../libs/exe_effects/exe_effects.js"> </script>
+<link rel="stylesheet" href="../libs/exe_effects/exe_effects.css">
+<link rel="stylesheet" href="../content/css/base.css"><script src="../theme/style.js"> </script><link rel="stylesheet" href="../theme/style.css"><link rel="stylesheet" href="../theme/zzz-majuelo.css">
+<script type="text/javascript" src="https://cdn.ckeditor.com/ckeditor5/36.0.0/classic/ckeditor.js">
+</script>
+<script>
+window.MathJax = {
+  loader: {load: ['[tex]/empheq'],load: ['[tex]/textmacros'],load: ['[tex]/color'],load: ['[tex]/cancel']}
+  tex: {
+    tags: "ams",
+    inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+    displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+    processEscapes: true,
+    packages: {'[+]': ['empheq']},
+    packages: {'[+]': ['textmacros']},
+    packages: {'[+]': ['color']},
+    packages: {'[+]': ['cancel']},
+    autoload: {empheq: [[], ['empheq']]}
+  },
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" id="MathJax-script">
+</script>
+<script type="text/javascript" async="" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+</head>
+<body class="exe-export exe-web-site">
+<script>document.body.className+=" js"</script>
+<div class="exe-content exe-export pre-js siteNav-hidden"><a href="#page-msszgrsv-724iqwzab" id="skipNav">Skip to content</a> <nav id="siteNav">
+<ul>
+<li> <a href="../index.html" class="main-node no-ch">Circuitos electrónicos</a>
+</li>
+<li> <a href="../html/herramientas-basicas.html" class="no-ch">Herramientas básicas</a>
+</li>
+<li> <a href="../html/resistencias-electronicas.html" class="no-ch">Resistencias electrónicas</a>
+</li>
+<li> <a href="../html/condensadores.html" class="no-ch">Condensadores</a>
+</li>
+<li class="current-page-parent"> <a href="../html/elementos-semiconductores.html" class="daddy">Elementos semiconductores</a>
+<ul class="other-section">
+<li> <a href="../html/diodos.html" class="no-ch">Diodos</a>
+</li>
+<li class="active"> <a href="../html/transistores.html" class="active no-ch">Transistores</a>
+</li>
+<li> <a href="../html/circuitos-integrados.html" class="no-ch">Circuitos integrados</a>
+</li>
+</ul>
+</li>
+</ul>
+</nav><main id="page-msszgrsv-724iqwzab" class="page"> 
+<header class="main-header"> <p class="page-counter"> <span class="page-counter-label">Página </span><span class="page-counter-content"> <strong class="page-counter-current-page">7</strong><span class="page-counter-sep">/</span><strong class="page-counter-total">8</strong></span></p>
+
+<div class="package-header"><p class="package-title">Circuitos electrónicos</p></div>
+<div class="page-header"><h1 class="page-title">Transistores</h1></div>
+</header><div id="page-content-page-msszgrsv-724iqwzab" class="page-content">
+<article id="block-msszgrsw-phfho4gu7" class="box no-header">
+<header class="box-head no-icon">
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="idevice-msszgrsw-19oee5e2v" class="idevice_node udl-content" data-idevice-path="../idevices/udl-content/" data-idevice-type="udl-content">
+<div class="bloque bloque-nota"><p class="bloque-titulo">Sesiones 6–7</p></div>
+<div class="exe-udlContent exe-udlContent-representation"><section class="exe-udlContent-block"><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p>Un <span style="color: #008000;"><strong>transistor</strong></span> es un dispositivo electrónico <span style="color: #008000;"><strong>semiconductor</strong></span> que cumple funciones de <span style="color: #008000;"><strong>amplificación</strong></span>, <span style="color: #008000;"><strong>conmutación</strong></span> o <span style="color: #008000;"><strong>regulación</strong></span> de señales eléctricas. Es decir, puede funcionar como un amplificador o como un interruptor que podemos controlar con electricidad. Consiste en un pequeño trozo de material semiconductor con <span style="color: #008000;"><strong>al menos tres terminales</strong></span> para la conexión a un circuito externo.</p>
+<p>La historia del transistor se remonta a la década de 1940, cuando un equipo de investigadores de los Laboratorios Bell, liderado por William Shockley, John Bardeen y Walter Brattain, desarrolló el primer transistor funcional en diciembre de 1947. Este dispositivo, hecho de germanio y con una configuración de punto de contacto, reemplazó las grandes y frágiles válvulas de vacío utilizadas en la época, que eran los componentes electrónicos que se utilizaban para <span style="color: #008000;"><strong>amplificar</strong></span>, <span style="color: #008000;"><strong>conmutar</strong></span>, o <span style="color: #008000;"><strong>modificar</strong></span> una&nbsp;señal eléctrica.</p>
+<p>Este avance revolucionario permitió la <span style="color: #008000;"><strong>miniaturización</strong></span> de los circuitos electrónicos y allanó el camino para el desarrollo de la electrónica moderna. En 1956, los investigadores Bell recibieron el Premio Nobel de Física por su invención del transistor.</p>
+<p>Posteriormente, la industria de semiconductores evolucionó rápidamente, llevando a la introducción de nuevos tipos de transistores, como los <span style="color: #008000;"><strong>bipolares</strong></span> y los de <span style="color: #008000;"><strong>efecto de campo</strong></span>, y dando lugar a la era de la electrónica digital y de consumo masivo de dispositivos electrónicos. Desde entonces, los transistores han sido fundamentales en el desarrollo de tecnologías como los ordenadores, los teléfonos móviles, los dispositivos médicos y muchos otros dispositivos electrónicos que forman parte de nuestra vida cotidiana.</p>
+<h1><span style="color: #008000;">Tipos de transistores</span></h1>
+<p>Existen varios tipos de transistores, cada uno con características y aplicaciones específicas. Estos son los principales tipos de transistores y sus usos:</p>
+<dl class="exe-dl">
+<dt>Transistores Bipolares (<span style="color: #008000;"><strong>BJT</strong></span> - Bipolar Junction Transistor)</dt>
+<dd>
+<p>NPN (Negativo-Positivo-Negativo) y PNP (Positivo-Negativo-Positivo) son los dos tipos principales.<br>Se utilizan en aplicaciones de <span style="color: #008000;"><strong>amplificación de señales</strong></span>, como en etapas de amplificación de audio y radiofrecuencia, además de en <span style="color: #008000;"><strong>interruptores de baja potencia</strong></span>.</p>
+</dd>
+<dt>Transistores de Efecto de Campo (<span style="color: #008000;"><strong>FET</strong></span> - Field Effect Transistor)</dt>
+<dd>
+<p>Los tipos más comunes son MOSFET (Transistor de Efecto de Campo de Metal-Óxido-Semiconductor) y JFET (Transistor de Efecto de Campo de Unión).<br>Se utilizan en aplicaciones de <span style="color: #008000;"><strong>amplificación</strong></span> y <span style="color: #008000;"><strong>conmutación</strong></span> de señales, así como en circuitos integrados digitales, tales como en <span style="color: #008000;"><strong>memorias</strong></span> y <span style="color: #008000;"><strong>microprocesadores.</strong></span></p>
+</dd>
+</dl>
+<dl class="exe-dl">
+<dd></dd>
+</dl>
+<dl class="exe-dl">
+<dt>Transistores de Unión Bipolar de Puerta Aislada (<span style="color: #008000;"><strong>IGBT</strong></span> - Isolated Gate Bipolar Transistor):</dt>
+<dd>
+<p>Combina características de los transistores bipolares y de efecto de campo.<br>Se utilizan en aplicaciones de <span style="color: #008000;"><strong>alta potencia</strong></span>, como en sistemas de control de motores, inversores de potencia y fuentes de alimentación conmutadas.</p>
+</dd>
+<dt>Transistores de alta movilidad de electrones (<span style="color: #008000;"><strong>HEMT</strong></span> - High electron mobility transistor)</dt>
+<dd>
+<p>También conocidos como FET de&nbsp;Heteroestructura (HFET - Heterostructure FET).<br>Se utilizan en aplicaciones de <span style="color: #008000;"><strong>alta frecuencia</strong></span>, como en dispositivos de comunicación de radiofrecuencia y en amplificadores de microondas.</p>
+</dd>
+</dl>
+<p>En este curso nos vamos a centrar en el estudio de los <span style="color: #008000;"><strong>transistores de unión bipolar</strong></span>.</p></div></div></section></div>
+</div>
+</div>
+</article><article id="block-msszgrsw-yivzrpm3i" class="box">
+<header class="box-head no-icon">
+<h1 class="box-title">El transistor BJT</h1>
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="idevice-msszgrsw-sz912vauh" class="idevice_node udl-content" data-idevice-path="../idevices/udl-content/" data-idevice-type="udl-content">
+<div class="exe-udlContent exe-udlContent-representation"><section class="exe-udlContent-block"><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p>Un transistor de unión bipolar (BJT) está formado por <span style="color: #008000;"><strong>dos&nbsp;uniones PN&nbsp;en un solo cristal semiconductor</strong></span>, separados por una región muy estrecha. De esta manera quedan formadas tres regiones:</p>
+<ul>
+<li><span style="color: #008000;"><strong>Emisor,</strong> </span>que se diferencia de las otras dos por estar fuertemente&nbsp;dopada, comportándose como un metal. Su nombre se debe a que esta terminal funciona como&nbsp;emisor&nbsp;de portadores de carga.</li>
+<li><span style="color: #008000;"><strong>Base,</strong></span> la intermedia, muy estrecha, que separa el emisor del colector.</li>
+<li><span style="color: #008000;"><strong>Colector,</strong> </span>de extensión mucho mayor.</li>
+</ul>
+<p>Según el <span style="color: #008000;"><strong>tipo de dopado</strong></span> de cada región, podemos tener dos clases de transistores BJT:</p>
+<ul>
+<li><span style="color: #008000;"><strong>PNP:</strong></span> emisor tipo P, base tipo N, colector tipo P</li>
+<li><span style="color: #008000;"><strong>NPN:</strong></span>&nbsp;emisor tipo N, base tipo P, colector tipo N</li>
+</ul>
+<p>Cada región del semiconductor está conectada a un terminal, denominado igual que ella: <span style="color: #008000;"><strong>emisor (E)</strong></span>, <span style="color: #008000;"><strong>base (B)</strong></span> o <span style="color: #008000;"><strong>colector (C).&nbsp;</strong></span>En esta imagen puedes ver la estructura que tendría un <span style="color: #008000;"><strong>BJT de tipo NPN</strong></span>:</p>
+<p><img src="../content/resources/Npn_BJT_cross_section.png" alt="" width="455" height="188" style="display: block; margin-left: auto; margin-right: auto;"></p>
+<p>Los <span style="color: #008000;"><strong>símbolos</strong></span> de los dos tipos de transistores BJT son los siguientes:</p>
+<table style="width: 400px; margin-left: auto; margin-right: auto;">
+<tbody>
+<tr>
+<td style="width: 50%; text-align: center;"><span style="color: #008000;"><strong>TRANSISTOR PNP</strong></span></td>
+<td style="width: 50%; text-align: center;"><span style="color: #008000;"><strong>TRANSISTOR NPN</strong></span></td>
+</tr>
+<tr>
+<td style="width: 50%; text-align: center;"><img src="../content/resources/BJT_symbol_PNP.svg.png" width="150" height="177"></td>
+<td style="width: 50%; text-align: center;"><img src="../content/resources/BJT_symbol_NPN.svg.png" alt="" width="150" height="176"></td>
+</tr>
+</tbody>
+</table>
+<p>Como puedes ver, es sencillo identificar los tres terminales simplemente viendo los símbolos:</p>
+<ul>
+<li><span style="color: #008000;"><strong>Base:</strong> </span>es el terminal central.</li>
+<li><span style="color: #008000;"><strong>Emisor:</strong> </span>es el terminal que tiene una flecha.
+<ul>
+<li>Si la flecha apunta hacia la base, es PNP.</li>
+<li>Sila flecha apunta hacia fuera del emisor, es NPN.</li>
+</ul>
+</li>
+<li><span style="color: #008000;"><strong>Colector:</strong> </span>es el tercer terminal que queda, sin flecha.</li>
+</ul>
+<p>En este vídeo tienes una explicación muy buena de cómo funcionan estos tipos de transistores y del aspecto que tienen físicamente:</p>
+<p style="text-align: center;"><iframe width="560" height="314" src="https://www.youtube.com/embed/zh7PeHAZRLY" referrerpolicy="strict-origin-when-cross-origin"></iframe></p>
+<p>Aunque los dos tipos de transistores de unión funcionan bajo el mismo principio y lo único que los diferencia son los sentidos de los voltajes y corrientes, para no complicar las cosas <span style="color: #008000;"><strong>nos vamos a centrar en uno solo de ellos: el transistor NPN.</strong></span></p></div></div></section></div>
+</div>
+</div>
+</article><article id="block-msszgrsw-t7ux6e98c" class="box">
+<header class="box-head no-icon">
+<h1 class="box-title">El transistor de unión NPN</h1>
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="idevice-msszgrsw-3f07cvybc" class="idevice_node udl-content" data-idevice-path="../idevices/udl-content/" data-idevice-type="udl-content">
+<div class="exe-udlContent exe-udlContent-representation"><section class="exe-udlContent-block"><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p>En el transistor BJT de tipo NPN las corrientes que pueden circular por sus terminales llevan el siguiente sentido (recuerda que siempre utilizamos el criterio de sentido convencional de la corriente):</p>
+<p><img src="../content/resources/BJT_symbol_NPN-Corrientes.svg.png" alt="" width="200" height="235" style="display: block; margin-left: auto; margin-right: auto;">Como se puede ver, siempre se cumple que:</p>
+<table border="1" style="width: 0%; border-style: none; margin-left: auto; margin-right: auto;">
+<tbody>
+<tr>
+<td style="width: 100%; background-color: #ffe3c2; border-color: #db6600; border-style: solid; border-radius: 8px; -moz-border-radius: 8px; -webkit-border-radius: 8px; box-shadow: 5px 5px 5px gray; padding: 5px;"><span class="exe-math-rendered" data-latex="\[I_{C}+I_{B}=I_{E}\]" data-display="block"><svg xmlns="http://www.w3.org/2000/svg" width="12.985ex" height="1.92ex" role="img" focusable="false" viewBox="0 -683 5739.3 848.6" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" style="vertical-align: -0.375ex;"><defs><path id="MJX-11-TEX-I-1D43C" d="M43 1Q26 1 26 10Q26 12 29 24Q34 43 39 45Q42 46 54 46H60Q120 46 136 53Q137 53 138 54Q143 56 149 77T198 273Q210 318 216 344Q286 624 286 626Q284 630 284 631Q274 637 213 637H193Q184 643 189 662Q193 677 195 680T209 683H213Q285 681 359 681Q481 681 487 683H497Q504 676 504 672T501 655T494 639Q491 637 471 637Q440 637 407 634Q393 631 388 623Q381 609 337 432Q326 385 315 341Q245 65 245 59Q245 52 255 50T307 46H339Q345 38 345 37T342 19Q338 6 332 0H316Q279 2 179 2Q143 2 113 2T65 2T43 1Z"></path><path id="MJX-11-TEX-I-1D436" d="M50 252Q50 367 117 473T286 641T490 704Q580 704 633 653Q642 643 648 636T656 626L657 623Q660 623 684 649Q691 655 699 663T715 679T725 690L740 705H746Q760 705 760 698Q760 694 728 561Q692 422 692 421Q690 416 687 415T669 413H653Q647 419 647 422Q647 423 648 429T650 449T651 481Q651 552 619 605T510 659Q484 659 454 652T382 628T299 572T226 479Q194 422 175 346T156 222Q156 108 232 58Q280 24 350 24Q441 24 512 92T606 240Q610 253 612 255T628 257Q648 257 648 248Q648 243 647 239Q618 132 523 55T319 -22Q206 -22 128 53T50 252Z"></path><path id="MJX-11-TEX-N-2B" d="M56 237T56 250T70 270H369V420L370 570Q380 583 389 583Q402 583 409 568V270H707Q722 262 722 250T707 230H409V-68Q401 -82 391 -82H389H387Q375 -82 369 -68V230H70Q56 237 56 250Z"></path><path id="MJX-11-TEX-I-1D435" d="M231 637Q204 637 199 638T194 649Q194 676 205 682Q206 683 335 683Q594 683 608 681Q671 671 713 636T756 544Q756 480 698 429T565 360L555 357Q619 348 660 311T702 219Q702 146 630 78T453 1Q446 0 242 0Q42 0 39 2Q35 5 35 10Q35 17 37 24Q42 43 47 45Q51 46 62 46H68Q95 46 128 49Q142 52 147 61Q150 65 219 339T288 628Q288 635 231 637ZM649 544Q649 574 634 600T585 634Q578 636 493 637Q473 637 451 637T416 636H403Q388 635 384 626Q382 622 352 506Q352 503 351 500L320 374H401Q482 374 494 376Q554 386 601 434T649 544ZM595 229Q595 273 572 302T512 336Q506 337 429 337Q311 337 310 336Q310 334 293 263T258 122L240 52Q240 48 252 48T333 46Q422 46 429 47Q491 54 543 105T595 229Z"></path><path id="MJX-11-TEX-N-3D" d="M56 347Q56 360 70 367H707Q722 359 722 347Q722 336 708 328L390 327H72Q56 332 56 347ZM56 153Q56 168 72 173H708Q722 163 722 153Q722 140 707 133H70Q56 140 56 153Z"></path><path id="MJX-11-TEX-I-1D438" d="M492 213Q472 213 472 226Q472 230 477 250T482 285Q482 316 461 323T364 330H312Q311 328 277 192T243 52Q243 48 254 48T334 46Q428 46 458 48T518 61Q567 77 599 117T670 248Q680 270 683 272Q690 274 698 274Q718 274 718 261Q613 7 608 2Q605 0 322 0H133Q31 0 31 11Q31 13 34 25Q38 41 42 43T65 46Q92 46 125 49Q139 52 144 61Q146 66 215 342T285 622Q285 629 281 629Q273 632 228 634H197Q191 640 191 642T193 659Q197 676 203 680H757Q764 676 764 669Q764 664 751 557T737 447Q735 440 717 440H705Q698 445 698 453L701 476Q704 500 704 528Q704 558 697 578T678 609T643 625T596 632T532 634H485Q397 633 392 631Q388 629 386 622Q385 619 355 499T324 377Q347 376 372 376H398Q464 376 489 391T534 472Q538 488 540 490T557 493Q562 493 565 493T570 492T572 491T574 487T577 483L544 351Q511 218 508 216Q505 213 492 213Z"></path></defs><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="msub"><g data-mml-node="mi"><use data-c="1D43C" xlink:href="#MJX-11-TEX-I-1D43C"></use></g><g data-mml-node="TeXAtom" transform="translate(473,-150) scale(0.707)" data-mjx-texclass="ORD"><g data-mml-node="mi"><use data-c="1D436" xlink:href="#MJX-11-TEX-I-1D436"></use></g></g></g><g data-mml-node="mo" transform="translate(1282.6,0)"><use data-c="2B" xlink:href="#MJX-11-TEX-N-2B"></use></g><g data-mml-node="msub" transform="translate(2282.8,0)"><g data-mml-node="mi"><use data-c="1D43C" xlink:href="#MJX-11-TEX-I-1D43C"></use></g><g data-mml-node="TeXAtom" transform="translate(473,-150) scale(0.707)" data-mjx-texclass="ORD"><g data-mml-node="mi"><use data-c="1D435" xlink:href="#MJX-11-TEX-I-1D435"></use></g></g></g><g data-mml-node="mo" transform="translate(3620.3,0)"><use data-c="3D" xlink:href="#MJX-11-TEX-N-3D"></use></g><g data-mml-node="msub" transform="translate(4676.1,0)"><g data-mml-node="mi"><use data-c="1D43C" xlink:href="#MJX-11-TEX-I-1D43C"></use></g><g data-mml-node="TeXAtom" transform="translate(473,-150) scale(0.707)" data-mjx-texclass="ORD"><g data-mml-node="mi"><use data-c="1D438" xlink:href="#MJX-11-TEX-I-1D438"></use></g></g></g></g></g></svg><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><msub><mi>I</mi><mrow data-mjx-texclass="ORD"><mi>C</mi></mrow></msub><mo>+</mo><msub><mi>I</mi><mrow data-mjx-texclass="ORD"><mi>B</mi></mrow></msub><mo>=</mo><msub><mi>I</mi><mrow data-mjx-texclass="ORD"><mi>E</mi></mrow></msub></math></span></td>
+</tr>
+</tbody>
+</table>
+<p>En la práctica,&nbsp;I<sub>C</sub>&nbsp;≈ I<sub>E</sub>, ya que I<sub>B</sub> es muy pequeña en comparación con ambas.</p>
+<p>En un transistor <span style="color: #008000;"><strong>la corriente principal es la que circula entre el colector y el emisor (I<sub>C</sub>&nbsp;≈ I<sub>E</sub>)</strong></span>, activando el dispositivo de salida conectado al circuito. Para que esto suceda <span style="color: #008000;"><strong>es necesario que circule una corriente a través de la base del transistor (I<sub>B</sub>)</strong></span>, si esto no ocurre, el transistor no permitirá el paso de corriente entre el colector y el emisor y por lo tanto el circuito no funcionará. Para comprender mejor el funcionamiento del transistor vamos a analizar el siguiente circuito:</p>
+<p><img src="../content/resources/bjt01.png" width="350" height="270" style="display: block; margin-left: auto; margin-right: auto;">Tenemos una pila que alimenta un circuito con un motor, un transistor, una resistencia y un pulsador. Queremos que la corriente pase por el motor, es decir, que haya intensidad en el colector (I<sub>C</sub>), y tenemos dos posibilidades, que el pulsador esté accionado o no:</p>
+<ul>
+<li>No accionamos el pulsador: como por la base no entra corriente, no es posible que la corriente pase del colector al emisor, y por lo tanto el motor no gira. En este caso se dice que el transistor está en <span style="color: #008000;"><strong>corte</strong></span>.</li>
+<li>Accionamos el pulsador: ahora entra corriente por la base (I<sub>B</sub>) que hará que el transistor permita el paso de corriente del colector al emisor, y por lo tanto que el motor gire, se dice que el transistor está en <span style="color: #008000;"><strong>activa</strong></span>.</li>
+</ul>
+<p>Con este sencillo circuito podemos entender el funcionamiento básico del transistor, aunque no es muy útil, ya que si ponemos el pulsador en serie con el motor el efecto sería exactamente el mismo, realmente el transistor no nos aporta nada útil.</p>
+<p>Hacemos ahora un pequeño cambio, eliminamos el pulsador y la resistencia, y colocamos una LDR (resistencia que cambia su valor óhmico con la luz). Cuando la LDR recibe luz su resistencia disminuye, y cuando la LDR está en oscuridad su resistencia aumenta.</p>
+<p><img src="../content/resources/bjt02.png" alt="" width="350" height="290" style="display: block; margin-left: auto; margin-right: auto;">Si montamos físicamente este circuito y lo analizamos, encontramos los siguientes casos:</p>
+<div class="exe-fx exe-accordion">
+<h2>Con oscuridad</h2>
+<div class="page" title="Page 19">
+<div class="section">
+<div class="layoutArea">
+<div class="column">
+<p><span>La LDR ofrece una <span style="color: #008000;"><strong>gran resistencia</strong></span>, por lo que por la base casi no hay intensidad, <span style="color: #008000;"><strong>I</strong></span></span><span style="color: #008000;"><strong><sub>B </sub>≈ 0</strong></span><span>, el </span><span>transistor está en <span style="color: #008000;"><strong>corte</strong></span></span><span>, y el motor <span style="color: #008000;"><strong>no gira</strong></span>. La intensidad del colector </span><span>es cero (<span style="color: #008000;"><strong>I<sub>C</sub> = 0</strong></span>): </span></p>
+<p><img src="../content/resources/bjt03.png" alt="" width="350" height="266" style="display: block; margin-left: auto; margin-right: auto;"></p>
+</div>
+</div>
+</div>
+</div>
+<h2>Con luz</h2>
+<div class="page" title="Page 20">
+<div class="section">
+<div class="layoutArea">
+<div class="column">
+<p><span>La LDR disminuye su resistencia, por lo que aumenta la intensidad de la base hasta que el transistor comienza a conducir corriente entre colector y emisor. Ahora el transistor </span><span>está en <span style="color: #008000;"><strong>activa</strong></span></span><span>. Aparece intensidad por el colector y el motor empieza a girar.</span></p>
+<p><span><img src="../content/resources/bjt04.png" alt="" width="350" height="272" style="display: block; margin-left: auto; margin-right: auto;"></span></p>
+<p><span>Si aumentamos más la luz, la resistencia de la LDR disminuye y la I<sub>B</sub> aumenta.&nbsp; Si disminuimos la luz, la resistencia aumenta y la I<sub>B</sub> disminuye. M</span><span>edimos la corriente de base y la corriente de colector en varios momentos y observamos lo siguiente:</span></p>
+<table border="1" style="height: 122px; width: 400px; margin-left: auto; margin-right: auto;" class="exe-table">
+<thead>
+<tr style="height: 27px;">
+<td style="width: 153.409px; height: 27px;"><span style="color: #008000;"><strong>&nbsp;NIVEL DE LUZ</strong></span></td>
+<td style="width: 125.341px; height: 27px;"><span style="color: #008000;"><strong>Valor de IB</strong></span></td>
+<td style="width: 120.341px; height: 27px;"><span style="color: #008000;"><strong>Valor de IC</strong></span></td>
+</tr>
+</thead>
+<tbody>
+<tr style="height: 27px;">
+<td style="width: 153.409px; height: 27px;">BAJO</td>
+<td style="width: 125.341px; height: 27px;">2 mA</td>
+<td style="width: 120.341px; height: 27px;">400 mA</td>
+</tr>
+<tr style="height: 41px;">
+<td style="width: 153.409px; height: 41px;">MEDIO</td>
+<td style="width: 125.341px; height: 41px;">3 mA</td>
+<td style="width: 120.341px; height: 41px;">600 mA</td>
+</tr>
+<tr style="height: 27px;">
+<td style="width: 153.409px; height: 27px;">ALTO</td>
+<td style="width: 125.341px; height: 27px;">4 mA</td>
+<td style="width: 120.341px; height: 27px;">800 mA</td>
+</tr>
+</tbody>
+</table>
+<p>Como ves, el valor de <span style="color: #008000;"><strong>I<sub>C</sub> siempre es proporcional al de I<sub>B</sub></strong></span>. La constante de proporcionalidad se denomina <span style="color: #008000;"><strong>ganancia en corriente del transistor</strong></span> y se designa mediante la letra griega <span style="color: #008000;"><strong>beta (β)</strong></span>, o bien mediante <span style="color: #008000;"><strong>h<sub>FE</sub></strong></span>.</p>
+<p>La ganancia de corriente para un transistor BJT en <span style="color: #008000;"><strong>zona de trabajo activa</strong></span> es, por lo tanto:</p>
+<table border="1" style="width: 0%; border-style: none; margin-left: auto; margin-right: auto;">
+<tbody>
+<tr>
+<td style="width: 100%; background-color: #ffe3c2; border-color: #db6600; border-style: solid; border-radius: 8px; -moz-border-radius: 8px; -webkit-border-radius: 8px; box-shadow: 5px 5px 5px gray; padding: 5px;"><span class="exe-math-rendered" data-latex="\[\beta = \frac{I_{C}}{I_{B}}\]" data-display="block"><svg xmlns="http://www.w3.org/2000/svg" width="7.692ex" height="4.966ex" role="img" focusable="false" viewBox="0 -1359 3400 2195" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" style="vertical-align: -1.891ex;"><defs><path id="MJX-12-TEX-I-1D6FD" d="M29 -194Q23 -188 23 -186Q23 -183 102 134T186 465Q208 533 243 584T309 658Q365 705 429 705H431Q493 705 533 667T573 570Q573 465 469 396L482 383Q533 332 533 252Q533 139 448 65T257 -10Q227 -10 203 -2T165 17T143 40T131 59T126 65L62 -188Q60 -194 42 -194H29ZM353 431Q392 431 427 419L432 422Q436 426 439 429T449 439T461 453T472 471T484 495T493 524T501 560Q503 569 503 593Q503 611 502 616Q487 667 426 667Q384 667 347 643T286 582T247 514T224 455Q219 439 186 308T152 168Q151 163 151 147Q151 99 173 68Q204 26 260 26Q302 26 349 51T425 137Q441 171 449 214T457 279Q457 337 422 372Q380 358 347 358H337Q258 358 258 389Q258 396 261 403Q275 431 353 431Z"></path><path id="MJX-12-TEX-N-3D" d="M56 347Q56 360 70 367H707Q722 359 722 347Q722 336 708 328L390 327H72Q56 332 56 347ZM56 153Q56 168 72 173H708Q722 163 722 153Q722 140 707 133H70Q56 140 56 153Z"></path><path id="MJX-12-TEX-I-1D43C" d="M43 1Q26 1 26 10Q26 12 29 24Q34 43 39 45Q42 46 54 46H60Q120 46 136 53Q137 53 138 54Q143 56 149 77T198 273Q210 318 216 344Q286 624 286 626Q284 630 284 631Q274 637 213 637H193Q184 643 189 662Q193 677 195 680T209 683H213Q285 681 359 681Q481 681 487 683H497Q504 676 504 672T501 655T494 639Q491 637 471 637Q440 637 407 634Q393 631 388 623Q381 609 337 432Q326 385 315 341Q245 65 245 59Q245 52 255 50T307 46H339Q345 38 345 37T342 19Q338 6 332 0H316Q279 2 179 2Q143 2 113 2T65 2T43 1Z"></path><path id="MJX-12-TEX-I-1D436" d="M50 252Q50 367 117 473T286 641T490 704Q580 704 633 653Q642 643 648 636T656 626L657 623Q660 623 684 649Q691 655 699 663T715 679T725 690L740 705H746Q760 705 760 698Q760 694 728 561Q692 422 692 421Q690 416 687 415T669 413H653Q647 419 647 422Q647 423 648 429T650 449T651 481Q651 552 619 605T510 659Q484 659 454 652T382 628T299 572T226 479Q194 422 175 346T156 222Q156 108 232 58Q280 24 350 24Q441 24 512 92T606 240Q610 253 612 255T628 257Q648 257 648 248Q648 243 647 239Q618 132 523 55T319 -22Q206 -22 128 53T50 252Z"></path><path id="MJX-12-TEX-I-1D435" d="M231 637Q204 637 199 638T194 649Q194 676 205 682Q206 683 335 683Q594 683 608 681Q671 671 713 636T756 544Q756 480 698 429T565 360L555 357Q619 348 660 311T702 219Q702 146 630 78T453 1Q446 0 242 0Q42 0 39 2Q35 5 35 10Q35 17 37 24Q42 43 47 45Q51 46 62 46H68Q95 46 128 49Q142 52 147 61Q150 65 219 339T288 628Q288 635 231 637ZM649 544Q649 574 634 600T585 634Q578 636 493 637Q473 637 451 637T416 636H403Q388 635 384 626Q382 622 352 506Q352 503 351 500L320 374H401Q482 374 494 376Q554 386 601 434T649 544ZM595 229Q595 273 572 302T512 336Q506 337 429 337Q311 337 310 336Q310 334 293 263T258 122L240 52Q240 48 252 48T333 46Q422 46 429 47Q491 54 543 105T595 229Z"></path></defs><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><use data-c="1D6FD" xlink:href="#MJX-12-TEX-I-1D6FD"></use></g><g data-mml-node="mo" transform="translate(843.8,0)"><use data-c="3D" xlink:href="#MJX-12-TEX-N-3D"></use></g><g data-mml-node="mfrac" transform="translate(1899.6,0)"><g data-mml-node="msub" transform="translate(220,676)"><g data-mml-node="mi"><use data-c="1D43C" xlink:href="#MJX-12-TEX-I-1D43C"></use></g><g data-mml-node="TeXAtom" transform="translate(473,-150) scale(0.707)" data-mjx-texclass="ORD"><g data-mml-node="mi"><use data-c="1D436" xlink:href="#MJX-12-TEX-I-1D436"></use></g></g></g><g data-mml-node="msub" transform="translate(220.4,-686)"><g data-mml-node="mi"><use data-c="1D43C" xlink:href="#MJX-12-TEX-I-1D43C"></use></g><g data-mml-node="TeXAtom" transform="translate(473,-150) scale(0.707)" data-mjx-texclass="ORD"><g data-mml-node="mi"><use data-c="1D435" xlink:href="#MJX-12-TEX-I-1D435"></use></g></g></g><rect width="1260.4" height="60" x="120" y="220"></rect></g></g></g></svg><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mi>β</mi><mo>=</mo><mfrac><msub><mi>I</mi><mrow data-mjx-texclass="ORD"><mi>C</mi></mrow></msub><msub><mi>I</mi><mrow data-mjx-texclass="ORD"><mi>B</mi></mrow></msub></mfrac></math></span></td>
+</tr>
+</tbody>
+</table>
+<p>En este ejemplo, el transistor tiene una&nbsp;β = 200, pero hay otros transistores con otros valores de ganancia. En la hoja de características del fabricante se encuentra la ganancia de cada transistor, entre otras muchas propiedades.</p>
+</div>
+</div>
+</div>
+</div>
+<h2>Con mucha más luz</h2>
+<p>Si seguimos aumentando el nivel de luminosidad, la corriente de base sigue aumentando. Como ya hemos visto que la corriente de colector es proporcional a ella <span style="color: #008000;"><strong>(I<sub>C</sub> = β·I<sub>B</sub>)</strong></span>, podemos esperar que siga aumentando IC. Sin embargo, llega un momento en que, por más que aumentemos I<sub>B</sub> ya no aumenta I<sub>C</sub>.</p>
+<p>Imagina que, por ejemplo, el valor de I<sub>C</sub> se queda en 850 mA por más que siga aumentando I<sub>B</sub>. El transistor no puede proporcionar más corriente de colector y ya no se cumple la fórmula anterior. Decimos que el transistor ha entrado en <span style="color: #008000;"><strong>saturación</strong></span>.</p>
+</div>
+<p>Podemos resumir en una tabla el funcionamiento observado y los valores medidos en el circuito para diversos estados de funcionamiento:</p>
+<table border="1" style="width: 69.5187%; margin-left: auto; margin-right: auto;" class="exe-table">
+<tbody>
+<tr>
+<td style="width: 11.96%; text-align: center;"><span style="color: #008000;"><strong>NIVEL DE LUZ</strong></span></td>
+<td style="width: 14.02%; text-align: center;"><span style="color: #008000;"><strong>I<sub>B</sub></strong></span></td>
+<td style="width: 28.9204%; text-align: center;"><span style="color: #008000;"><strong>MOTOR</strong></span></td>
+<td style="width: 15.2866%; text-align: center;"><span style="color: #008000;"><strong>I<sub>C</sub></strong></span></td>
+<td style="width: 6.28699%; text-align: center;"><span style="color: #008000;"><strong>ESTADO DEL TRANSISTOR</strong></span></td>
+</tr>
+<tr>
+<td style="width: 11.96%;">0 %</td>
+<td style="width: 14.02%;">0 mA</td>
+<td style="width: 28.9204%; text-align: center;">PARADO</td>
+<td style="width: 15.2866%;">0 mA</td>
+<td style="width: 6.28699%; text-align: center; background-color: #fa2d3e;"><span style="color: #ffffff;">CORTE</span></td>
+</tr>
+<tr>
+<td style="width: 11.96%;">5 %</td>
+<td style="width: 14.02%;">1 mA</td>
+<td style="width: 28.9204%; text-align: center;">PARADO</td>
+<td style="width: 15.2866%;">0 mA</td>
+<td style="width: 6.28699%; text-align: center; background-color: #fa2d3e;"><span style="color: #ffffff;">CORTE</span></td>
+</tr>
+<tr>
+<td style="width: 11.96%;">20 %</td>
+<td style="width: 14.02%;">2 mA</td>
+<td style="width: 28.9204%; text-align: center;">GIRA DESPACIO</td>
+<td style="width: 15.2866%;">400 mA</td>
+<td style="width: 6.28699%; text-align: center; background-color: #fce90f;">ACTIVA</td>
+</tr>
+<tr>
+<td style="width: 11.96%;">30 %</td>
+<td style="width: 14.02%;">3 mA</td>
+<td style="width: 28.9204%; text-align: center;">AUMENTA VELOCIDAD</td>
+<td style="width: 15.2866%;">600 mA</td>
+<td style="width: 6.28699%; text-align: center; background-color: #fce90f;">ACTIVA</td>
+</tr>
+<tr>
+<td style="width: 11.96%;">40 %</td>
+<td style="width: 14.02%;">4 mA</td>
+<td style="width: 28.9204%; text-align: center;">AUMENTA VELOCIDAD</td>
+<td style="width: 15.2866%;">800 mA</td>
+<td style="width: 6.28699%; text-align: center; background-color: #fce90f;">ACTIVA</td>
+</tr>
+<tr>
+<td style="width: 11.96%;">50 %</td>
+<td style="width: 14.02%;">5 mA</td>
+<td style="width: 28.9204%; text-align: center;">VELOCIDAD MÁXIMA</td>
+<td style="width: 15.2866%;">850 mA</td>
+<td style="width: 6.28699%; text-align: center; background-color: #14c90e;"><span style="color: #ffffff;">SATURACIÓN</span></td>
+</tr>
+<tr>
+<td style="width: 11.96%;">60 %</td>
+<td style="width: 14.02%;">6 mA</td>
+<td style="width: 28.9204%; text-align: center;">VELOCIDAD MÁXIMA</td>
+<td style="width: 15.2866%;">850 mA</td>
+<td style="width: 6.28699%; text-align: center; background-color: #14c90e;"><span style="color: #ffffff;">SATURACIÓN</span></td>
+</tr>
+<tr>
+<td style="width: 11.96%;">70 %</td>
+<td style="width: 14.02%;">7 mA</td>
+<td style="width: 28.9204%; text-align: center;">VELOCIDAD MÁXIMA</td>
+<td style="width: 15.2866%;">850 mA</td>
+<td style="width: 6.28699%; text-align: center; background-color: #14c90e;"><span style="color: #ffffff;">SATURACIÓN</span></td>
+</tr>
+</tbody>
+</table></div></div></section></div>
+</div>
+</div>
+</article><article id="block-msszgrsw-db7k6zp89" class="box">
+<header class="box-head no-icon">
+<h1 class="box-title">Zonas de trabajo de un transistor</h1>
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="idevice-msszgrsw-hx9rmm3yp" class="idevice_node udl-content" data-idevice-path="../idevices/udl-content/" data-idevice-type="udl-content">
+<div class="exe-udlContent exe-udlContent-representation"><section class="exe-udlContent-block"><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p>Como hemos visto, existen tres zonas posibles de trabajo de un transistor:</p>
+<div class="exe-fx exe-tabs">
+<h2>Zona de CORTE</h2>
+<p><span>La zona de corte es el estado en el que el transistor BJT no está conduciendo corriente entre su colector y su emisor. En este estado, el transistor está "apagado" y actúa como un circuito abierto entre estos dos terminales. Esto significa que no hay flujo de corriente a través del transistor, y el dispositivo tiene una alta resistencia entre el colector y el emisor.</span></p>
+<p>La zona de corte se alcanza cuando la tensión aplicada entre la base y el emisor (V<sub>BE</sub>) es menor que el umbral necesario para que el transistor comience a conducir. En un BJT de tipo NPN, esto significa que <span style="color: #008000;"><strong>la base debe estar a un potencial más bajo que el emisor en al menos aproximadamente 0.7 voltios (V<sub>BE</sub> &lt; 0,7 V).</strong></span></p>
+<p>Cuando el transistor está en la zona de corte:</p>
+<ol>
+<li>No hay corriente de colector-emisor significativa, lo que significa que el transistor no está conduciendo (<span style="color: #008000;"><strong>I<sub>C</sub> = I<sub>E</sub> = 0</strong></span>)</li>
+<li>La corriente de base (I<sub>B</sub>) es muy baja, ya que no hay flujo de corriente importante a través de la unión base-emisor <span style="color: #008000;"><strong>(I<sub>B</sub> ≈ 0)</strong></span>.</li>
+<li>La resistencia entre colector y emisor es muy alta, por lo que la tensión entre colector y emisor (<span style="color: #008000;"><strong>V<sub>CE</sub></strong></span>) puede ser de bastantes voltios y la establecerá el circuito externo.</li>
+</ol>
+<h2>Zona ACTIVA</h2>
+<p><span>La zona activa es el estado típico de funcionamiento de un transistor BJT cuando se utiliza como <span style="color: #008000;"><strong>amplificador</strong></span> lineal de señales. En este estado, el transistor controla la corriente de colector en función de la corriente de base, lo que permite la amplificación de señales.</span></p>
+<p>Hay corriente en la base y en el colector <span style="color: #008000;"><strong>siendo ambas proporcionales</strong></span>.<span style="font-size: 1.05em;">&nbsp;Se cumple la fórmula&nbsp;<span style="color: #008000;"><strong>I<sub>C</sub> = β·I<sub>B</sub></strong></span></span>.</p>
+<p>Cuando el transistor está en zona activa:</p>
+<ol>
+<li>
+<p><span style="color: #008000;"><strong>La corriente de la base controla la corriente del colector:</strong></span> la corriente que fluye entre el colector y el emisor está controlada por la corriente que fluye entre la base y el emisor. La corriente de base es la corriente que controla la cantidad de corriente que fluye a través del transistor, y la relación&nbsp;<span style="font-size: 1.05em;"><span style="color: #008000;"><strong>I<sub>C</sub> = β·I<sub>B</sub></strong></span></span> es fundamental para la operación del transistor como amplificador.</p>
+</li>
+<li>
+<p><span style="color: #008000;"><strong>Ganancia de corriente controlada:</strong> </span>En la zona activa, el transistor BJT puede amplificar señales eléctricas. La amplificación de señal se logra mediante la relación entre la corriente de colector y la corriente de base, conocida como ganancia de corriente (β). Por ejemplo, si la ganancia de corriente de un transistor es 100, significa que un pequeño cambio en la corriente de base produce un cambio 100 veces mayor en la corriente de colector.</p>
+</li>
+<li>
+<p><span style="color: #008000;"><strong>La tensión base-emisor (V<sub>BE)</sub> es mayor que el umbral de conducción:</strong> </span>En la zona activa, la tensión aplicada entre la base y el emisor (V<sub>BE</sub>) es mayor que el umbral necesario para que el transistor comience a conducir. Para un transistor BJT de tipo NPN, esto generalmente es al menos aproximadamente <span style="color: #008000;"><strong>0.7 voltios</strong></span>.</p>
+</li>
+</ol>
+<h2>Zona de SATURACIÓN</h2>
+<p><span>En este estado, el transistor está completamente encendido y permite un <span style="color: #008000;"><strong>flujo máximo de corriente</strong></span> entre su colector y su emisor.</span></p>
+<p>Para que un transistor BJT entre en la zona de saturación, la tensión aplicada entre la base y el emisor (V<sub>BE</sub>) debe ser suficientemente alta para que el transistor conduzca completamente, y la tensión entre el colector y el emisor (V<sub>CE</sub>) debe ser lo más baja posible. En la práctica, esto significa que la corriente de base (I<sub>B</sub>) debe ser lo suficientemente alta para "saturar" la unión base-emisor y permitir que la corriente fluya libremente del colector al emisor.</p>
+<p>Cuando el transistor está en la zona de saturación:</p>
+<ol>
+<li>
+<p>La corriente de colector (<span style="color: #008000;"><strong>I</strong></span><sub><span style="color: #008000;"><strong>C</strong></span>)</sub> es <span style="color: #008000;"><strong>máxima</strong></span> y está limitada principalmente por la resistencia de carga externa.</p>
+</li>
+<li>
+<p>La caída de voltaje entre el colector y el emisor (<span style="color: #008000;"><strong>V<sub>CE</sub></strong></span>) es mínima, típicamente de unos <span style="color: #008000;"><strong>0,2 voltios</strong></span>.</p>
+</li>
+<li>
+<p>La corriente de base (I<sub>B</sub>) es lo suficientemente alta como para "saturar" la unión base-emisor, lo que permite un flujo máximo de corriente entre el colector y el emisor.</p>
+</li>
+</ol>
+</div></div></div></section></div>
+</div>
+</div>
+</article><article id="block-msszgrsw-j4ams4nze" class="box">
+<header class="box-head no-icon">
+<h1 class="box-title">Aplicaciones básicas del transistor</h1>
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="idevice-msszgrsw-tnyt8rajr" class="idevice_node udl-content" data-idevice-path="../idevices/udl-content/" data-idevice-type="udl-content">
+<div class="exe-udlContent exe-udlContent-representation"><section class="exe-udlContent-block"><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p><span style="font-size: 1.05em;">Teniendo en cuenta las tres zonas de funcionamiento, el transistor puede utilizarse para dos finalidades muy distintas:</span></p>
+<div class="exe-fx exe-tabs">
+<h2>Uso como AMPLIFICADOR</h2>
+<p>Una de las aplicaciones más comunes de los transistores BJT es <span style="color: #008000;"><strong>amplificar señales eléctricas.</strong></span>&nbsp;Para trabajar como amplificador, hay que diseñar el circuito de tal manera que <span style="color: #008000;"><strong>el transistor funcione en todo momento en zona activa.</strong></span></p>
+<p>La corriente de colector I<sub>C</sub> será igual que la de base I<sub>B</sub>, pero multiplicada por la ganancia&nbsp;β del transistor.</p>
+<h3><span style="color: #008000;">Polarización del transistor</span></h3>
+<p>Si el transistor entra en saturación en algún momento, la señal se verá recortada y ya no será igual que la original, por lo que la amplificación tendrá errores. Si esto ocurre, por ejemplo, en un amplificador de audio, esas distorsiones se notan claramente en el sonido resultante, que pierde mucha calidad. Decimos que la señal está <span style="color: #008000;"><strong>distorsionada</strong></span>. Igualmente, tampoco podemos permitir que el transistor entre en corte, pues dejará de amplificar y la señal de salida se hará cero cunque la corriente de base no sea cero.</p>
+<ul>
+<li>Cuando el transistor está en corte, su tensión colector-emisor (V<sub>CE</sub>) será prácticamente la de la fuente de alimentación del circuito (V<sub>CE</sub> = V<sub>CC</sub>).</li>
+<li>Cuando el transistor está en saturación, su tensión colector emisor es muy pequeña (del orden de 0,2 V), por lo que podemos considerar que VCE&nbsp;≈ 0.&nbsp;</li>
+</ul>
+<p>Por lo tanto, para evitar que el transistor entre en corte o en saturación, se emplean unas resistencias externas que se calculan para que la VCE esté lo más alejada posible de los dos valores extremos, es decir, para que V<sub>CE</sub>&nbsp;≈ V/2. Existen diferentes circuitos de polarización:</p>
+<dl class="exe-dl">
+<dt>Polarización fija</dt>
+<dd>
+<p>Se utilizan solo dos resistencias, una en la base (RB) y otra en el colector (RC). Es el circuito más simple, pero es muy inestable y suele dar problemas con la temperatura.</p>
+<p><img src="../content/resources/polariz01.png" width="200" height="335" style="display: block; margin-left: auto; margin-right: auto;"></p>
+</dd>
+<dt>Polarización por realimentación del emisor</dt>
+<dd>
+<p>Para mejorar la estabilidad del circuito anterior, se puede añadir una resistencia en el emisor (RE). Así, si por alguna razón la corriente aumenta demasiado, la tensión en el emisor aumentará (por la caída de tensión en RE), por lo que VBE será menor y la corriente en la unión base-emisor disminuirá, disminuyendo la corriente del transistor y evitando la saturación.</p>
+<p><img src="../content/resources/polariz02.png" alt="" width="200" height="378" style="display: block; margin-left: auto; margin-right: auto;"></p>
+</dd>
+<dt>Polarización por realimentación del colector</dt>
+<dd>
+<p>Análogamente, podemos realimenta la tensión en el colector si conectamos la resistencia de base directamente al terminal de colector. Si la corriente de colector aumenta, la tensión del colector disminuye (por la caída en la resistencia RC) y, por tanto, la corriente de base también disminuirá, corrigiéndose ese aumento de I<sub>C</sub>.</p>
+<p><img src="../content/resources/polariz03.png" width="190" height="341" style="display: block; margin-left: auto; margin-right: auto;"></p>
+</dd>
+<dt>Polarización universal</dt>
+<dd>
+<p>Es el circuito más estable, pues combina la realimentación de emisor y la de colector. Consiste en trasladar a la base tanto la tensión de colector (a través de una RB1) como la de emisor (a través de una RB2).</p>
+<p><img src="../content/resources/polariz04.png" alt="" width="180" height="429" style="display: block; margin-left: auto; margin-right: auto;"></p>
+</dd>
+</dl>
+<h3><span style="color: #008000;">Configuración de la entrada y la salida</span></h3>
+<p>Existen tres posibles configuraciones para conectar un transistor como amplificador: base común, emisor común y colector común:</p>
+<dl class="exe-dl">
+<dt>Base común</dt>
+<dd>
+<p>La señal de entrada se aplica entre el emisor y la base, mientras que la de salida se obtiene entre el colector y la base (la base aparece en las dos, por eso se llama "base común").</p>
+<p><img src="../content/resources/amp-base-com.png" width="250" height="278" style="display: block; margin-left: auto; margin-right: auto;"></p>
+<p>En esta configuración observamos lo siguiente:</p>
+<p>&nbsp; - <span style="color: #008000;"><strong>Prácticamente no obtenemos amplificación de corriente:</strong></span> como la corriente de entrada es I<sub>E</sub> y la de salida es I<sub>C</sub>, y sabemos que, en un transistor, I<sub>E</sub>&nbsp;≈ I<sub>C</sub>, no tenemos ganancia en corriente de la señal.</p>
+<p>&nbsp; - <span style="color: #008000;"><strong>Sí tenemos amplificación de la tensión</strong></span>, puesto que V<sub>BE</sub> es pequeño (del orden de 0,7 V), mientras que V<sub>CB</sub> puede ser bastante elevada.</p>
+<p>&nbsp; - Este montaje tiene un elevado <span style="color: #008000;"><strong>ancho de banda,</strong></span> lo que significa que es capaz de amplificar señales tanto de bajas como de altas frecuencias. Esto los hace especialmente indicados como amplificadores de la señal de cualquier <span style="color: #008000;"><strong>antena</strong></span>.</p>
+</dd>
+<dt>Emisor común</dt>
+<dd>
+<p>La señal de entrada se aplica entre la base y el emisor, mientras que la de salida se obtiene entre el colector y el emisor.&nbsp;</p>
+<p><img src="../content/resources/amp-emi-com.png" width="340" height="272" style="display: block; margin-left: auto; margin-right: auto;"></p>
+<p>En este caso, observamos que:</p>
+<p>&nbsp; - <span style="color: #008000;"><strong>Tenemos amplificación de corriente:</strong> </span>al ser la entrada I<sub>B</sub> y la salida I<sub>C</sub>, amplificamos la señal con la ganancia en corriente del transistor (β = I<sub>C</sub>/I<sub>B</sub>)</p>
+<p>&nbsp; - <span style="color: #008000;"><strong>También tenemos amplificación en tensión,</strong></span> pues la entrada es V<sub>BE</sub>, que es pequeña (unos 0,7 V) y la salida es V<sub>CE</sub> que puede ser de varios voltios.</p>
+<p>&nbsp; - El <span style="color: #008000;"><strong>ancho de banda es menor</strong></span> que en la configuración de emisor común, por lo que se utilizan para amplificar frecuencias más concretas.</p>
+</dd>
+<dt>Colector común</dt>
+<dd>
+<p>La señal de entrada se aplica entre la base y el colector, mientras que la de salida se obtiene entre el colector y el emisor.&nbsp;</p>
+<p><img src="../content/resources/amp-col-com.png" width="340" height="302" style="display: block; margin-left: auto; margin-right: auto;"></p>
+<p>En este caso, observamos que:</p>
+<p>&nbsp; - <span style="color: #008000;"><strong>Tenemos amplificación de corriente:</strong> </span>al ser la entrada I<sub>B</sub> y la salida I<sub>E</sub>, amplificamos la señal prácticamente con la ganancia en corriente del transistor (β = I<sub>C</sub>/I<sub>B</sub> ≈ I<sub>E</sub>/I<sub>B</sub>)</p>
+<p>&nbsp; - <span style="color: #008000;"><strong>No tenemos amplificación en tensión,</strong></span> pues la entrada es V<sub>CB&nbsp;</sub>y la salida es V<sub>CE</sub>&nbsp;. La diferencia entre estas dos tensiones es V<sub>BE</sub>, que es muy pequeña (0,6-0,7 V), por lo que son prácticamente iguales y no hay amplificación.</p>
+</dd>
+</dl>
+<p>La configuración más común para utilizar un BJT como amplificador es la configuración de <span style="color: #008000;"><strong>emisor común.</strong></span> En esta configuración, tenemos amplificación tanto de corriente como de tensión. La base está polarizada positivamente con respecto al emisor, de modo que <span style="color: #008000;"><strong>la corriente de base controla la corriente de colector</strong></span>. Aquí tienes un ejemplo de circuito amplificador en emisor común, con polarización universal:</p>
+<p><iframe width="800" height="600" src="https://www.falstad.com/circuit/circuitjs.html?ctz=CQAgjCAMB0l3BWcA2aYDMZIA5nrzgEzYCcIyk4SC6ICApgLRhgBQA7iIQCyXfYh0+EPyisATl14iBPSoRxRwWeBKnzFcwQkJKVcVgBd1XRUOSmBlCIwTRuYbtwDsJBAjAl0kEoTBIYCjBXL2QnIQQBFRAAE3oAMwBDAFcAG0MOE3QdQWFs3UhWAHMsnK10bG4lQoAlE1FHKtFKPg1qqGgENXMZXItPAvB4Qskewh4+7UH9VgBjEwUoiktq2GHuEk2t7Z3+zrdvQhpkf2wfZ1oYODY6sGXF5V0H6xAzjoDVrvmegZE78F8q2GkA2OzBW36VxIrkg6A22COyAQJAsV0gbAA8n9+oDuGEAYMRtiCcTCM5psDCiUHBYyboaYIQdVWAB7IbkKqtEhWaDII4dYbQpF8j66LCCVngXT4rlRFprOBChAi8DgVhAA"></iframe><br><br></p>
+<p><span style="font-size: 1.05em;">La fuente da un voltaje máximo de 0,5 V, mientras que a la carga llegan casi 5 V.</span></p>
+<h3><span style="font-size: 1.05em; color: #008000;">Aplicaciones</span></h3>
+<p><span style="font-size: 1.05em;">Se utilizan en etapas de amplificación de baja, media o alta potencia en una variedad de dispositivos, como amplificadores de audio, amplificadores de radiofrecuencia (RF), amplificadores de señal débil en instrumentación, entre otros.</span></p>
+<h2>Uso como INTERRUPTOR</h2>
+<p>Los transistores BJT también se utilizan para conmutar circuitos. En este caso, el transistor actúa como un interruptor electrónico que puede estar en uno de dos estados:</p>
+<ul>
+<li>Encendido (el transistor estará en saturación)</li>
+<li>Apagado (el transistor estará en corte).</li>
+</ul>
+<p>En este caso hay que diseñar el circuito para que el transistor funcione todo el tiempo o bien en <span style="color: #008000;"><strong>corte</strong></span> (para interrumpir totalmente la corriente) o bien en <span style="color: #008000;"><strong>saturación</strong></span> (para permitir el máximo paso de corriente posible), nunca en activa.</p>
+<p>La configuración más común para utilizar un BJT como interruptor es la configuración de <span style="color: #008000;"><strong>emisor común</strong></span>. En esta configuración, el BJT se coloca entre la carga (el componente o dispositivo que se controla) y la tierra o el suministro de voltaje. La señal de control (que puede ser una señal digital o analógica) se aplica entre la base y el emisor. Aquí tienes un circuito de ejemplo, en el que la señal de control la simulamos con un interruptor manual:</p>
+<p><iframe width="800" height="600" src="https://www.falstad.com/circuit/circuitjs.html?ctz=CQAgjCAMB0l3BWcMBMcUHYMGZIA4UA2ATmIxAUgoqoQFMBaMMAKADdwAWTkbBFLjzxURITrSiSYCFgHdBIYSBQJCikSwAuy1TrXZCePZIgNO0DMOx8EnA2EiFDUaCjDEndyBkgIHhTgJkKgATOgAzAEMAVwAbTRYAJ2MlFTUwDDUqB3gWAGdjDLU042yQKNi8ujkUqgMjJUgk3mcleuVxSVwm+XbMAXa+AR6WoyGFcaagA"></iframe></p>
+<p>Se usan en aplicaciones como interruptores electrónicos en circuitos digitales (la base de los ordenadores y la informática), controladores de motores, relés electrónicos, etc.</p>
+</div></div></div></section></div>
+</div>
+</div>
+</article><article id="block-msszgrsx-u3pjw3fzk" class="box">
+<header class="box-head no-icon">
+<h1 class="box-title">Ejemplos de circuitos con transistores</h1>
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="idevice-msszgrsx-u9vzewpnd" class="idevice_node udl-content" data-idevice-path="../idevices/udl-content/" data-idevice-type="udl-content">
+<div class="exe-udlContent exe-udlContent-representation"><section class="exe-udlContent-block"><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p>Vamos a ver algunos ejemplos de uso de transistores BJT en circuitos, lo que nos ayudará a entender mejor su funcionamiento. Posteriormente tendréis que montar vosotros mismos esos circuitos y comprobar su funcionamiento con componentes reales.</p></div></div></section><section class="exe-udlContent-block js-hidden"><header class="exe-udlContent-header"><h2>Alarma por desconexión</h2></header><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><div class="exe-fx exe-accordion">
+<h2>Montaje 1: alarma visual con LED</h2>
+<p>El esquema del circuito es el siguiente:</p>
+<p><img src="../content/resources/circ-bjt-01.png" alt="" width="350" height="385" style="display: block; margin-left: auto; margin-right: auto;"></p>
+<h3><span style="color: #008000;">Funcionamiento</span></h3>
+<p>Entre los puntos A y B hay un cable que puede soltarse fácilmente. Cuando se corta el cable se dispara la alarma y se enciende el led.&nbsp;</p>
+<ul>
+<li>Mientras tenemos conectado el cable entre los puntos A y B, la unión base-emisor está cortocircuitada y, por lo tanto, no conduce corriente (V<sub>BE</sub> = 0). La intensidad de base I<sub>B</sub> = 0 y el transistor se comporta como un i<span style="color: #008000;"><strong>nterruptor abierto</strong></span>.</li>
+<li>Cuando cortamos el cable, la base deja de estar a 0 V y la V<sub>BE</sub><span style="font-size: 1.05em;"> puede aumentar sin problemas hasta los 0,6-0,7 V aproximadamente que se necesita para que la unión base-emisor conduzca y entre intensidad por la base. El transistor se satura y se comporta como un </span><span style="color: #008000;"><strong>interruptor cerrado</strong></span><span style="font-size: 1.05em;">, con lo que el led se enciende.</span></li>
+</ul>
+<p>Las resistencias se emplean para proteger al led (R1) y para limitar la corriente de base y proteger al transistor (R2).</p>
+<h2>Montaje 2: alarma acústica con zumbador</h2>
+<p>Si queremos modificar el circuito para que la alarma sea acústica, podemos usar un zumbador. El problema es que puede que el zumbador necesite una corriente muy alta para funcionar y el transistor no sea capaz de proporcionar tanta corriente.</p>
+<p>En casos como este, podemos utilizar un <span style="color: #008000;"><strong>relé</strong></span>&nbsp;, que puede activarse con una corriente típica del transistor para abrir o cerrar otro circuito por el que circule mucha más corriente para la carga que la demande.</p>
+<p>El montaje quedaría así:</p>
+<p><img src="../content/resources/circ-bjt-02.png" width="440" height="385" style="display: block; margin-left: auto; margin-right: auto;"></p>
+<p>Funcionamiento</p>
+<p>Cuando se corta el cable entre A y B se dispara la alarma y suena el zumbador.</p>
+<p>El circuito es análogo al del montaje 1, con los siguientes cambios:</p>
+<ul>
+<li>El LED y su resistencia de protección se han sustituido por un <span style="color: #008000;"><strong>relé</strong></span> y un <span style="color: #008000;"><strong>diodo</strong></span> D1. La función del diodo D1 es proteger al transistor de una posible sobrecorriente al activarse el relé. Cuando se activa una bobina magnética puede aparecer una tensión bastante mayor que la de la fuente del circuito (en este caso 6 V). En ese caso el diodo D1 se polariza directamente y conduce la posible corriente hacia arriba, manteniendo el colector del transistor a una tensión controlada. Si en vez de un relé hubiéramos puesto un motor, también tendríamos que haber puesto un diodo de protección.</li>
+<li>Se ha añadido un zumbador en el circuito del contacto del relé. Cuando el relé está en reposo (tal y como está dibujado su símbolo), el zumbador está apagado. Cuando el relé conmuta, llega corriente al zumbador y suena.</li>
+</ul>
+<p>Por lo tanto, el funcionamiento es igual al caso anterior:</p>
+<ul>
+<li>Cuando el cable está intacto, el transistor está en corte y no pasa corriente por el relé, por lo que el zumbador no suena.</li>
+<li>Cuando el cable se rompe el transistor entra en saturación, la corriente de colector pasa por el relé y hace que conmute su contacto, permitiendo el paso de corriente a través del zumbador, haciéndolo sonar.</li>
+</ul>
+</div></div></div></section><section class="exe-udlContent-block js-hidden"><header class="exe-udlContent-header"><h2>Sensor de luz</h2></header><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><div class="exe-fx exe-accordion">
+<h2>Montaje 1: sensor de luminosidad</h2>
+<p>El circuito será el siguiente:</p>
+<p><img src="../content/resources/circ-bjt-03.png" alt="" width="300" height="402" style="display: block; margin-left: auto; margin-right: auto;"></p>
+<h3><span style="color: #008000;">Funcionamiento</span></h3>
+<p>Cuando se ilumina lo suficiente la LDR, el LED se enciende. Si la LDR permanece a oscuras, el LED se apaga.</p>
+<ul>
+<li>Cuando la LDR está a oscuras, su resistencia es alta y la tensión en la base es demasiado pequeña para que el transistor conduzca.</li>
+<li>Cuando la LDR se ilumina su resistencia va bajando y, por tanto, la tensión en la base del transistor va subiendo, hasta que llega un momento en que llega a unos 0,7 V y el transistor comienza a conducir, encendiéndose el LED.</li>
+<li>El transistor comenzará a conducir en activa, por lo que la IC será proporcional a la IB. Así, a medida que la LDR se ilumine más, su resistencia bajará y la corriente por la base aumentará, brillando más el LED. Esto ocurrirá hasta que el transistor sature, momento en que el LED ya tendrá su brillo máximo y no aumentará por más que aumentemos la luz sobre la LDR.</li>
+<li>El potenciómetro lo podremos regular para que el LED se ilumine con más o menos luz sobre la LDR. Nos sirve para ajustar la sensibilidad de nuestro circuito (mientras más resistencia tenga, menos luz necesitaremos para que el transistor conduzca).</li>
+</ul>
+<h2>Montaje 2: sensor de oscuridad</h2>
+<p>Si modificamos el circuito anterior y colocamos la LDR en el emisor y el potenciómetro en el colector, el circuito ahora funcionará al revés:</p>
+<p><img src="../content/resources/circ-bjt-04.png" alt="" width="241" height="335" style="display: block; margin-left: auto; margin-right: auto;"></p>
+<ul>
+<li>Cuando la LDR está a oscuras, su resistencia es alta y la tensión en la base del transistor es suficiente para que entre en conducción y se encienda el LED.</li>
+<li>Cuando vamos iluminando la LDR su resistencia va disminuyendo, con lo que cada vez se va más corriente a través de ella y entra menos a la base del transistor. El LED cada vez ilumina menos. Cuando la corriente de base sea demasiado pequeña, el transistor se cortará y el LED se apagará del todo.</li>
+</ul>
+</div></div></div></section><section class="exe-udlContent-block js-hidden"><header class="exe-udlContent-header"><h2>Sensor táctil con par Darlington</h2></header><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p>En este caso solo veremos un montaje, que es el de la siguiente figura:</p>
+<p><img src="../content/resources/circ-bjt-05.png" alt="" width="500" height="493" style="display: block; margin-left: auto; margin-right: auto;"></p>
+<h3><span style="color: #008000;">Funcionamiento</span></h3>
+<p>Al tocar con el dedo entre los puntos A y B, el LED se ilumina. Al quitar el dedo, el LED se apaga.</p>
+<ul>
+<li>Cuando no tocamos nada, la base del primer transistor está aislada, por lo que el transistor está cortado. Si el primer transistor está cortado, el segundo también lo estará y, por lo tanto, el LED estará apagado.</li>
+<li>Cuando tocamos entre A y B cerramos el circuito a través de la piel de nuestro dedo. Aunque la resistencia de la piel humana es grande, puede circular algo de corriente entre A y B y llegar a la base del primer transistor, haciendo que conduzca. Esa mínima corriente de base se amplifica con la&nbsp;β<sub>1</sub> del primer transistor y se utiliza como corriente de base del segundo transistor, que vuelve a amplificarla ahora con su β<sub>2</sub>, con lo que la corriente que pasa por el LED es suficiente ya para hacerlo lucir.</li>
+</ul>
+<p>El montaje con los dos transistores conectados de esta forma se llama conexión o par Darlington. Este montaje nos permite conseguir unas amplificaciones muy grandes, porque estamos combinando las ganancias en corriente de los dos transistores.</p>
+<p>En efecto, cuando conduce el primer transistor, su corriente de colector es I<sub>C1</sub> =&nbsp;β<sub>1</sub>·I<sub>B1</sub>. Su corriente de emisor será, por lo tanto: I<sub>E1</sub> = I<sub>C1</sub> + I<sub>B1</sub> =&nbsp;β<sub>1</sub>·I<sub>B1</sub>&nbsp;+&nbsp;I<sub>B1</sub>&nbsp;= (β<sub>1</sub> + 1)·I<sub>B1</sub>&nbsp;&nbsp;</p>
+<p>Esta corriente de emisor del primer transistor es la corriente de base del segundo: I<sub>B2</sub> = I<sub>E1&nbsp;</sub>=(β<sub>1</sub> + 1)·I<sub>B1</sub></p>
+<p>La corriente de colector del segundo transistor será, por lo tanto:</p>
+<p>I<sub>C2</sub> =&nbsp;β<sub>2</sub>·I<sub>B2</sub>&nbsp;=&nbsp;β<sub>2</sub>·(β<sub>1</sub> + 1)·I<sub>B1</sub>&nbsp;</p>
+<p>Si consideramos el par Darlington como un solo transistor grande:</p>
+<p><img src="../content/resources/darlington.png" alt="" width="400" height="372" style="display: block; margin-left: auto; margin-right: auto;"></p>
+<p>I<sub>C</sub> = I<sub>C1</sub> + I<sub>C2</sub> =&nbsp;β<sub>1</sub>·I<sub>B1</sub>&nbsp;+&nbsp;β<sub>2</sub>·(β<sub>1</sub> + 1)·I<sub>B1</sub>&nbsp;= (β<sub>1</sub>·β<sub>2</sub>&nbsp;+&nbsp;β<sub>1</sub>&nbsp;+&nbsp;β<sub>2</sub>)·I<sub>B</sub>&nbsp;</p>
+<p>Como las ganancias de los transistores son bastante mayores que 1, podemos aproximar la expresión anterior y decir que <span style="color: #008000;"><strong>I<sub>C</sub> =&nbsp;β<sub>1</sub>·β<sub>2</sub>·I<sub>B</sub></strong></span>&nbsp; . Por lo tanto, la ganancia de un par Darlington es, aproximadamente, el <span style="color: #008000;"><strong>producto</strong></span> de las ganancias de los dos transistores que lo componen.</p>
+<table border="1" style="width: 180px; border-style: none; margin-left: auto; margin-right: auto;" cellpadding="5px">
+<tbody>
+<tr>
+<td style="width: 100%; background-color: #ffe3c2; border-color: #db6600; border-style: solid; border-radius: 8px; box-shadow: gray 5px 5px 5px; padding: 5px; text-align: center;"><span style="color: #008000;"><strong>β<sub>DARLINGTON ≈</sub>&nbsp;β<sub>1</sub>·β<sub>2</sub></strong></span></td>
+</tr>
+</tbody>
+</table>
+<p style="text-align: left;">Si, por ejemplo, las ganancias de los transistores son&nbsp;β<sub>1&nbsp;</sub>= 100 y β<sub>2&nbsp;</sub>= 50, la ganancia del par sería&nbsp;β = 5000.</p></div></div></section><section class="exe-udlContent-block js-hidden"><header class="exe-udlContent-header"><h2>Multivibrador astable</h2></header><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p>Consiste en un circuito como este:</p>
+<p><img src="../content/resources/multi-astable.png" width="700" height="496" style="display: block; margin-left: auto; margin-right: auto;"></p>
+<p>La salida de este circuito sería la tensión obtenida en el terminal "Y", que será una <span style="color: #008000;"><strong>onda cuadrada</strong></span>. Nosotros le hemos añadido unos LEDs para visualizar bien el funcionamiento cuando lo montemos con elementos reales, pero no son necesarios si usamos el circuito para su función primordial de generar ondas.</p>
+<p>Veamos cómo funciona.</p>
+<p>Cuando lo ponemos en marcha, parece no hacer nada durante los primeros instantes. Esto es porque la configuración del montaje es&nbsp;simétrica&nbsp;por lo que, si los componentes fueran&nbsp;ideales&nbsp;(perfectos, todos iguales, sin tolerancia ninguna), el circuito, efectivamente, se quedaría en reposo indefinidamente. Pero no es así: los componentes, dadas las características de la fabricación, son algo diferentes.</p>
+<p>Al aplicar la&nbsp;tensión&nbsp;de alimentación (9 V), los dos&nbsp;transistores&nbsp;iniciarán la conducción, ya que sus bases reciben un potencial positivo a través de las resistencias R2 y R3, pero como los transistores <span style="color: #008000;"><strong>no serán exactamente idénticos</strong></span>, por el propio proceso de fabricación y el grado de impurezas del material&nbsp;semiconductor, uno conducirá antes o más rápido que el otro.</p>
+<p>Supongamos que es TR1 el que conduce primero. En estas condiciones el voltaje en su colector estará próximo a 0&nbsp;voltios, por lo que C1 comenzará a cargarse a través de R2, creando al principio una muy pequeña diferencia de potencial entre sus placas y, por tanto, trasladando el voltaje próximo a 0 hasta la base de TR2, que se pondrá en <span style="color: #008000;"><strong>corte</strong></span>.</p>
+<p>Cuando el voltaje en C1 alcance los 0,6 V, el transistor TR2 comenzará a conducir, pasando su tensión de colector (salida Y del circuito) a <span style="color: #008000;"><strong>nivel bajo</strong></span> (tensión próxima a 0V). El condensador C2, que se había cargado a través de R4 y de la unión base-emisor de TR1, se descargará ahora provocando el bloqueo de TR1 al bajar la tensión en su base.</p>
+<p>C2 comienza a cargarse vía R3 y, al alcanzar la tensión de 0,6 V, provocará nuevamente la conducción de TR1, la descarga de C1, el bloqueo de TR2 y el pase a <span style="color: #008000;"><strong>nivel alto</strong></span> (tensión próxima a Vcc (+) de la salida Y).</p>
+<p>A partir de aquí la secuencia se repite indefinidamente, dependiendo los tiempos de conducción y bloqueo de cada transistor de las relaciones R2/C1 y R3/C2. Estos tiempos no son necesariamente iguales, por lo que pueden obtenerse distintos ciclos de trabajo actuando sobre los valores de dichos componentes.</p>
+<p>A los pocos segundos el circuito se pone en marcha (se rompe la presunta simetría), y vemos cómo los LEDs se encienden <span style="color: #008000;"><strong>alternativamente</strong></span>. En ningún caso se permanece indefinidamente en un estado, es decir, los estados "decaen" por sí mismos, <span style="color: #008000;"><strong>no son estables</strong></span>&nbsp;(por lo tanto son "astables")</p>
+<p>Es por esto que a este circuito se le llama<span style="color: #008000;"><strong>&nbsp;multivibrador astable&nbsp;</strong></span>u <span style="color: #008000;"><strong>oscilador</strong></span>, y es muy usado en electrónica, especialmente para generar&nbsp;señales PWM. En ese caso no se utilizan LEDs, que aquí están simplemente para que veamos cómo funciona el circuito cuando lo montemos con componentes reales.</p></div></div></section></div>
+</div>
+</div>
+</article><article id="block-msszgrsx-w2a9wxssg" class="box">
+<header class="box-head no-icon">
+<h1 class="box-title">Tarea 5  - Montajes de circuitos con transistor</h1>
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="idevice-msszgrsx-ir5ysao3r" class="idevice_node udl-content" data-idevice-path="../idevices/udl-content/" data-idevice-type="udl-content">
+<div class="exe-udlContent exe-udlContent-expression"><section class="exe-udlContent-block"><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p>Esta tarea consiste en montar físicamente los circuitos de ejemplo que acabas de ver. Los transistores que utilizaremos en el taller serán, en general, distintos de los de los ejemplos, por lo que las resistencias de polarización pueden tener valores algo diferentes. En todo caso, intentad utilizar las resistencias más parecidas posibles y ya las cambiaréis por otros valores si es necesario.</p>
+<p>Hay que montar cada uno de los circuitos de ejemplo estudiados:</p></div></div></section></div>
+</div>
+</div>
+</article><article id="block-msszgrsx-y2as05hx8" class="box">
+<header class="box-head no-icon">
+<h1 class="box-title">Ejercicios con transistores</h1>
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="idevice-msszgrsx-zoa1qsb77" class="idevice_node udl-content" data-idevice-path="../idevices/udl-content/" data-idevice-type="udl-content">
+<div class="exe-udlContent exe-udlContent-representation"><section class="exe-udlContent-block"><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p>Para resolver ejercicios de transistores utilizaremos las siguientes fórmulas:</p>
+<ul>
+<li>Ganancia del transistor en corriente (sólo si está en activa): I<sub>C</sub> =&nbsp;β · I<sub>B</sub></li>
+<li>Segunda lety de Kirchhoff en el transistor: I<sub>E</sub> = I<sub>C</sub> + I<sub>B</sub></li>
+<li>Leyes de Kirchhoff y de Ohm en el circuito externo al transistor.</li>
+</ul>
+<p>En ocasiones, no sabremos en qué estado se encuentra el transistor, por lo que tendremos que suponer que está en alguno de los estados posibles (corte, activa o saturación) y, si todos los valores salen compatibles, habremos acertado, mientras que si obtenemos alguna incongruencia, es que no está en ese estado y tenemos que probar con otro.</p>
+<p>Dependiendo de en qué estado esté el transistor, tendremos en cuenta lo siguiente:</p>
+<dl class="exe-dl">
+<dt>En corte</dt>
+<dd>
+<p>Para que esté en corte, debe cumplirse que:</p>
+<ul>
+<li>I<sub>B</sub> ≈ 0</li>
+<li>V<sub>BE</sub> &lt; 0,6 V</li>
+</ul>
+</dd>
+</dl>
+<dl class="exe-dl">
+<dt>En activa</dt>
+<dd>
+<p>Se cumple:</p>
+<ul>
+<li>I<sub>C</sub> =&nbsp;β · I<sub>B</sub></li>
+<li>V<sub>BE</sub> ≈ 0,6 - 0,7 V&nbsp;</li>
+</ul>
+</dd>
+</dl>
+<dl class="exe-dl">
+<dt>En saturación</dt>
+<dd>
+<p>Se cumple:</p>
+<ul>
+<li>I<sub>C</sub> &lt;&nbsp;β · I<sub>B</sub></li>
+<li>V<sub>BE</sub> ≈ 0,7 V (normalmente tendrás el dato V<sub>BE(sat)</sub>)</li>
+<li>VCE&nbsp;≈ 0,2 V&nbsp;(normalmente tendrás el dato V<sub>CE(sat)</sub>)</li>
+</ul>
+</dd>
+</dl>
+<p>Con estas premisas, podremos realizar nuestros ejercicios. Haremos uno de ejemplo paso a paso:</p>
+<h2><span style="color: #008000;">Ejemplo resuelto</span></h2>
+<table border="1" style="width: 90%; border-style: none; margin-left: auto; margin-right: auto;">
+<tbody>
+<tr>
+<td style="border: 3px solid blue; border-radius: 10px; border-collapse: collapse; border-style: solid;">
+<p>Ejercicio resuelto: En el circuito de la figura, el transistor tiene las siguiente características:&nbsp;V<sub>CE(sat)</sub> = 0,2 V; V<sub>BE(sat)</sub> = 0,7 V; β = 60.</p>
+<p>Calcular las corrientes&nbsp;I<sub>B</sub>, I<sub>C</sub>, I<sub>E</sub> y el estado del transistor en los siguientes casos:</p>
+<ol style="list-style-type: lower-alpha;">
+<li>Interruptor S1 cerrado</li>
+<li>Interruptor S1 abierto</li>
+</ol>
+</td>
+</tr>
+</tbody>
+</table>
+<h2><span style="color: #008000;">Solución</span></h2>
+<p><span style="color: #008000;"><strong>Caso (a): Interruptor cerrado.</strong></span></p>
+<ul>
+<li>Al cerrar el interruptor, estamos cortocircuitando la base del transistor a tierra, por lo que la tensión base-emisor será de 0 V.</li>
+<li>Como VBE = 0, el transistor está en <span style="color: #008000;"><strong>corte</strong></span>.</li>
+<li>Al estar cortado el transistor, <span style="color: #008000;"><strong>I<sub>B</sub> = I<sub>C</sub> = I<sub>E</sub> = 0</strong></span>&nbsp;</li>
+</ul>
+<p>Por lo tanto, la solución a este apartado sería:</p>
+<table border="1" style="width: 191px; border-style: none; margin-left: auto; margin-right: auto;">
+<tbody>
+<tr>
+<td style="border: 3px solid blue; border-radius: 10px; border-collapse: collapse; width: 179.915px;">
+<p><span style="color: #008000;"><strong>IB = 0 mA</strong></span></p>
+<p><span style="color: #008000;"><strong>IC = 0 mA</strong></span></p>
+<p><span style="color: #008000;"><strong>IE = 0 mA</strong></span></p>
+<p><span style="color: #008000;"><strong>Transistor en CORTE</strong></span></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p><span style="color: #008000;"><strong>Caso (b): interruptor abierto</strong></span></p>
+<ul>
+<li>Ahora el transistor conducirá, pero no sabemos a priori si estará en activa o en saturación. Tendremos que suponer uno de los dos estados y comprobar luego si estábamos en lo cierto o no.</li>
+<li>Como el problema nos da datos de tensiones de saturación del transistor, vamos a suponer que está en ese estado y ya conoceremos las tensiones de las uniones B-E y C-E. Sería así:</li>
+<li><img src="../content/resources/ej02.png" alt="" width="350" height="364" style="display: block; margin-left: auto; margin-right: auto;">Para calculas las tres corrientes del transistor vamos a usar tres ecuaciones de Kirchhoff:</li>
+</ul>
+<p style="padding-left: 60px;">1ª LK en el transistor:</p>
+<table border="0" style="width: 0%; margin-left: auto; margin-right: auto;">
+<tbody>
+<tr>
+<td style="width: 100%;"><span class="exe-math-rendered" data-latex="\[I_{E}=I_{B}+I_{C}\]" data-display="block"><svg xmlns="http://www.w3.org/2000/svg" width="12.985ex" height="1.92ex" role="img" focusable="false" viewBox="0 -683 5739.3 848.6" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" style="vertical-align: -0.375ex;"><defs><path id="MJX-13-TEX-I-1D43C" d="M43 1Q26 1 26 10Q26 12 29 24Q34 43 39 45Q42 46 54 46H60Q120 46 136 53Q137 53 138 54Q143 56 149 77T198 273Q210 318 216 344Q286 624 286 626Q284 630 284 631Q274 637 213 637H193Q184 643 189 662Q193 677 195 680T209 683H213Q285 681 359 681Q481 681 487 683H497Q504 676 504 672T501 655T494 639Q491 637 471 637Q440 637 407 634Q393 631 388 623Q381 609 337 432Q326 385 315 341Q245 65 245 59Q245 52 255 50T307 46H339Q345 38 345 37T342 19Q338 6 332 0H316Q279 2 179 2Q143 2 113 2T65 2T43 1Z"></path><path id="MJX-13-TEX-I-1D438" d="M492 213Q472 213 472 226Q472 230 477 250T482 285Q482 316 461 323T364 330H312Q311 328 277 192T243 52Q243 48 254 48T334 46Q428 46 458 48T518 61Q567 77 599 117T670 248Q680 270 683 272Q690 274 698 274Q718 274 718 261Q613 7 608 2Q605 0 322 0H133Q31 0 31 11Q31 13 34 25Q38 41 42 43T65 46Q92 46 125 49Q139 52 144 61Q146 66 215 342T285 622Q285 629 281 629Q273 632 228 634H197Q191 640 191 642T193 659Q197 676 203 680H757Q764 676 764 669Q764 664 751 557T737 447Q735 440 717 440H705Q698 445 698 453L701 476Q704 500 704 528Q704 558 697 578T678 609T643 625T596 632T532 634H485Q397 633 392 631Q388 629 386 622Q385 619 355 499T324 377Q347 376 372 376H398Q464 376 489 391T534 472Q538 488 540 490T557 493Q562 493 565 493T570 492T572 491T574 487T577 483L544 351Q511 218 508 216Q505 213 492 213Z"></path><path id="MJX-13-TEX-N-3D" d="M56 347Q56 360 70 367H707Q722 359 722 347Q722 336 708 328L390 327H72Q56 332 56 347ZM56 153Q56 168 72 173H708Q722 163 722 153Q722 140 707 133H70Q56 140 56 153Z"></path><path id="MJX-13-TEX-I-1D435" d="M231 637Q204 637 199 638T194 649Q194 676 205 682Q206 683 335 683Q594 683 608 681Q671 671 713 636T756 544Q756 480 698 429T565 360L555 357Q619 348 660 311T702 219Q702 146 630 78T453 1Q446 0 242 0Q42 0 39 2Q35 5 35 10Q35 17 37 24Q42 43 47 45Q51 46 62 46H68Q95 46 128 49Q142 52 147 61Q150 65 219 339T288 628Q288 635 231 637ZM649 544Q649 574 634 600T585 634Q578 636 493 637Q473 637 451 637T416 636H403Q388 635 384 626Q382 622 352 506Q352 503 351 500L320 374H401Q482 374 494 376Q554 386 601 434T649 544ZM595 229Q595 273 572 302T512 336Q506 337 429 337Q311 337 310 336Q310 334 293 263T258 122L240 52Q240 48 252 48T333 46Q422 46 429 47Q491 54 543 105T595 229Z"></path><path id="MJX-13-TEX-N-2B" d="M56 237T56 250T70 270H369V420L370 570Q380 583 389 583Q402 583 409 568V270H707Q722 262 722 250T707 230H409V-68Q401 -82 391 -82H389H387Q375 -82 369 -68V230H70Q56 237 56 250Z"></path><path id="MJX-13-TEX-I-1D436" d="M50 252Q50 367 117 473T286 641T490 704Q580 704 633 653Q642 643 648 636T656 626L657 623Q660 623 684 649Q691 655 699 663T715 679T725 690L740 705H746Q760 705 760 698Q760 694 728 561Q692 422 692 421Q690 416 687 415T669 413H653Q647 419 647 422Q647 423 648 429T650 449T651 481Q651 552 619 605T510 659Q484 659 454 652T382 628T299 572T226 479Q194 422 175 346T156 222Q156 108 232 58Q280 24 350 24Q441 24 512 92T606 240Q610 253 612 255T628 257Q648 257 648 248Q648 243 647 239Q618 132 523 55T319 -22Q206 -22 128 53T50 252Z"></path></defs><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="msub"><g data-mml-node="mi"><use data-c="1D43C" xlink:href="#MJX-13-TEX-I-1D43C"></use></g><g data-mml-node="TeXAtom" transform="translate(473,-150) scale(0.707)" data-mjx-texclass="ORD"><g data-mml-node="mi"><use data-c="1D438" xlink:href="#MJX-13-TEX-I-1D438"></use></g></g></g><g data-mml-node="mo" transform="translate(1341,0)"><use data-c="3D" xlink:href="#MJX-13-TEX-N-3D"></use></g><g data-mml-node="msub" transform="translate(2396.8,0)"><g data-mml-node="mi"><use data-c="1D43C" xlink:href="#MJX-13-TEX-I-1D43C"></use></g><g data-mml-node="TeXAtom" transform="translate(473,-150) scale(0.707)" data-mjx-texclass="ORD"><g data-mml-node="mi"><use data-c="1D435" xlink:href="#MJX-13-TEX-I-1D435"></use></g></g></g><g data-mml-node="mo" transform="translate(3678.7,0)"><use data-c="2B" xlink:href="#MJX-13-TEX-N-2B"></use></g><g data-mml-node="msub" transform="translate(4678.9,0)"><g data-mml-node="mi"><use data-c="1D43C" xlink:href="#MJX-13-TEX-I-1D43C"></use></g><g data-mml-node="TeXAtom" transform="translate(473,-150) scale(0.707)" data-mjx-texclass="ORD"><g data-mml-node="mi"><use data-c="1D436" xlink:href="#MJX-13-TEX-I-1D436"></use></g></g></g></g></g></svg><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><msub><mi>I</mi><mrow data-mjx-texclass="ORD"><mi>E</mi></mrow></msub><mo>=</mo><msub><mi>I</mi><mrow data-mjx-texclass="ORD"><mi>B</mi></mrow></msub><mo>+</mo><msub><mi>I</mi><mrow data-mjx-texclass="ORD"><mi>C</mi></mrow></msub></math></span></td>
+</tr>
+</tbody>
+</table>
+<p style="padding-left: 60px;">2ª LK en dos mallas del circuito. Vamos a elegir dos mallas en las que estén las tensiones datos del problema: la malla exterior del circuito y la malla que incluye la unión base-emisor. Las tienes indicadas en esta figura:</p>
+<p style="padding-left: 60px;"><img src="../content/resources/ej03.png" width="450" height="395" style="display: block; margin-left: auto; margin-right: auto;"></p>
+<p style="padding-left: 60px;">2ª LK en malla exterior:</p>
+<table border="0" style="width: 0%; margin-left: auto; margin-right: auto;">
+<tbody>
+<tr>
+<td style="width: 100%;"><span class="exe-math-rendered" data-latex="\[30 \ V - 0,2\ V=R2\cdot I_{C}\]" data-display="block"><svg xmlns="http://www.w3.org/2000/svg" width="22.807ex" height="1.984ex" role="img" focusable="false" viewBox="0 -683 10080.5 877" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" style="vertical-align: -0.439ex;"><defs><path id="MJX-14-TEX-N-33" d="M127 463Q100 463 85 480T69 524Q69 579 117 622T233 665Q268 665 277 664Q351 652 390 611T430 522Q430 470 396 421T302 350L299 348Q299 347 308 345T337 336T375 315Q457 262 457 175Q457 96 395 37T238 -22Q158 -22 100 21T42 130Q42 158 60 175T105 193Q133 193 151 175T169 130Q169 119 166 110T159 94T148 82T136 74T126 70T118 67L114 66Q165 21 238 21Q293 21 321 74Q338 107 338 175V195Q338 290 274 322Q259 328 213 329L171 330L168 332Q166 335 166 348Q166 366 174 366Q202 366 232 371Q266 376 294 413T322 525V533Q322 590 287 612Q265 626 240 626Q208 626 181 615T143 592T132 580H135Q138 579 143 578T153 573T165 566T175 555T183 540T186 520Q186 498 172 481T127 463Z"></path><path id="MJX-14-TEX-N-30" d="M96 585Q152 666 249 666Q297 666 345 640T423 548Q460 465 460 320Q460 165 417 83Q397 41 362 16T301 -15T250 -22Q224 -22 198 -16T137 16T82 83Q39 165 39 320Q39 494 96 585ZM321 597Q291 629 250 629Q208 629 178 597Q153 571 145 525T137 333Q137 175 145 125T181 46Q209 16 250 16Q290 16 318 46Q347 76 354 130T362 333Q362 478 354 524T321 597Z"></path><path id="MJX-14-TEX-N-A0" d=""></path><path id="MJX-14-TEX-I-1D449" d="M52 648Q52 670 65 683H76Q118 680 181 680Q299 680 320 683H330Q336 677 336 674T334 656Q329 641 325 637H304Q282 635 274 635Q245 630 242 620Q242 618 271 369T301 118L374 235Q447 352 520 471T595 594Q599 601 599 609Q599 633 555 637Q537 637 537 648Q537 649 539 661Q542 675 545 679T558 683Q560 683 570 683T604 682T668 681Q737 681 755 683H762Q769 676 769 672Q769 655 760 640Q757 637 743 637Q730 636 719 635T698 630T682 623T670 615T660 608T652 599T645 592L452 282Q272 -9 266 -16Q263 -18 259 -21L241 -22H234Q216 -22 216 -15Q213 -9 177 305Q139 623 138 626Q133 637 76 637H59Q52 642 52 648Z"></path><path id="MJX-14-TEX-N-2212" d="M84 237T84 250T98 270H679Q694 262 694 250T679 230H98Q84 237 84 250Z"></path><path id="MJX-14-TEX-N-2C" d="M78 35T78 60T94 103T137 121Q165 121 187 96T210 8Q210 -27 201 -60T180 -117T154 -158T130 -185T117 -194Q113 -194 104 -185T95 -172Q95 -168 106 -156T131 -126T157 -76T173 -3V9L172 8Q170 7 167 6T161 3T152 1T140 0Q113 0 96 17Z"></path><path id="MJX-14-TEX-N-32" d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z"></path><path id="MJX-14-TEX-N-3D" d="M56 347Q56 360 70 367H707Q722 359 722 347Q722 336 708 328L390 327H72Q56 332 56 347ZM56 153Q56 168 72 173H708Q722 163 722 153Q722 140 707 133H70Q56 140 56 153Z"></path><path id="MJX-14-TEX-I-1D445" d="M230 637Q203 637 198 638T193 649Q193 676 204 682Q206 683 378 683Q550 682 564 680Q620 672 658 652T712 606T733 563T739 529Q739 484 710 445T643 385T576 351T538 338L545 333Q612 295 612 223Q612 212 607 162T602 80V71Q602 53 603 43T614 25T640 16Q668 16 686 38T712 85Q717 99 720 102T735 105Q755 105 755 93Q755 75 731 36Q693 -21 641 -21H632Q571 -21 531 4T487 82Q487 109 502 166T517 239Q517 290 474 313Q459 320 449 321T378 323H309L277 193Q244 61 244 59Q244 55 245 54T252 50T269 48T302 46H333Q339 38 339 37T336 19Q332 6 326 0H311Q275 2 180 2Q146 2 117 2T71 2T50 1Q33 1 33 10Q33 12 36 24Q41 43 46 45Q50 46 61 46H67Q94 46 127 49Q141 52 146 61Q149 65 218 339T287 628Q287 635 230 637ZM630 554Q630 586 609 608T523 636Q521 636 500 636T462 637H440Q393 637 386 627Q385 624 352 494T319 361Q319 360 388 360Q466 361 492 367Q556 377 592 426Q608 449 619 486T630 554Z"></path><path id="MJX-14-TEX-N-22C5" d="M78 250Q78 274 95 292T138 310Q162 310 180 294T199 251Q199 226 182 208T139 190T96 207T78 250Z"></path><path id="MJX-14-TEX-I-1D43C" d="M43 1Q26 1 26 10Q26 12 29 24Q34 43 39 45Q42 46 54 46H60Q120 46 136 53Q137 53 138 54Q143 56 149 77T198 273Q210 318 216 344Q286 624 286 626Q284 630 284 631Q274 637 213 637H193Q184 643 189 662Q193 677 195 680T209 683H213Q285 681 359 681Q481 681 487 683H497Q504 676 504 672T501 655T494 639Q491 637 471 637Q440 637 407 634Q393 631 388 623Q381 609 337 432Q326 385 315 341Q245 65 245 59Q245 52 255 50T307 46H339Q345 38 345 37T342 19Q338 6 332 0H316Q279 2 179 2Q143 2 113 2T65 2T43 1Z"></path><path id="MJX-14-TEX-I-1D436" d="M50 252Q50 367 117 473T286 641T490 704Q580 704 633 653Q642 643 648 636T656 626L657 623Q660 623 684 649Q691 655 699 663T715 679T725 690L740 705H746Q760 705 760 698Q760 694 728 561Q692 422 692 421Q690 416 687 415T669 413H653Q647 419 647 422Q647 423 648 429T650 449T651 481Q651 552 619 605T510 659Q484 659 454 652T382 628T299 572T226 479Q194 422 175 346T156 222Q156 108 232 58Q280 24 350 24Q441 24 512 92T606 240Q610 253 612 255T628 257Q648 257 648 248Q648 243 647 239Q618 132 523 55T319 -22Q206 -22 128 53T50 252Z"></path></defs><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mn"><use data-c="33" xlink:href="#MJX-14-TEX-N-33"></use><use data-c="30" xlink:href="#MJX-14-TEX-N-30" transform="translate(500,0)"></use></g><g data-mml-node="mtext" transform="translate(1000,0)"><use data-c="A0" xlink:href="#MJX-14-TEX-N-A0"></use></g><g data-mml-node="mi" transform="translate(1250,0)"><use data-c="1D449" xlink:href="#MJX-14-TEX-I-1D449"></use></g><g data-mml-node="mo" transform="translate(2241.2,0)"><use data-c="2212" xlink:href="#MJX-14-TEX-N-2212"></use></g><g data-mml-node="mn" transform="translate(3241.4,0)"><use data-c="30" xlink:href="#MJX-14-TEX-N-30"></use></g><g data-mml-node="mo" transform="translate(3741.4,0)"><use data-c="2C" xlink:href="#MJX-14-TEX-N-2C"></use></g><g data-mml-node="mn" transform="translate(4186.1,0)"><use data-c="32" xlink:href="#MJX-14-TEX-N-32"></use></g><g data-mml-node="mtext" transform="translate(4686.1,0)"><use data-c="A0" xlink:href="#MJX-14-TEX-N-A0"></use></g><g data-mml-node="mi" transform="translate(4936.1,0)"><use data-c="1D449" xlink:href="#MJX-14-TEX-I-1D449"></use></g><g data-mml-node="mo" transform="translate(5982.9,0)"><use data-c="3D" xlink:href="#MJX-14-TEX-N-3D"></use></g><g data-mml-node="mi" transform="translate(7038.7,0)"><use data-c="1D445" xlink:href="#MJX-14-TEX-I-1D445"></use></g><g data-mml-node="mn" transform="translate(7797.7,0)"><use data-c="32" xlink:href="#MJX-14-TEX-N-32"></use></g><g data-mml-node="mo" transform="translate(8519.9,0)"><use data-c="22C5" xlink:href="#MJX-14-TEX-N-22C5"></use></g><g data-mml-node="msub" transform="translate(9020.1,0)"><g data-mml-node="mi"><use data-c="1D43C" xlink:href="#MJX-14-TEX-I-1D43C"></use></g><g data-mml-node="TeXAtom" transform="translate(473,-150) scale(0.707)" data-mjx-texclass="ORD"><g data-mml-node="mi"><use data-c="1D436" xlink:href="#MJX-14-TEX-I-1D436"></use></g></g></g></g></g></svg><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mn>30</mn><mtext>&nbsp;</mtext><mi>V</mi><mo>−</mo><mn>0</mn><mo>,</mo><mn>2</mn><mtext>&nbsp;</mtext><mi>V</mi><mo>=</mo><mi>R</mi><mn>2</mn><mo>⋅</mo><msub><mi>I</mi><mrow data-mjx-texclass="ORD"><mi>C</mi></mrow></msub></math></span></td>
+</tr>
+</tbody>
+</table>
+<p style="padding-left: 60px;">Se puede despejar directamente el valor de I<sub>C</sub>:</p>
+<table border="0" style="width: 0%; margin-left: auto; margin-right: auto;">
+<tbody>
+<tr>
+<td style="width: 100%;"><span class="exe-math-rendered" data-latex="\[I_{C}=\frac{(30 - 0,2)V}{2k\Omega} =14,9 \ mA\]" data-display="block"><svg xmlns="http://www.w3.org/2000/svg" width="29.874ex" height="4.88ex" role="img" focusable="false" viewBox="0 -1460 13204.3 2157" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" style="vertical-align: -1.577ex;"><defs><path id="MJX-15-TEX-I-1D43C" d="M43 1Q26 1 26 10Q26 12 29 24Q34 43 39 45Q42 46 54 46H60Q120 46 136 53Q137 53 138 54Q143 56 149 77T198 273Q210 318 216 344Q286 624 286 626Q284 630 284 631Q274 637 213 637H193Q184 643 189 662Q193 677 195 680T209 683H213Q285 681 359 681Q481 681 487 683H497Q504 676 504 672T501 655T494 639Q491 637 471 637Q440 637 407 634Q393 631 388 623Q381 609 337 432Q326 385 315 341Q245 65 245 59Q245 52 255 50T307 46H339Q345 38 345 37T342 19Q338 6 332 0H316Q279 2 179 2Q143 2 113 2T65 2T43 1Z"></path><path id="MJX-15-TEX-I-1D436" d="M50 252Q50 367 117 473T286 641T490 704Q580 704 633 653Q642 643 648 636T656 626L657 623Q660 623 684 649Q691 655 699 663T715 679T725 690L740 705H746Q760 705 760 698Q760 694 728 561Q692 422 692 421Q690 416 687 415T669 413H653Q647 419 647 422Q647 423 648 429T650 449T651 481Q651 552 619 605T510 659Q484 659 454 652T382 628T299 572T226 479Q194 422 175 346T156 222Q156 108 232 58Q280 24 350 24Q441 24 512 92T606 240Q610 253 612 255T628 257Q648 257 648 248Q648 243 647 239Q618 132 523 55T319 -22Q206 -22 128 53T50 252Z"></path><path id="MJX-15-TEX-N-3D" d="M56 347Q56 360 70 367H707Q722 359 722 347Q722 336 708 328L390 327H72Q56 332 56 347ZM56 153Q56 168 72 173H708Q722 163 722 153Q722 140 707 133H70Q56 140 56 153Z"></path><path id="MJX-15-TEX-N-28" d="M94 250Q94 319 104 381T127 488T164 576T202 643T244 695T277 729T302 750H315H319Q333 750 333 741Q333 738 316 720T275 667T226 581T184 443T167 250T184 58T225 -81T274 -167T316 -220T333 -241Q333 -250 318 -250H315H302L274 -226Q180 -141 137 -14T94 250Z"></path><path id="MJX-15-TEX-N-33" d="M127 463Q100 463 85 480T69 524Q69 579 117 622T233 665Q268 665 277 664Q351 652 390 611T430 522Q430 470 396 421T302 350L299 348Q299 347 308 345T337 336T375 315Q457 262 457 175Q457 96 395 37T238 -22Q158 -22 100 21T42 130Q42 158 60 175T105 193Q133 193 151 175T169 130Q169 119 166 110T159 94T148 82T136 74T126 70T118 67L114 66Q165 21 238 21Q293 21 321 74Q338 107 338 175V195Q338 290 274 322Q259 328 213 329L171 330L168 332Q166 335 166 348Q166 366 174 366Q202 366 232 371Q266 376 294 413T322 525V533Q322 590 287 612Q265 626 240 626Q208 626 181 615T143 592T132 580H135Q138 579 143 578T153 573T165 566T175 555T183 540T186 520Q186 498 172 481T127 463Z"></path><path id="MJX-15-TEX-N-30" d="M96 585Q152 666 249 666Q297 666 345 640T423 548Q460 465 460 320Q460 165 417 83Q397 41 362 16T301 -15T250 -22Q224 -22 198 -16T137 16T82 83Q39 165 39 320Q39 494 96 585ZM321 597Q291 629 250 629Q208 629 178 597Q153 571 145 525T137 333Q137 175 145 125T181 46Q209 16 250 16Q290 16 318 46Q347 76 354 130T362 333Q362 478 354 524T321 597Z"></path><path id="MJX-15-TEX-N-2212" d="M84 237T84 250T98 270H679Q694 262 694 250T679 230H98Q84 237 84 250Z"></path><path id="MJX-15-TEX-N-2C" d="M78 35T78 60T94 103T137 121Q165 121 187 96T210 8Q210 -27 201 -60T180 -117T154 -158T130 -185T117 -194Q113 -194 104 -185T95 -172Q95 -168 106 -156T131 -126T157 -76T173 -3V9L172 8Q170 7 167 6T161 3T152 1T140 0Q113 0 96 17Z"></path><path id="MJX-15-TEX-N-32" d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z"></path><path id="MJX-15-TEX-N-29" d="M60 749L64 750Q69 750 74 750H86L114 726Q208 641 251 514T294 250Q294 182 284 119T261 12T224 -76T186 -143T145 -194T113 -227T90 -246Q87 -249 86 -250H74Q66 -250 63 -250T58 -247T55 -238Q56 -237 66 -225Q221 -64 221 250T66 725Q56 737 55 738Q55 746 60 749Z"></path><path id="MJX-15-TEX-I-1D449" d="M52 648Q52 670 65 683H76Q118 680 181 680Q299 680 320 683H330Q336 677 336 674T334 656Q329 641 325 637H304Q282 635 274 635Q245 630 242 620Q242 618 271 369T301 118L374 235Q447 352 520 471T595 594Q599 601 599 609Q599 633 555 637Q537 637 537 648Q537 649 539 661Q542 675 545 679T558 683Q560 683 570 683T604 682T668 681Q737 681 755 683H762Q769 676 769 672Q769 655 760 640Q757 637 743 637Q730 636 719 635T698 630T682 623T670 615T660 608T652 599T645 592L452 282Q272 -9 266 -16Q263 -18 259 -21L241 -22H234Q216 -22 216 -15Q213 -9 177 305Q139 623 138 626Q133 637 76 637H59Q52 642 52 648Z"></path><path id="MJX-15-TEX-I-1D458" d="M121 647Q121 657 125 670T137 683Q138 683 209 688T282 694Q294 694 294 686Q294 679 244 477Q194 279 194 272Q213 282 223 291Q247 309 292 354T362 415Q402 442 438 442Q468 442 485 423T503 369Q503 344 496 327T477 302T456 291T438 288Q418 288 406 299T394 328Q394 353 410 369T442 390L458 393Q446 405 434 405H430Q398 402 367 380T294 316T228 255Q230 254 243 252T267 246T293 238T320 224T342 206T359 180T365 147Q365 130 360 106T354 66Q354 26 381 26Q429 26 459 145Q461 153 479 153H483Q499 153 499 144Q499 139 496 130Q455 -11 378 -11Q333 -11 305 15T277 90Q277 108 280 121T283 145Q283 167 269 183T234 206T200 217T182 220H180Q168 178 159 139T145 81T136 44T129 20T122 7T111 -2Q98 -11 83 -11Q66 -11 57 -1T48 16Q48 26 85 176T158 471L195 616Q196 629 188 632T149 637H144Q134 637 131 637T124 640T121 647Z"></path><path id="MJX-15-TEX-N-3A9" d="M55 454Q55 503 75 546T127 617T197 665T272 695T337 704H352Q396 704 404 703Q527 687 596 615T666 454Q666 392 635 330T559 200T499 83V80H543Q589 81 600 83T617 93Q622 102 629 135T636 172L637 177H677V175L660 89Q645 3 644 2V0H552H488Q461 0 456 3T451 20Q451 89 499 235T548 455Q548 512 530 555T483 622T424 656T361 668Q332 668 303 658T243 626T193 560T174 456Q174 380 222 233T270 20Q270 7 263 0H77V2Q76 3 61 89L44 175V177H84L85 172Q85 171 88 155T96 119T104 93Q109 86 120 84T178 80H222V83Q206 132 162 199T87 329T55 454Z"></path><path id="MJX-15-TEX-N-31" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"></path><path id="MJX-15-TEX-N-34" d="M462 0Q444 3 333 3Q217 3 199 0H190V46H221Q241 46 248 46T265 48T279 53T286 61Q287 63 287 115V165H28V211L179 442Q332 674 334 675Q336 677 355 677H373L379 671V211H471V165H379V114Q379 73 379 66T385 54Q393 47 442 46H471V0H462ZM293 211V545L74 212L183 211H293Z"></path><path id="MJX-15-TEX-N-39" d="M352 287Q304 211 232 211Q154 211 104 270T44 396Q42 412 42 436V444Q42 537 111 606Q171 666 243 666Q245 666 249 666T257 665H261Q273 665 286 663T323 651T370 619T413 560Q456 472 456 334Q456 194 396 97Q361 41 312 10T208 -22Q147 -22 108 7T68 93T121 149Q143 149 158 135T173 96Q173 78 164 65T148 49T135 44L131 43Q131 41 138 37T164 27T206 22H212Q272 22 313 86Q352 142 352 280V287ZM244 248Q292 248 321 297T351 430Q351 508 343 542Q341 552 337 562T323 588T293 615T246 625Q208 625 181 598Q160 576 154 546T147 441Q147 358 152 329T172 282Q197 248 244 248Z"></path><path id="MJX-15-TEX-N-A0" d=""></path><path id="MJX-15-TEX-I-1D45A" d="M21 287Q22 293 24 303T36 341T56 388T88 425T132 442T175 435T205 417T221 395T229 376L231 369Q231 367 232 367L243 378Q303 442 384 442Q401 442 415 440T441 433T460 423T475 411T485 398T493 385T497 373T500 364T502 357L510 367Q573 442 659 442Q713 442 746 415T780 336Q780 285 742 178T704 50Q705 36 709 31T724 26Q752 26 776 56T815 138Q818 149 821 151T837 153Q857 153 857 145Q857 144 853 130Q845 101 831 73T785 17T716 -10Q669 -10 648 17T627 73Q627 92 663 193T700 345Q700 404 656 404H651Q565 404 506 303L499 291L466 157Q433 26 428 16Q415 -11 385 -11Q372 -11 364 -4T353 8T350 18Q350 29 384 161L420 307Q423 322 423 345Q423 404 379 404H374Q288 404 229 303L222 291L189 157Q156 26 151 16Q138 -11 108 -11Q95 -11 87 -5T76 7T74 17Q74 30 112 181Q151 335 151 342Q154 357 154 369Q154 405 129 405Q107 405 92 377T69 316T57 280Q55 278 41 278H27Q21 284 21 287Z"></path><path id="MJX-15-TEX-I-1D434" d="M208 74Q208 50 254 46Q272 46 272 35Q272 34 270 22Q267 8 264 4T251 0Q249 0 239 0T205 1T141 2Q70 2 50 0H42Q35 7 35 11Q37 38 48 46H62Q132 49 164 96Q170 102 345 401T523 704Q530 716 547 716H555H572Q578 707 578 706L606 383Q634 60 636 57Q641 46 701 46Q726 46 726 36Q726 34 723 22Q720 7 718 4T704 0Q701 0 690 0T651 1T578 2Q484 2 455 0H443Q437 6 437 9T439 27Q443 40 445 43L449 46H469Q523 49 533 63L521 213H283L249 155Q208 86 208 74ZM516 260Q516 271 504 416T490 562L463 519Q447 492 400 412L310 260L413 259Q516 259 516 260Z"></path></defs><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="msub"><g data-mml-node="mi"><use data-c="1D43C" xlink:href="#MJX-15-TEX-I-1D43C"></use></g><g data-mml-node="TeXAtom" transform="translate(473,-150) scale(0.707)" data-mjx-texclass="ORD"><g data-mml-node="mi"><use data-c="1D436" xlink:href="#MJX-15-TEX-I-1D436"></use></g></g></g><g data-mml-node="mo" transform="translate(1338.2,0)"><use data-c="3D" xlink:href="#MJX-15-TEX-N-3D"></use></g><g data-mml-node="mfrac" transform="translate(2394,0)"><g data-mml-node="mrow" transform="translate(220,710)"><g data-mml-node="mo"><use data-c="28" xlink:href="#MJX-15-TEX-N-28"></use></g><g data-mml-node="mn" transform="translate(389,0)"><use data-c="33" xlink:href="#MJX-15-TEX-N-33"></use><use data-c="30" xlink:href="#MJX-15-TEX-N-30" transform="translate(500,0)"></use></g><g data-mml-node="mo" transform="translate(1611.2,0)"><use data-c="2212" xlink:href="#MJX-15-TEX-N-2212"></use></g><g data-mml-node="mn" transform="translate(2611.4,0)"><use data-c="30" xlink:href="#MJX-15-TEX-N-30"></use></g><g data-mml-node="mo" transform="translate(3111.4,0)"><use data-c="2C" xlink:href="#MJX-15-TEX-N-2C"></use></g><g data-mml-node="mn" transform="translate(3556.1,0)"><use data-c="32" xlink:href="#MJX-15-TEX-N-32"></use></g><g data-mml-node="mo" transform="translate(4056.1,0)"><use data-c="29" xlink:href="#MJX-15-TEX-N-29"></use></g><g data-mml-node="mi" transform="translate(4445.1,0)"><use data-c="1D449" xlink:href="#MJX-15-TEX-I-1D449"></use></g></g><g data-mml-node="mrow" transform="translate(1955.6,-686)"><g data-mml-node="mn"><use data-c="32" xlink:href="#MJX-15-TEX-N-32"></use></g><g data-mml-node="mi" transform="translate(500,0)"><use data-c="1D458" xlink:href="#MJX-15-TEX-I-1D458"></use></g><g data-mml-node="mi" transform="translate(1021,0)"><use data-c="3A9" xlink:href="#MJX-15-TEX-N-3A9"></use></g></g><rect width="5414.1" height="60" x="120" y="220"></rect></g><g data-mml-node="mo" transform="translate(8325.8,0)"><use data-c="3D" xlink:href="#MJX-15-TEX-N-3D"></use></g><g data-mml-node="mn" transform="translate(9381.6,0)"><use data-c="31" xlink:href="#MJX-15-TEX-N-31"></use><use data-c="34" xlink:href="#MJX-15-TEX-N-34" transform="translate(500,0)"></use></g><g data-mml-node="mo" transform="translate(10381.6,0)"><use data-c="2C" xlink:href="#MJX-15-TEX-N-2C"></use></g><g data-mml-node="mn" transform="translate(10826.3,0)"><use data-c="39" xlink:href="#MJX-15-TEX-N-39"></use></g><g data-mml-node="mtext" transform="translate(11326.3,0)"><use data-c="A0" xlink:href="#MJX-15-TEX-N-A0"></use></g><g data-mml-node="mi" transform="translate(11576.3,0)"><use data-c="1D45A" xlink:href="#MJX-15-TEX-I-1D45A"></use></g><g data-mml-node="mi" transform="translate(12454.3,0)"><use data-c="1D434" xlink:href="#MJX-15-TEX-I-1D434"></use></g></g></g></svg><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><msub><mi>I</mi><mrow data-mjx-texclass="ORD"><mi>C</mi></mrow></msub><mo>=</mo><mfrac><mrow><mo stretchy="false">(</mo><mn>30</mn><mo>−</mo><mn>0</mn><mo>,</mo><mn>2</mn><mo stretchy="false">)</mo><mi>V</mi></mrow><mrow><mn>2</mn><mi>k</mi><mi mathvariant="normal">Ω</mi></mrow></mfrac><mo>=</mo><mn>14</mn><mo>,</mo><mn>9</mn><mtext>&nbsp;</mtext><mi>m</mi><mi>A</mi></math></span></td>
+</tr>
+</tbody>
+</table>
+<p style="padding-left: 60px;">2ª LK en la malla de la base:</p>
+<table border="0" style="width: 0%; margin-left: auto; margin-right: auto;">
+<tbody>
+<tr>
+<td style="width: 100%;"><span class="exe-math-rendered" data-latex="\[30 \ V - 0,7\ V=R1\cdot I_{B}\]" data-display="block"><svg xmlns="http://www.w3.org/2000/svg" width="22.805ex" height="1.984ex" role="img" focusable="false" viewBox="0 -683 10079.8 877" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" style="vertical-align: -0.439ex;"><defs><path id="MJX-16-TEX-N-33" d="M127 463Q100 463 85 480T69 524Q69 579 117 622T233 665Q268 665 277 664Q351 652 390 611T430 522Q430 470 396 421T302 350L299 348Q299 347 308 345T337 336T375 315Q457 262 457 175Q457 96 395 37T238 -22Q158 -22 100 21T42 130Q42 158 60 175T105 193Q133 193 151 175T169 130Q169 119 166 110T159 94T148 82T136 74T126 70T118 67L114 66Q165 21 238 21Q293 21 321 74Q338 107 338 175V195Q338 290 274 322Q259 328 213 329L171 330L168 332Q166 335 166 348Q166 366 174 366Q202 366 232 371Q266 376 294 413T322 525V533Q322 590 287 612Q265 626 240 626Q208 626 181 615T143 592T132 580H135Q138 579 143 578T153 573T165 566T175 555T183 540T186 520Q186 498 172 481T127 463Z"></path><path id="MJX-16-TEX-N-30" d="M96 585Q152 666 249 666Q297 666 345 640T423 548Q460 465 460 320Q460 165 417 83Q397 41 362 16T301 -15T250 -22Q224 -22 198 -16T137 16T82 83Q39 165 39 320Q39 494 96 585ZM321 597Q291 629 250 629Q208 629 178 597Q153 571 145 525T137 333Q137 175 145 125T181 46Q209 16 250 16Q290 16 318 46Q347 76 354 130T362 333Q362 478 354 524T321 597Z"></path><path id="MJX-16-TEX-N-A0" d=""></path><path id="MJX-16-TEX-I-1D449" d="M52 648Q52 670 65 683H76Q118 680 181 680Q299 680 320 683H330Q336 677 336 674T334 656Q329 641 325 637H304Q282 635 274 635Q245 630 242 620Q242 618 271 369T301 118L374 235Q447 352 520 471T595 594Q599 601 599 609Q599 633 555 637Q537 637 537 648Q537 649 539 661Q542 675 545 679T558 683Q560 683 570 683T604 682T668 681Q737 681 755 683H762Q769 676 769 672Q769 655 760 640Q757 637 743 637Q730 636 719 635T698 630T682 623T670 615T660 608T652 599T645 592L452 282Q272 -9 266 -16Q263 -18 259 -21L241 -22H234Q216 -22 216 -15Q213 -9 177 305Q139 623 138 626Q133 637 76 637H59Q52 642 52 648Z"></path><path id="MJX-16-TEX-N-2212" d="M84 237T84 250T98 270H679Q694 262 694 250T679 230H98Q84 237 84 250Z"></path><path id="MJX-16-TEX-N-2C" d="M78 35T78 60T94 103T137 121Q165 121 187 96T210 8Q210 -27 201 -60T180 -117T154 -158T130 -185T117 -194Q113 -194 104 -185T95 -172Q95 -168 106 -156T131 -126T157 -76T173 -3V9L172 8Q170 7 167 6T161 3T152 1T140 0Q113 0 96 17Z"></path><path id="MJX-16-TEX-N-37" d="M55 458Q56 460 72 567L88 674Q88 676 108 676H128V672Q128 662 143 655T195 646T364 644H485V605L417 512Q408 500 387 472T360 435T339 403T319 367T305 330T292 284T284 230T278 162T275 80Q275 66 275 52T274 28V19Q270 2 255 -10T221 -22Q210 -22 200 -19T179 0T168 40Q168 198 265 368Q285 400 349 489L395 552H302Q128 552 119 546Q113 543 108 522T98 479L95 458V455H55V458Z"></path><path id="MJX-16-TEX-N-3D" d="M56 347Q56 360 70 367H707Q722 359 722 347Q722 336 708 328L390 327H72Q56 332 56 347ZM56 153Q56 168 72 173H708Q722 163 722 153Q722 140 707 133H70Q56 140 56 153Z"></path><path id="MJX-16-TEX-I-1D445" d="M230 637Q203 637 198 638T193 649Q193 676 204 682Q206 683 378 683Q550 682 564 680Q620 672 658 652T712 606T733 563T739 529Q739 484 710 445T643 385T576 351T538 338L545 333Q612 295 612 223Q612 212 607 162T602 80V71Q602 53 603 43T614 25T640 16Q668 16 686 38T712 85Q717 99 720 102T735 105Q755 105 755 93Q755 75 731 36Q693 -21 641 -21H632Q571 -21 531 4T487 82Q487 109 502 166T517 239Q517 290 474 313Q459 320 449 321T378 323H309L277 193Q244 61 244 59Q244 55 245 54T252 50T269 48T302 46H333Q339 38 339 37T336 19Q332 6 326 0H311Q275 2 180 2Q146 2 117 2T71 2T50 1Q33 1 33 10Q33 12 36 24Q41 43 46 45Q50 46 61 46H67Q94 46 127 49Q141 52 146 61Q149 65 218 339T287 628Q287 635 230 637ZM630 554Q630 586 609 608T523 636Q521 636 500 636T462 637H440Q393 637 386 627Q385 624 352 494T319 361Q319 360 388 360Q466 361 492 367Q556 377 592 426Q608 449 619 486T630 554Z"></path><path id="MJX-16-TEX-N-31" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"></path><path id="MJX-16-TEX-N-22C5" d="M78 250Q78 274 95 292T138 310Q162 310 180 294T199 251Q199 226 182 208T139 190T96 207T78 250Z"></path><path id="MJX-16-TEX-I-1D43C" d="M43 1Q26 1 26 10Q26 12 29 24Q34 43 39 45Q42 46 54 46H60Q120 46 136 53Q137 53 138 54Q143 56 149 77T198 273Q210 318 216 344Q286 624 286 626Q284 630 284 631Q274 637 213 637H193Q184 643 189 662Q193 677 195 680T209 683H213Q285 681 359 681Q481 681 487 683H497Q504 676 504 672T501 655T494 639Q491 637 471 637Q440 637 407 634Q393 631 388 623Q381 609 337 432Q326 385 315 341Q245 65 245 59Q245 52 255 50T307 46H339Q345 38 345 37T342 19Q338 6 332 0H316Q279 2 179 2Q143 2 113 2T65 2T43 1Z"></path><path id="MJX-16-TEX-I-1D435" d="M231 637Q204 637 199 638T194 649Q194 676 205 682Q206 683 335 683Q594 683 608 681Q671 671 713 636T756 544Q756 480 698 429T565 360L555 357Q619 348 660 311T702 219Q702 146 630 78T453 1Q446 0 242 0Q42 0 39 2Q35 5 35 10Q35 17 37 24Q42 43 47 45Q51 46 62 46H68Q95 46 128 49Q142 52 147 61Q150 65 219 339T288 628Q288 635 231 637ZM649 544Q649 574 634 600T585 634Q578 636 493 637Q473 637 451 637T416 636H403Q388 635 384 626Q382 622 352 506Q352 503 351 500L320 374H401Q482 374 494 376Q554 386 601 434T649 544ZM595 229Q595 273 572 302T512 336Q506 337 429 337Q311 337 310 336Q310 334 293 263T258 122L240 52Q240 48 252 48T333 46Q422 46 429 47Q491 54 543 105T595 229Z"></path></defs><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mn"><use data-c="33" xlink:href="#MJX-16-TEX-N-33"></use><use data-c="30" xlink:href="#MJX-16-TEX-N-30" transform="translate(500,0)"></use></g><g data-mml-node="mtext" transform="translate(1000,0)"><use data-c="A0" xlink:href="#MJX-16-TEX-N-A0"></use></g><g data-mml-node="mi" transform="translate(1250,0)"><use data-c="1D449" xlink:href="#MJX-16-TEX-I-1D449"></use></g><g data-mml-node="mo" transform="translate(2241.2,0)"><use data-c="2212" xlink:href="#MJX-16-TEX-N-2212"></use></g><g data-mml-node="mn" transform="translate(3241.4,0)"><use data-c="30" xlink:href="#MJX-16-TEX-N-30"></use></g><g data-mml-node="mo" transform="translate(3741.4,0)"><use data-c="2C" xlink:href="#MJX-16-TEX-N-2C"></use></g><g data-mml-node="mn" transform="translate(4186.1,0)"><use data-c="37" xlink:href="#MJX-16-TEX-N-37"></use></g><g data-mml-node="mtext" transform="translate(4686.1,0)"><use data-c="A0" xlink:href="#MJX-16-TEX-N-A0"></use></g><g data-mml-node="mi" transform="translate(4936.1,0)"><use data-c="1D449" xlink:href="#MJX-16-TEX-I-1D449"></use></g><g data-mml-node="mo" transform="translate(5982.9,0)"><use data-c="3D" xlink:href="#MJX-16-TEX-N-3D"></use></g><g data-mml-node="mi" transform="translate(7038.7,0)"><use data-c="1D445" xlink:href="#MJX-16-TEX-I-1D445"></use></g><g data-mml-node="mn" transform="translate(7797.7,0)"><use data-c="31" xlink:href="#MJX-16-TEX-N-31"></use></g><g data-mml-node="mo" transform="translate(8519.9,0)"><use data-c="22C5" xlink:href="#MJX-16-TEX-N-22C5"></use></g><g data-mml-node="msub" transform="translate(9020.1,0)"><g data-mml-node="mi"><use data-c="1D43C" xlink:href="#MJX-16-TEX-I-1D43C"></use></g><g data-mml-node="TeXAtom" transform="translate(473,-150) scale(0.707)" data-mjx-texclass="ORD"><g data-mml-node="mi"><use data-c="1D435" xlink:href="#MJX-16-TEX-I-1D435"></use></g></g></g></g></g></svg><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mn>30</mn><mtext>&nbsp;</mtext><mi>V</mi><mo>−</mo><mn>0</mn><mo>,</mo><mn>7</mn><mtext>&nbsp;</mtext><mi>V</mi><mo>=</mo><mi>R</mi><mn>1</mn><mo>⋅</mo><msub><mi>I</mi><mrow data-mjx-texclass="ORD"><mi>B</mi></mrow></msub></math></span></td>
+</tr>
+</tbody>
+</table>
+<p style="padding-left: 60px;">Despejamos directamente la corriente de base:</p>
+<table border="0" style="width: 0%; margin-left: auto; margin-right: auto;">
+<tbody>
+<tr>
+<td style="width: 100%;"><span class="exe-math-rendered" data-latex="\[I_{B}=\frac{(30 - 0,7)V}{100k\Omega} =0,293 \ mA\]" data-display="block"><svg xmlns="http://www.w3.org/2000/svg" width="31.004ex" height="4.905ex" role="img" focusable="false" viewBox="0 -1460 13703.6 2168" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" style="vertical-align: -1.602ex;"><defs><path id="MJX-17-TEX-I-1D43C" d="M43 1Q26 1 26 10Q26 12 29 24Q34 43 39 45Q42 46 54 46H60Q120 46 136 53Q137 53 138 54Q143 56 149 77T198 273Q210 318 216 344Q286 624 286 626Q284 630 284 631Q274 637 213 637H193Q184 643 189 662Q193 677 195 680T209 683H213Q285 681 359 681Q481 681 487 683H497Q504 676 504 672T501 655T494 639Q491 637 471 637Q440 637 407 634Q393 631 388 623Q381 609 337 432Q326 385 315 341Q245 65 245 59Q245 52 255 50T307 46H339Q345 38 345 37T342 19Q338 6 332 0H316Q279 2 179 2Q143 2 113 2T65 2T43 1Z"></path><path id="MJX-17-TEX-I-1D435" d="M231 637Q204 637 199 638T194 649Q194 676 205 682Q206 683 335 683Q594 683 608 681Q671 671 713 636T756 544Q756 480 698 429T565 360L555 357Q619 348 660 311T702 219Q702 146 630 78T453 1Q446 0 242 0Q42 0 39 2Q35 5 35 10Q35 17 37 24Q42 43 47 45Q51 46 62 46H68Q95 46 128 49Q142 52 147 61Q150 65 219 339T288 628Q288 635 231 637ZM649 544Q649 574 634 600T585 634Q578 636 493 637Q473 637 451 637T416 636H403Q388 635 384 626Q382 622 352 506Q352 503 351 500L320 374H401Q482 374 494 376Q554 386 601 434T649 544ZM595 229Q595 273 572 302T512 336Q506 337 429 337Q311 337 310 336Q310 334 293 263T258 122L240 52Q240 48 252 48T333 46Q422 46 429 47Q491 54 543 105T595 229Z"></path><path id="MJX-17-TEX-N-3D" d="M56 347Q56 360 70 367H707Q722 359 722 347Q722 336 708 328L390 327H72Q56 332 56 347ZM56 153Q56 168 72 173H708Q722 163 722 153Q722 140 707 133H70Q56 140 56 153Z"></path><path id="MJX-17-TEX-N-28" d="M94 250Q94 319 104 381T127 488T164 576T202 643T244 695T277 729T302 750H315H319Q333 750 333 741Q333 738 316 720T275 667T226 581T184 443T167 250T184 58T225 -81T274 -167T316 -220T333 -241Q333 -250 318 -250H315H302L274 -226Q180 -141 137 -14T94 250Z"></path><path id="MJX-17-TEX-N-33" d="M127 463Q100 463 85 480T69 524Q69 579 117 622T233 665Q268 665 277 664Q351 652 390 611T430 522Q430 470 396 421T302 350L299 348Q299 347 308 345T337 336T375 315Q457 262 457 175Q457 96 395 37T238 -22Q158 -22 100 21T42 130Q42 158 60 175T105 193Q133 193 151 175T169 130Q169 119 166 110T159 94T148 82T136 74T126 70T118 67L114 66Q165 21 238 21Q293 21 321 74Q338 107 338 175V195Q338 290 274 322Q259 328 213 329L171 330L168 332Q166 335 166 348Q166 366 174 366Q202 366 232 371Q266 376 294 413T322 525V533Q322 590 287 612Q265 626 240 626Q208 626 181 615T143 592T132 580H135Q138 579 143 578T153 573T165 566T175 555T183 540T186 520Q186 498 172 481T127 463Z"></path><path id="MJX-17-TEX-N-30" d="M96 585Q152 666 249 666Q297 666 345 640T423 548Q460 465 460 320Q460 165 417 83Q397 41 362 16T301 -15T250 -22Q224 -22 198 -16T137 16T82 83Q39 165 39 320Q39 494 96 585ZM321 597Q291 629 250 629Q208 629 178 597Q153 571 145 525T137 333Q137 175 145 125T181 46Q209 16 250 16Q290 16 318 46Q347 76 354 130T362 333Q362 478 354 524T321 597Z"></path><path id="MJX-17-TEX-N-2212" d="M84 237T84 250T98 270H679Q694 262 694 250T679 230H98Q84 237 84 250Z"></path><path id="MJX-17-TEX-N-2C" d="M78 35T78 60T94 103T137 121Q165 121 187 96T210 8Q210 -27 201 -60T180 -117T154 -158T130 -185T117 -194Q113 -194 104 -185T95 -172Q95 -168 106 -156T131 -126T157 -76T173 -3V9L172 8Q170 7 167 6T161 3T152 1T140 0Q113 0 96 17Z"></path><path id="MJX-17-TEX-N-37" d="M55 458Q56 460 72 567L88 674Q88 676 108 676H128V672Q128 662 143 655T195 646T364 644H485V605L417 512Q408 500 387 472T360 435T339 403T319 367T305 330T292 284T284 230T278 162T275 80Q275 66 275 52T274 28V19Q270 2 255 -10T221 -22Q210 -22 200 -19T179 0T168 40Q168 198 265 368Q285 400 349 489L395 552H302Q128 552 119 546Q113 543 108 522T98 479L95 458V455H55V458Z"></path><path id="MJX-17-TEX-N-29" d="M60 749L64 750Q69 750 74 750H86L114 726Q208 641 251 514T294 250Q294 182 284 119T261 12T224 -76T186 -143T145 -194T113 -227T90 -246Q87 -249 86 -250H74Q66 -250 63 -250T58 -247T55 -238Q56 -237 66 -225Q221 -64 221 250T66 725Q56 737 55 738Q55 746 60 749Z"></path><path id="MJX-17-TEX-I-1D449" d="M52 648Q52 670 65 683H76Q118 680 181 680Q299 680 320 683H330Q336 677 336 674T334 656Q329 641 325 637H304Q282 635 274 635Q245 630 242 620Q242 618 271 369T301 118L374 235Q447 352 520 471T595 594Q599 601 599 609Q599 633 555 637Q537 637 537 648Q537 649 539 661Q542 675 545 679T558 683Q560 683 570 683T604 682T668 681Q737 681 755 683H762Q769 676 769 672Q769 655 760 640Q757 637 743 637Q730 636 719 635T698 630T682 623T670 615T660 608T652 599T645 592L452 282Q272 -9 266 -16Q263 -18 259 -21L241 -22H234Q216 -22 216 -15Q213 -9 177 305Q139 623 138 626Q133 637 76 637H59Q52 642 52 648Z"></path><path id="MJX-17-TEX-N-31" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"></path><path id="MJX-17-TEX-I-1D458" d="M121 647Q121 657 125 670T137 683Q138 683 209 688T282 694Q294 694 294 686Q294 679 244 477Q194 279 194 272Q213 282 223 291Q247 309 292 354T362 415Q402 442 438 442Q468 442 485 423T503 369Q503 344 496 327T477 302T456 291T438 288Q418 288 406 299T394 328Q394 353 410 369T442 390L458 393Q446 405 434 405H430Q398 402 367 380T294 316T228 255Q230 254 243 252T267 246T293 238T320 224T342 206T359 180T365 147Q365 130 360 106T354 66Q354 26 381 26Q429 26 459 145Q461 153 479 153H483Q499 153 499 144Q499 139 496 130Q455 -11 378 -11Q333 -11 305 15T277 90Q277 108 280 121T283 145Q283 167 269 183T234 206T200 217T182 220H180Q168 178 159 139T145 81T136 44T129 20T122 7T111 -2Q98 -11 83 -11Q66 -11 57 -1T48 16Q48 26 85 176T158 471L195 616Q196 629 188 632T149 637H144Q134 637 131 637T124 640T121 647Z"></path><path id="MJX-17-TEX-N-3A9" d="M55 454Q55 503 75 546T127 617T197 665T272 695T337 704H352Q396 704 404 703Q527 687 596 615T666 454Q666 392 635 330T559 200T499 83V80H543Q589 81 600 83T617 93Q622 102 629 135T636 172L637 177H677V175L660 89Q645 3 644 2V0H552H488Q461 0 456 3T451 20Q451 89 499 235T548 455Q548 512 530 555T483 622T424 656T361 668Q332 668 303 658T243 626T193 560T174 456Q174 380 222 233T270 20Q270 7 263 0H77V2Q76 3 61 89L44 175V177H84L85 172Q85 171 88 155T96 119T104 93Q109 86 120 84T178 80H222V83Q206 132 162 199T87 329T55 454Z"></path><path id="MJX-17-TEX-N-32" d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z"></path><path id="MJX-17-TEX-N-39" d="M352 287Q304 211 232 211Q154 211 104 270T44 396Q42 412 42 436V444Q42 537 111 606Q171 666 243 666Q245 666 249 666T257 665H261Q273 665 286 663T323 651T370 619T413 560Q456 472 456 334Q456 194 396 97Q361 41 312 10T208 -22Q147 -22 108 7T68 93T121 149Q143 149 158 135T173 96Q173 78 164 65T148 49T135 44L131 43Q131 41 138 37T164 27T206 22H212Q272 22 313 86Q352 142 352 280V287ZM244 248Q292 248 321 297T351 430Q351 508 343 542Q341 552 337 562T323 588T293 615T246 625Q208 625 181 598Q160 576 154 546T147 441Q147 358 152 329T172 282Q197 248 244 248Z"></path><path id="MJX-17-TEX-N-A0" d=""></path><path id="MJX-17-TEX-I-1D45A" d="M21 287Q22 293 24 303T36 341T56 388T88 425T132 442T175 435T205 417T221 395T229 376L231 369Q231 367 232 367L243 378Q303 442 384 442Q401 442 415 440T441 433T460 423T475 411T485 398T493 385T497 373T500 364T502 357L510 367Q573 442 659 442Q713 442 746 415T780 336Q780 285 742 178T704 50Q705 36 709 31T724 26Q752 26 776 56T815 138Q818 149 821 151T837 153Q857 153 857 145Q857 144 853 130Q845 101 831 73T785 17T716 -10Q669 -10 648 17T627 73Q627 92 663 193T700 345Q700 404 656 404H651Q565 404 506 303L499 291L466 157Q433 26 428 16Q415 -11 385 -11Q372 -11 364 -4T353 8T350 18Q350 29 384 161L420 307Q423 322 423 345Q423 404 379 404H374Q288 404 229 303L222 291L189 157Q156 26 151 16Q138 -11 108 -11Q95 -11 87 -5T76 7T74 17Q74 30 112 181Q151 335 151 342Q154 357 154 369Q154 405 129 405Q107 405 92 377T69 316T57 280Q55 278 41 278H27Q21 284 21 287Z"></path><path id="MJX-17-TEX-I-1D434" d="M208 74Q208 50 254 46Q272 46 272 35Q272 34 270 22Q267 8 264 4T251 0Q249 0 239 0T205 1T141 2Q70 2 50 0H42Q35 7 35 11Q37 38 48 46H62Q132 49 164 96Q170 102 345 401T523 704Q530 716 547 716H555H572Q578 707 578 706L606 383Q634 60 636 57Q641 46 701 46Q726 46 726 36Q726 34 723 22Q720 7 718 4T704 0Q701 0 690 0T651 1T578 2Q484 2 455 0H443Q437 6 437 9T439 27Q443 40 445 43L449 46H469Q523 49 533 63L521 213H283L249 155Q208 86 208 74ZM516 260Q516 271 504 416T490 562L463 519Q447 492 400 412L310 260L413 259Q516 259 516 260Z"></path></defs><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="msub"><g data-mml-node="mi"><use data-c="1D43C" xlink:href="#MJX-17-TEX-I-1D43C"></use></g><g data-mml-node="TeXAtom" transform="translate(473,-150) scale(0.707)" data-mjx-texclass="ORD"><g data-mml-node="mi"><use data-c="1D435" xlink:href="#MJX-17-TEX-I-1D435"></use></g></g></g><g data-mml-node="mo" transform="translate(1337.5,0)"><use data-c="3D" xlink:href="#MJX-17-TEX-N-3D"></use></g><g data-mml-node="mfrac" transform="translate(2393.2,0)"><g data-mml-node="mrow" transform="translate(220,710)"><g data-mml-node="mo"><use data-c="28" xlink:href="#MJX-17-TEX-N-28"></use></g><g data-mml-node="mn" transform="translate(389,0)"><use data-c="33" xlink:href="#MJX-17-TEX-N-33"></use><use data-c="30" xlink:href="#MJX-17-TEX-N-30" transform="translate(500,0)"></use></g><g data-mml-node="mo" transform="translate(1611.2,0)"><use data-c="2212" xlink:href="#MJX-17-TEX-N-2212"></use></g><g data-mml-node="mn" transform="translate(2611.4,0)"><use data-c="30" xlink:href="#MJX-17-TEX-N-30"></use></g><g data-mml-node="mo" transform="translate(3111.4,0)"><use data-c="2C" xlink:href="#MJX-17-TEX-N-2C"></use></g><g data-mml-node="mn" transform="translate(3556.1,0)"><use data-c="37" xlink:href="#MJX-17-TEX-N-37"></use></g><g data-mml-node="mo" transform="translate(4056.1,0)"><use data-c="29" xlink:href="#MJX-17-TEX-N-29"></use></g><g data-mml-node="mi" transform="translate(4445.1,0)"><use data-c="1D449" xlink:href="#MJX-17-TEX-I-1D449"></use></g></g><g data-mml-node="mrow" transform="translate(1455.6,-686)"><g data-mml-node="mn"><use data-c="31" xlink:href="#MJX-17-TEX-N-31"></use><use data-c="30" xlink:href="#MJX-17-TEX-N-30" transform="translate(500,0)"></use><use data-c="30" xlink:href="#MJX-17-TEX-N-30" transform="translate(1000,0)"></use></g><g data-mml-node="mi" transform="translate(1500,0)"><use data-c="1D458" xlink:href="#MJX-17-TEX-I-1D458"></use></g><g data-mml-node="mi" transform="translate(2021,0)"><use data-c="3A9" xlink:href="#MJX-17-TEX-N-3A9"></use></g></g><rect width="5414.1" height="60" x="120" y="220"></rect></g><g data-mml-node="mo" transform="translate(8325.1,0)"><use data-c="3D" xlink:href="#MJX-17-TEX-N-3D"></use></g><g data-mml-node="mn" transform="translate(9380.9,0)"><use data-c="30" xlink:href="#MJX-17-TEX-N-30"></use></g><g data-mml-node="mo" transform="translate(9880.9,0)"><use data-c="2C" xlink:href="#MJX-17-TEX-N-2C"></use></g><g data-mml-node="mn" transform="translate(10325.6,0)"><use data-c="32" xlink:href="#MJX-17-TEX-N-32"></use><use data-c="39" xlink:href="#MJX-17-TEX-N-39" transform="translate(500,0)"></use><use data-c="33" xlink:href="#MJX-17-TEX-N-33" transform="translate(1000,0)"></use></g><g data-mml-node="mtext" transform="translate(11825.6,0)"><use data-c="A0" xlink:href="#MJX-17-TEX-N-A0"></use></g><g data-mml-node="mi" transform="translate(12075.6,0)"><use data-c="1D45A" xlink:href="#MJX-17-TEX-I-1D45A"></use></g><g data-mml-node="mi" transform="translate(12953.6,0)"><use data-c="1D434" xlink:href="#MJX-17-TEX-I-1D434"></use></g></g></g></svg><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><msub><mi>I</mi><mrow data-mjx-texclass="ORD"><mi>B</mi></mrow></msub><mo>=</mo><mfrac><mrow><mo stretchy="false">(</mo><mn>30</mn><mo>−</mo><mn>0</mn><mo>,</mo><mn>7</mn><mo stretchy="false">)</mo><mi>V</mi></mrow><mrow><mn>100</mn><mi>k</mi><mi mathvariant="normal">Ω</mi></mrow></mfrac><mo>=</mo><mn>0</mn><mo>,</mo><mn>293</mn><mtext>&nbsp;</mtext><mi>m</mi><mi>A</mi></math></span></td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>Como tenemos I<sub>B</sub> e I<sub>C</sub>, podemos comprobar si estamos efectivamente en saturación o no. Para que esté en saturación, debe cumplirse que&nbsp;β·I<sub>B</sub> &gt; I<sub>C</sub>. Lo calculamos:</li>
+</ul>
+<table border="0" style="width: 0%; margin-left: auto; margin-right: auto;">
+<tbody>
+<tr>
+<td style="width: 100%;"><span class="exe-math-rendered" data-latex="\[\beta \cdot I_{B}= 60\cdot 0,293 \ mA = 17,58 \ mA&gt;14,9 \ mA\]" data-display="block"><svg xmlns="http://www.w3.org/2000/svg" width="46.469ex" height="2.059ex" role="img" focusable="false" viewBox="0 -716 20539.2 910" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" style="vertical-align: -0.439ex;"><defs><path id="MJX-18-TEX-I-1D6FD" d="M29 -194Q23 -188 23 -186Q23 -183 102 134T186 465Q208 533 243 584T309 658Q365 705 429 705H431Q493 705 533 667T573 570Q573 465 469 396L482 383Q533 332 533 252Q533 139 448 65T257 -10Q227 -10 203 -2T165 17T143 40T131 59T126 65L62 -188Q60 -194 42 -194H29ZM353 431Q392 431 427 419L432 422Q436 426 439 429T449 439T461 453T472 471T484 495T493 524T501 560Q503 569 503 593Q503 611 502 616Q487 667 426 667Q384 667 347 643T286 582T247 514T224 455Q219 439 186 308T152 168Q151 163 151 147Q151 99 173 68Q204 26 260 26Q302 26 349 51T425 137Q441 171 449 214T457 279Q457 337 422 372Q380 358 347 358H337Q258 358 258 389Q258 396 261 403Q275 431 353 431Z"></path><path id="MJX-18-TEX-N-22C5" d="M78 250Q78 274 95 292T138 310Q162 310 180 294T199 251Q199 226 182 208T139 190T96 207T78 250Z"></path><path id="MJX-18-TEX-I-1D43C" d="M43 1Q26 1 26 10Q26 12 29 24Q34 43 39 45Q42 46 54 46H60Q120 46 136 53Q137 53 138 54Q143 56 149 77T198 273Q210 318 216 344Q286 624 286 626Q284 630 284 631Q274 637 213 637H193Q184 643 189 662Q193 677 195 680T209 683H213Q285 681 359 681Q481 681 487 683H497Q504 676 504 672T501 655T494 639Q491 637 471 637Q440 637 407 634Q393 631 388 623Q381 609 337 432Q326 385 315 341Q245 65 245 59Q245 52 255 50T307 46H339Q345 38 345 37T342 19Q338 6 332 0H316Q279 2 179 2Q143 2 113 2T65 2T43 1Z"></path><path id="MJX-18-TEX-I-1D435" d="M231 637Q204 637 199 638T194 649Q194 676 205 682Q206 683 335 683Q594 683 608 681Q671 671 713 636T756 544Q756 480 698 429T565 360L555 357Q619 348 660 311T702 219Q702 146 630 78T453 1Q446 0 242 0Q42 0 39 2Q35 5 35 10Q35 17 37 24Q42 43 47 45Q51 46 62 46H68Q95 46 128 49Q142 52 147 61Q150 65 219 339T288 628Q288 635 231 637ZM649 544Q649 574 634 600T585 634Q578 636 493 637Q473 637 451 637T416 636H403Q388 635 384 626Q382 622 352 506Q352 503 351 500L320 374H401Q482 374 494 376Q554 386 601 434T649 544ZM595 229Q595 273 572 302T512 336Q506 337 429 337Q311 337 310 336Q310 334 293 263T258 122L240 52Q240 48 252 48T333 46Q422 46 429 47Q491 54 543 105T595 229Z"></path><path id="MJX-18-TEX-N-3D" d="M56 347Q56 360 70 367H707Q722 359 722 347Q722 336 708 328L390 327H72Q56 332 56 347ZM56 153Q56 168 72 173H708Q722 163 722 153Q722 140 707 133H70Q56 140 56 153Z"></path><path id="MJX-18-TEX-N-36" d="M42 313Q42 476 123 571T303 666Q372 666 402 630T432 550Q432 525 418 510T379 495Q356 495 341 509T326 548Q326 592 373 601Q351 623 311 626Q240 626 194 566Q147 500 147 364L148 360Q153 366 156 373Q197 433 263 433H267Q313 433 348 414Q372 400 396 374T435 317Q456 268 456 210V192Q456 169 451 149Q440 90 387 34T253 -22Q225 -22 199 -14T143 16T92 75T56 172T42 313ZM257 397Q227 397 205 380T171 335T154 278T148 216Q148 133 160 97T198 39Q222 21 251 21Q302 21 329 59Q342 77 347 104T352 209Q352 289 347 316T329 361Q302 397 257 397Z"></path><path id="MJX-18-TEX-N-30" d="M96 585Q152 666 249 666Q297 666 345 640T423 548Q460 465 460 320Q460 165 417 83Q397 41 362 16T301 -15T250 -22Q224 -22 198 -16T137 16T82 83Q39 165 39 320Q39 494 96 585ZM321 597Q291 629 250 629Q208 629 178 597Q153 571 145 525T137 333Q137 175 145 125T181 46Q209 16 250 16Q290 16 318 46Q347 76 354 130T362 333Q362 478 354 524T321 597Z"></path><path id="MJX-18-TEX-N-2C" d="M78 35T78 60T94 103T137 121Q165 121 187 96T210 8Q210 -27 201 -60T180 -117T154 -158T130 -185T117 -194Q113 -194 104 -185T95 -172Q95 -168 106 -156T131 -126T157 -76T173 -3V9L172 8Q170 7 167 6T161 3T152 1T140 0Q113 0 96 17Z"></path><path id="MJX-18-TEX-N-32" d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z"></path><path id="MJX-18-TEX-N-39" d="M352 287Q304 211 232 211Q154 211 104 270T44 396Q42 412 42 436V444Q42 537 111 606Q171 666 243 666Q245 666 249 666T257 665H261Q273 665 286 663T323 651T370 619T413 560Q456 472 456 334Q456 194 396 97Q361 41 312 10T208 -22Q147 -22 108 7T68 93T121 149Q143 149 158 135T173 96Q173 78 164 65T148 49T135 44L131 43Q131 41 138 37T164 27T206 22H212Q272 22 313 86Q352 142 352 280V287ZM244 248Q292 248 321 297T351 430Q351 508 343 542Q341 552 337 562T323 588T293 615T246 625Q208 625 181 598Q160 576 154 546T147 441Q147 358 152 329T172 282Q197 248 244 248Z"></path><path id="MJX-18-TEX-N-33" d="M127 463Q100 463 85 480T69 524Q69 579 117 622T233 665Q268 665 277 664Q351 652 390 611T430 522Q430 470 396 421T302 350L299 348Q299 347 308 345T337 336T375 315Q457 262 457 175Q457 96 395 37T238 -22Q158 -22 100 21T42 130Q42 158 60 175T105 193Q133 193 151 175T169 130Q169 119 166 110T159 94T148 82T136 74T126 70T118 67L114 66Q165 21 238 21Q293 21 321 74Q338 107 338 175V195Q338 290 274 322Q259 328 213 329L171 330L168 332Q166 335 166 348Q166 366 174 366Q202 366 232 371Q266 376 294 413T322 525V533Q322 590 287 612Q265 626 240 626Q208 626 181 615T143 592T132 580H135Q138 579 143 578T153 573T165 566T175 555T183 540T186 520Q186 498 172 481T127 463Z"></path><path id="MJX-18-TEX-N-A0" d=""></path><path id="MJX-18-TEX-I-1D45A" d="M21 287Q22 293 24 303T36 341T56 388T88 425T132 442T175 435T205 417T221 395T229 376L231 369Q231 367 232 367L243 378Q303 442 384 442Q401 442 415 440T441 433T460 423T475 411T485 398T493 385T497 373T500 364T502 357L510 367Q573 442 659 442Q713 442 746 415T780 336Q780 285 742 178T704 50Q705 36 709 31T724 26Q752 26 776 56T815 138Q818 149 821 151T837 153Q857 153 857 145Q857 144 853 130Q845 101 831 73T785 17T716 -10Q669 -10 648 17T627 73Q627 92 663 193T700 345Q700 404 656 404H651Q565 404 506 303L499 291L466 157Q433 26 428 16Q415 -11 385 -11Q372 -11 364 -4T353 8T350 18Q350 29 384 161L420 307Q423 322 423 345Q423 404 379 404H374Q288 404 229 303L222 291L189 157Q156 26 151 16Q138 -11 108 -11Q95 -11 87 -5T76 7T74 17Q74 30 112 181Q151 335 151 342Q154 357 154 369Q154 405 129 405Q107 405 92 377T69 316T57 280Q55 278 41 278H27Q21 284 21 287Z"></path><path id="MJX-18-TEX-I-1D434" d="M208 74Q208 50 254 46Q272 46 272 35Q272 34 270 22Q267 8 264 4T251 0Q249 0 239 0T205 1T141 2Q70 2 50 0H42Q35 7 35 11Q37 38 48 46H62Q132 49 164 96Q170 102 345 401T523 704Q530 716 547 716H555H572Q578 707 578 706L606 383Q634 60 636 57Q641 46 701 46Q726 46 726 36Q726 34 723 22Q720 7 718 4T704 0Q701 0 690 0T651 1T578 2Q484 2 455 0H443Q437 6 437 9T439 27Q443 40 445 43L449 46H469Q523 49 533 63L521 213H283L249 155Q208 86 208 74ZM516 260Q516 271 504 416T490 562L463 519Q447 492 400 412L310 260L413 259Q516 259 516 260Z"></path><path id="MJX-18-TEX-N-31" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"></path><path id="MJX-18-TEX-N-37" d="M55 458Q56 460 72 567L88 674Q88 676 108 676H128V672Q128 662 143 655T195 646T364 644H485V605L417 512Q408 500 387 472T360 435T339 403T319 367T305 330T292 284T284 230T278 162T275 80Q275 66 275 52T274 28V19Q270 2 255 -10T221 -22Q210 -22 200 -19T179 0T168 40Q168 198 265 368Q285 400 349 489L395 552H302Q128 552 119 546Q113 543 108 522T98 479L95 458V455H55V458Z"></path><path id="MJX-18-TEX-N-35" d="M164 157Q164 133 148 117T109 101H102Q148 22 224 22Q294 22 326 82Q345 115 345 210Q345 313 318 349Q292 382 260 382H254Q176 382 136 314Q132 307 129 306T114 304Q97 304 95 310Q93 314 93 485V614Q93 664 98 664Q100 666 102 666Q103 666 123 658T178 642T253 634Q324 634 389 662Q397 666 402 666Q410 666 410 648V635Q328 538 205 538Q174 538 149 544L139 546V374Q158 388 169 396T205 412T256 420Q337 420 393 355T449 201Q449 109 385 44T229 -22Q148 -22 99 32T50 154Q50 178 61 192T84 210T107 214Q132 214 148 197T164 157Z"></path><path id="MJX-18-TEX-N-38" d="M70 417T70 494T124 618T248 666Q319 666 374 624T429 515Q429 485 418 459T392 417T361 389T335 371T324 363L338 354Q352 344 366 334T382 323Q457 264 457 174Q457 95 399 37T249 -22Q159 -22 101 29T43 155Q43 263 172 335L154 348Q133 361 127 368Q70 417 70 494ZM286 386L292 390Q298 394 301 396T311 403T323 413T334 425T345 438T355 454T364 471T369 491T371 513Q371 556 342 586T275 624Q268 625 242 625Q201 625 165 599T128 534Q128 511 141 492T167 463T217 431Q224 426 228 424L286 386ZM250 21Q308 21 350 55T392 137Q392 154 387 169T375 194T353 216T330 234T301 253T274 270Q260 279 244 289T218 306L210 311Q204 311 181 294T133 239T107 157Q107 98 150 60T250 21Z"></path><path id="MJX-18-TEX-N-3E" d="M84 520Q84 528 88 533T96 539L99 540Q106 540 253 471T544 334L687 265Q694 260 694 250T687 235Q685 233 395 96L107 -40H101Q83 -38 83 -20Q83 -19 83 -17Q82 -10 98 -1Q117 9 248 71Q326 108 378 132L626 250L378 368Q90 504 86 509Q84 513 84 520Z"></path><path id="MJX-18-TEX-N-34" d="M462 0Q444 3 333 3Q217 3 199 0H190V46H221Q241 46 248 46T265 48T279 53T286 61Q287 63 287 115V165H28V211L179 442Q332 674 334 675Q336 677 355 677H373L379 671V211H471V165H379V114Q379 73 379 66T385 54Q393 47 442 46H471V0H462ZM293 211V545L74 212L183 211H293Z"></path></defs><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><use data-c="1D6FD" xlink:href="#MJX-18-TEX-I-1D6FD"></use></g><g data-mml-node="mo" transform="translate(788.2,0)"><use data-c="22C5" xlink:href="#MJX-18-TEX-N-22C5"></use></g><g data-mml-node="msub" transform="translate(1288.4,0)"><g data-mml-node="mi"><use data-c="1D43C" xlink:href="#MJX-18-TEX-I-1D43C"></use></g><g data-mml-node="TeXAtom" transform="translate(473,-150) scale(0.707)" data-mjx-texclass="ORD"><g data-mml-node="mi"><use data-c="1D435" xlink:href="#MJX-18-TEX-I-1D435"></use></g></g></g><g data-mml-node="mo" transform="translate(2625.9,0)"><use data-c="3D" xlink:href="#MJX-18-TEX-N-3D"></use></g><g data-mml-node="mn" transform="translate(3681.7,0)"><use data-c="36" xlink:href="#MJX-18-TEX-N-36"></use><use data-c="30" xlink:href="#MJX-18-TEX-N-30" transform="translate(500,0)"></use></g><g data-mml-node="mo" transform="translate(4903.9,0)"><use data-c="22C5" xlink:href="#MJX-18-TEX-N-22C5"></use></g><g data-mml-node="mn" transform="translate(5404.1,0)"><use data-c="30" xlink:href="#MJX-18-TEX-N-30"></use></g><g data-mml-node="mo" transform="translate(5904.1,0)"><use data-c="2C" xlink:href="#MJX-18-TEX-N-2C"></use></g><g data-mml-node="mn" transform="translate(6348.8,0)"><use data-c="32" xlink:href="#MJX-18-TEX-N-32"></use><use data-c="39" xlink:href="#MJX-18-TEX-N-39" transform="translate(500,0)"></use><use data-c="33" xlink:href="#MJX-18-TEX-N-33" transform="translate(1000,0)"></use></g><g data-mml-node="mtext" transform="translate(7848.8,0)"><use data-c="A0" xlink:href="#MJX-18-TEX-N-A0"></use></g><g data-mml-node="mi" transform="translate(8098.8,0)"><use data-c="1D45A" xlink:href="#MJX-18-TEX-I-1D45A"></use></g><g data-mml-node="mi" transform="translate(8976.8,0)"><use data-c="1D434" xlink:href="#MJX-18-TEX-I-1D434"></use></g><g data-mml-node="mo" transform="translate(10004.6,0)"><use data-c="3D" xlink:href="#MJX-18-TEX-N-3D"></use></g><g data-mml-node="mn" transform="translate(11060.4,0)"><use data-c="31" xlink:href="#MJX-18-TEX-N-31"></use><use data-c="37" xlink:href="#MJX-18-TEX-N-37" transform="translate(500,0)"></use></g><g data-mml-node="mo" transform="translate(12060.4,0)"><use data-c="2C" xlink:href="#MJX-18-TEX-N-2C"></use></g><g data-mml-node="mn" transform="translate(12505,0)"><use data-c="35" xlink:href="#MJX-18-TEX-N-35"></use><use data-c="38" xlink:href="#MJX-18-TEX-N-38" transform="translate(500,0)"></use></g><g data-mml-node="mtext" transform="translate(13505,0)"><use data-c="A0" xlink:href="#MJX-18-TEX-N-A0"></use></g><g data-mml-node="mi" transform="translate(13755,0)"><use data-c="1D45A" xlink:href="#MJX-18-TEX-I-1D45A"></use></g><g data-mml-node="mi" transform="translate(14633,0)"><use data-c="1D434" xlink:href="#MJX-18-TEX-I-1D434"></use></g><g data-mml-node="mo" transform="translate(15660.8,0)"><use data-c="3E" xlink:href="#MJX-18-TEX-N-3E"></use></g><g data-mml-node="mn" transform="translate(16716.6,0)"><use data-c="31" xlink:href="#MJX-18-TEX-N-31"></use><use data-c="34" xlink:href="#MJX-18-TEX-N-34" transform="translate(500,0)"></use></g><g data-mml-node="mo" transform="translate(17716.6,0)"><use data-c="2C" xlink:href="#MJX-18-TEX-N-2C"></use></g><g data-mml-node="mn" transform="translate(18161.2,0)"><use data-c="39" xlink:href="#MJX-18-TEX-N-39"></use></g><g data-mml-node="mtext" transform="translate(18661.2,0)"><use data-c="A0" xlink:href="#MJX-18-TEX-N-A0"></use></g><g data-mml-node="mi" transform="translate(18911.2,0)"><use data-c="1D45A" xlink:href="#MJX-18-TEX-I-1D45A"></use></g><g data-mml-node="mi" transform="translate(19789.2,0)"><use data-c="1D434" xlink:href="#MJX-18-TEX-I-1D434"></use></g></g></g></svg><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mi>β</mi><mo>⋅</mo><msub><mi>I</mi><mrow data-mjx-texclass="ORD"><mi>B</mi></mrow></msub><mo>=</mo><mn>60</mn><mo>⋅</mo><mn>0</mn><mo>,</mo><mn>293</mn><mtext>&nbsp;</mtext><mi>m</mi><mi>A</mi><mo>=</mo><mn>17</mn><mo>,</mo><mn>58</mn><mtext>&nbsp;</mtext><mi>m</mi><mi>A</mi><mo>&gt;</mo><mn>14</mn><mo>,</mo><mn>9</mn><mtext>&nbsp;</mtext><mi>m</mi><mi>A</mi></math></span></td>
+</tr>
+</tbody>
+</table>
+<p style="padding-left: 60px;">Se comprueba que hemos acertado y que, efectivamente, el transistor está en <span style="color: #008000;"><strong>saturación</strong></span>.</p>
+<ul>
+<li>Calculamos la última corriente con la 1ª LK:</li>
+</ul>
+<table border="0" style="width: 0%; margin-left: auto; margin-right: auto;">
+<tbody>
+<tr>
+<td style="width: 100%;"><span class="exe-math-rendered" data-latex="\[I_{E} = I_{C}+I_{B}=14,9+0,293= 15,193 \ mA\]" data-display="block"><svg xmlns="http://www.w3.org/2000/svg" width="42.626ex" height="2.059ex" role="img" focusable="false" viewBox="0 -716 18840.9 910" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" style="vertical-align: -0.439ex;"><defs><path id="MJX-19-TEX-I-1D43C" d="M43 1Q26 1 26 10Q26 12 29 24Q34 43 39 45Q42 46 54 46H60Q120 46 136 53Q137 53 138 54Q143 56 149 77T198 273Q210 318 216 344Q286 624 286 626Q284 630 284 631Q274 637 213 637H193Q184 643 189 662Q193 677 195 680T209 683H213Q285 681 359 681Q481 681 487 683H497Q504 676 504 672T501 655T494 639Q491 637 471 637Q440 637 407 634Q393 631 388 623Q381 609 337 432Q326 385 315 341Q245 65 245 59Q245 52 255 50T307 46H339Q345 38 345 37T342 19Q338 6 332 0H316Q279 2 179 2Q143 2 113 2T65 2T43 1Z"></path><path id="MJX-19-TEX-I-1D438" d="M492 213Q472 213 472 226Q472 230 477 250T482 285Q482 316 461 323T364 330H312Q311 328 277 192T243 52Q243 48 254 48T334 46Q428 46 458 48T518 61Q567 77 599 117T670 248Q680 270 683 272Q690 274 698 274Q718 274 718 261Q613 7 608 2Q605 0 322 0H133Q31 0 31 11Q31 13 34 25Q38 41 42 43T65 46Q92 46 125 49Q139 52 144 61Q146 66 215 342T285 622Q285 629 281 629Q273 632 228 634H197Q191 640 191 642T193 659Q197 676 203 680H757Q764 676 764 669Q764 664 751 557T737 447Q735 440 717 440H705Q698 445 698 453L701 476Q704 500 704 528Q704 558 697 578T678 609T643 625T596 632T532 634H485Q397 633 392 631Q388 629 386 622Q385 619 355 499T324 377Q347 376 372 376H398Q464 376 489 391T534 472Q538 488 540 490T557 493Q562 493 565 493T570 492T572 491T574 487T577 483L544 351Q511 218 508 216Q505 213 492 213Z"></path><path id="MJX-19-TEX-N-3D" d="M56 347Q56 360 70 367H707Q722 359 722 347Q722 336 708 328L390 327H72Q56 332 56 347ZM56 153Q56 168 72 173H708Q722 163 722 153Q722 140 707 133H70Q56 140 56 153Z"></path><path id="MJX-19-TEX-I-1D436" d="M50 252Q50 367 117 473T286 641T490 704Q580 704 633 653Q642 643 648 636T656 626L657 623Q660 623 684 649Q691 655 699 663T715 679T725 690L740 705H746Q760 705 760 698Q760 694 728 561Q692 422 692 421Q690 416 687 415T669 413H653Q647 419 647 422Q647 423 648 429T650 449T651 481Q651 552 619 605T510 659Q484 659 454 652T382 628T299 572T226 479Q194 422 175 346T156 222Q156 108 232 58Q280 24 350 24Q441 24 512 92T606 240Q610 253 612 255T628 257Q648 257 648 248Q648 243 647 239Q618 132 523 55T319 -22Q206 -22 128 53T50 252Z"></path><path id="MJX-19-TEX-N-2B" d="M56 237T56 250T70 270H369V420L370 570Q380 583 389 583Q402 583 409 568V270H707Q722 262 722 250T707 230H409V-68Q401 -82 391 -82H389H387Q375 -82 369 -68V230H70Q56 237 56 250Z"></path><path id="MJX-19-TEX-I-1D435" d="M231 637Q204 637 199 638T194 649Q194 676 205 682Q206 683 335 683Q594 683 608 681Q671 671 713 636T756 544Q756 480 698 429T565 360L555 357Q619 348 660 311T702 219Q702 146 630 78T453 1Q446 0 242 0Q42 0 39 2Q35 5 35 10Q35 17 37 24Q42 43 47 45Q51 46 62 46H68Q95 46 128 49Q142 52 147 61Q150 65 219 339T288 628Q288 635 231 637ZM649 544Q649 574 634 600T585 634Q578 636 493 637Q473 637 451 637T416 636H403Q388 635 384 626Q382 622 352 506Q352 503 351 500L320 374H401Q482 374 494 376Q554 386 601 434T649 544ZM595 229Q595 273 572 302T512 336Q506 337 429 337Q311 337 310 336Q310 334 293 263T258 122L240 52Q240 48 252 48T333 46Q422 46 429 47Q491 54 543 105T595 229Z"></path><path id="MJX-19-TEX-N-31" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"></path><path id="MJX-19-TEX-N-34" d="M462 0Q444 3 333 3Q217 3 199 0H190V46H221Q241 46 248 46T265 48T279 53T286 61Q287 63 287 115V165H28V211L179 442Q332 674 334 675Q336 677 355 677H373L379 671V211H471V165H379V114Q379 73 379 66T385 54Q393 47 442 46H471V0H462ZM293 211V545L74 212L183 211H293Z"></path><path id="MJX-19-TEX-N-2C" d="M78 35T78 60T94 103T137 121Q165 121 187 96T210 8Q210 -27 201 -60T180 -117T154 -158T130 -185T117 -194Q113 -194 104 -185T95 -172Q95 -168 106 -156T131 -126T157 -76T173 -3V9L172 8Q170 7 167 6T161 3T152 1T140 0Q113 0 96 17Z"></path><path id="MJX-19-TEX-N-39" d="M352 287Q304 211 232 211Q154 211 104 270T44 396Q42 412 42 436V444Q42 537 111 606Q171 666 243 666Q245 666 249 666T257 665H261Q273 665 286 663T323 651T370 619T413 560Q456 472 456 334Q456 194 396 97Q361 41 312 10T208 -22Q147 -22 108 7T68 93T121 149Q143 149 158 135T173 96Q173 78 164 65T148 49T135 44L131 43Q131 41 138 37T164 27T206 22H212Q272 22 313 86Q352 142 352 280V287ZM244 248Q292 248 321 297T351 430Q351 508 343 542Q341 552 337 562T323 588T293 615T246 625Q208 625 181 598Q160 576 154 546T147 441Q147 358 152 329T172 282Q197 248 244 248Z"></path><path id="MJX-19-TEX-N-30" d="M96 585Q152 666 249 666Q297 666 345 640T423 548Q460 465 460 320Q460 165 417 83Q397 41 362 16T301 -15T250 -22Q224 -22 198 -16T137 16T82 83Q39 165 39 320Q39 494 96 585ZM321 597Q291 629 250 629Q208 629 178 597Q153 571 145 525T137 333Q137 175 145 125T181 46Q209 16 250 16Q290 16 318 46Q347 76 354 130T362 333Q362 478 354 524T321 597Z"></path><path id="MJX-19-TEX-N-32" d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z"></path><path id="MJX-19-TEX-N-33" d="M127 463Q100 463 85 480T69 524Q69 579 117 622T233 665Q268 665 277 664Q351 652 390 611T430 522Q430 470 396 421T302 350L299 348Q299 347 308 345T337 336T375 315Q457 262 457 175Q457 96 395 37T238 -22Q158 -22 100 21T42 130Q42 158 60 175T105 193Q133 193 151 175T169 130Q169 119 166 110T159 94T148 82T136 74T126 70T118 67L114 66Q165 21 238 21Q293 21 321 74Q338 107 338 175V195Q338 290 274 322Q259 328 213 329L171 330L168 332Q166 335 166 348Q166 366 174 366Q202 366 232 371Q266 376 294 413T322 525V533Q322 590 287 612Q265 626 240 626Q208 626 181 615T143 592T132 580H135Q138 579 143 578T153 573T165 566T175 555T183 540T186 520Q186 498 172 481T127 463Z"></path><path id="MJX-19-TEX-N-35" d="M164 157Q164 133 148 117T109 101H102Q148 22 224 22Q294 22 326 82Q345 115 345 210Q345 313 318 349Q292 382 260 382H254Q176 382 136 314Q132 307 129 306T114 304Q97 304 95 310Q93 314 93 485V614Q93 664 98 664Q100 666 102 666Q103 666 123 658T178 642T253 634Q324 634 389 662Q397 666 402 666Q410 666 410 648V635Q328 538 205 538Q174 538 149 544L139 546V374Q158 388 169 396T205 412T256 420Q337 420 393 355T449 201Q449 109 385 44T229 -22Q148 -22 99 32T50 154Q50 178 61 192T84 210T107 214Q132 214 148 197T164 157Z"></path><path id="MJX-19-TEX-N-A0" d=""></path><path id="MJX-19-TEX-I-1D45A" d="M21 287Q22 293 24 303T36 341T56 388T88 425T132 442T175 435T205 417T221 395T229 376L231 369Q231 367 232 367L243 378Q303 442 384 442Q401 442 415 440T441 433T460 423T475 411T485 398T493 385T497 373T500 364T502 357L510 367Q573 442 659 442Q713 442 746 415T780 336Q780 285 742 178T704 50Q705 36 709 31T724 26Q752 26 776 56T815 138Q818 149 821 151T837 153Q857 153 857 145Q857 144 853 130Q845 101 831 73T785 17T716 -10Q669 -10 648 17T627 73Q627 92 663 193T700 345Q700 404 656 404H651Q565 404 506 303L499 291L466 157Q433 26 428 16Q415 -11 385 -11Q372 -11 364 -4T353 8T350 18Q350 29 384 161L420 307Q423 322 423 345Q423 404 379 404H374Q288 404 229 303L222 291L189 157Q156 26 151 16Q138 -11 108 -11Q95 -11 87 -5T76 7T74 17Q74 30 112 181Q151 335 151 342Q154 357 154 369Q154 405 129 405Q107 405 92 377T69 316T57 280Q55 278 41 278H27Q21 284 21 287Z"></path><path id="MJX-19-TEX-I-1D434" d="M208 74Q208 50 254 46Q272 46 272 35Q272 34 270 22Q267 8 264 4T251 0Q249 0 239 0T205 1T141 2Q70 2 50 0H42Q35 7 35 11Q37 38 48 46H62Q132 49 164 96Q170 102 345 401T523 704Q530 716 547 716H555H572Q578 707 578 706L606 383Q634 60 636 57Q641 46 701 46Q726 46 726 36Q726 34 723 22Q720 7 718 4T704 0Q701 0 690 0T651 1T578 2Q484 2 455 0H443Q437 6 437 9T439 27Q443 40 445 43L449 46H469Q523 49 533 63L521 213H283L249 155Q208 86 208 74ZM516 260Q516 271 504 416T490 562L463 519Q447 492 400 412L310 260L413 259Q516 259 516 260Z"></path></defs><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="msub"><g data-mml-node="mi"><use data-c="1D43C" xlink:href="#MJX-19-TEX-I-1D43C"></use></g><g data-mml-node="TeXAtom" transform="translate(473,-150) scale(0.707)" data-mjx-texclass="ORD"><g data-mml-node="mi"><use data-c="1D438" xlink:href="#MJX-19-TEX-I-1D438"></use></g></g></g><g data-mml-node="mo" transform="translate(1341,0)"><use data-c="3D" xlink:href="#MJX-19-TEX-N-3D"></use></g><g data-mml-node="msub" transform="translate(2396.8,0)"><g data-mml-node="mi"><use data-c="1D43C" xlink:href="#MJX-19-TEX-I-1D43C"></use></g><g data-mml-node="TeXAtom" transform="translate(473,-150) scale(0.707)" data-mjx-texclass="ORD"><g data-mml-node="mi"><use data-c="1D436" xlink:href="#MJX-19-TEX-I-1D436"></use></g></g></g><g data-mml-node="mo" transform="translate(3679.4,0)"><use data-c="2B" xlink:href="#MJX-19-TEX-N-2B"></use></g><g data-mml-node="msub" transform="translate(4679.6,0)"><g data-mml-node="mi"><use data-c="1D43C" xlink:href="#MJX-19-TEX-I-1D43C"></use></g><g data-mml-node="TeXAtom" transform="translate(473,-150) scale(0.707)" data-mjx-texclass="ORD"><g data-mml-node="mi"><use data-c="1D435" xlink:href="#MJX-19-TEX-I-1D435"></use></g></g></g><g data-mml-node="mo" transform="translate(6017.1,0)"><use data-c="3D" xlink:href="#MJX-19-TEX-N-3D"></use></g><g data-mml-node="mn" transform="translate(7072.9,0)"><use data-c="31" xlink:href="#MJX-19-TEX-N-31"></use><use data-c="34" xlink:href="#MJX-19-TEX-N-34" transform="translate(500,0)"></use></g><g data-mml-node="mo" transform="translate(8072.9,0)"><use data-c="2C" xlink:href="#MJX-19-TEX-N-2C"></use></g><g data-mml-node="mn" transform="translate(8517.5,0)"><use data-c="39" xlink:href="#MJX-19-TEX-N-39"></use></g><g data-mml-node="mo" transform="translate(9239.8,0)"><use data-c="2B" xlink:href="#MJX-19-TEX-N-2B"></use></g><g data-mml-node="mn" transform="translate(10240,0)"><use data-c="30" xlink:href="#MJX-19-TEX-N-30"></use></g><g data-mml-node="mo" transform="translate(10740,0)"><use data-c="2C" xlink:href="#MJX-19-TEX-N-2C"></use></g><g data-mml-node="mn" transform="translate(11184.7,0)"><use data-c="32" xlink:href="#MJX-19-TEX-N-32"></use><use data-c="39" xlink:href="#MJX-19-TEX-N-39" transform="translate(500,0)"></use><use data-c="33" xlink:href="#MJX-19-TEX-N-33" transform="translate(1000,0)"></use></g><g data-mml-node="mo" transform="translate(12962.4,0)"><use data-c="3D" xlink:href="#MJX-19-TEX-N-3D"></use></g><g data-mml-node="mn" transform="translate(14018.2,0)"><use data-c="31" xlink:href="#MJX-19-TEX-N-31"></use><use data-c="35" xlink:href="#MJX-19-TEX-N-35" transform="translate(500,0)"></use></g><g data-mml-node="mo" transform="translate(15018.2,0)"><use data-c="2C" xlink:href="#MJX-19-TEX-N-2C"></use></g><g data-mml-node="mn" transform="translate(15462.9,0)"><use data-c="31" xlink:href="#MJX-19-TEX-N-31"></use><use data-c="39" xlink:href="#MJX-19-TEX-N-39" transform="translate(500,0)"></use><use data-c="33" xlink:href="#MJX-19-TEX-N-33" transform="translate(1000,0)"></use></g><g data-mml-node="mtext" transform="translate(16962.9,0)"><use data-c="A0" xlink:href="#MJX-19-TEX-N-A0"></use></g><g data-mml-node="mi" transform="translate(17212.9,0)"><use data-c="1D45A" xlink:href="#MJX-19-TEX-I-1D45A"></use></g><g data-mml-node="mi" transform="translate(18090.9,0)"><use data-c="1D434" xlink:href="#MJX-19-TEX-I-1D434"></use></g></g></g></svg><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><msub><mi>I</mi><mrow data-mjx-texclass="ORD"><mi>E</mi></mrow></msub><mo>=</mo><msub><mi>I</mi><mrow data-mjx-texclass="ORD"><mi>C</mi></mrow></msub><mo>+</mo><msub><mi>I</mi><mrow data-mjx-texclass="ORD"><mi>B</mi></mrow></msub><mo>=</mo><mn>14</mn><mo>,</mo><mn>9</mn><mo>+</mo><mn>0</mn><mo>,</mo><mn>293</mn><mo>=</mo><mn>15</mn><mo>,</mo><mn>193</mn><mtext>&nbsp;</mtext><mi>m</mi><mi>A</mi></math></span></td>
+</tr>
+</tbody>
+</table>
+<p>Por lo tanto, la solución a este apartado es:</p>
+<table border="1" style="width: 239px; border-style: none; margin-left: auto; margin-right: auto;">
+<tbody>
+<tr>
+<td style="border: 3px solid blue; border-radius: 10px; border-collapse: collapse; width: 227.919px;">
+<p><span style="color: #008000;"><strong>IB = 0,293 mA</strong></span></p>
+<p><span style="color: #008000;"><strong>IC = 14,9 mA</strong></span></p>
+<p><span style="color: #008000;"><strong>IE = 15,193 mA</strong></span></p>
+<p><span style="color: #008000;"><strong>Transistor en SATURACIÓN</strong></span></p>
+</td>
+</tr>
+</tbody>
+</table></div></div></section></div>
+</div>
+</div>
+</article><article id="block-msszgrsx-lrqewaktl" class="box">
+<header class="box-head">
+<div class="box-icon exe-icon">
+<img src="../theme/icons/assignment.png" alt="">
+</div>
+<h1 class="box-title">Relación de ejercicios de transistores</h1>
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="idevice-msszgrsx-zhz9asnmx" class="idevice_node file-attachment" data-idevice-path="../idevices/file-attachment/" data-idevice-type="file-attachment" data-idevice-component-type="json" data-idevice-json-data="{&quot;intro&quot;:&quot;&lt;p&gt;Aquí tenéis una relación de ejercicios de transistores. El primero es el que viene resuelto en la sección anterior, los otros los haremos en clase.&lt;/p&gt;&quot;,&quot;showDescriptions&quot;:true,&quot;attachments&quot;:[{&quot;url&quot;:&quot;../content/resources/EJERCICIOS TRANSISTORES.pdf&quot;,&quot;filename&quot;:&quot;EJERCICIOS TRANSISTORES.pdf&quot;,&quot;mimeType&quot;:&quot;&quot;,&quot;size&quot;:0,&quot;title&quot;:&quot;&quot;,&quot;description&quot;:&quot;&quot;}]}" data-idevice-template="file-attachment.html">
+<div class="fileAttachment-IDevice"><div class="fileAttachment-intro"><p>Aquí tenéis una relación de ejercicios de transistores. El primero es el que viene resuelto en la sección anterior, los otros los haremos en clase.</p></div><ul class="fileAttachment-list"><li class="fileAttachment-item fileAttachment-item--file"><a class="fileAttachment-link" href="../content/resources/EJERCICIOS TRANSISTORES.pdf" download="EJERCICIOS TRANSISTORES.pdf"><span class="fileAttachment-text"><span class="fileAttachment-title">EJERCICIOS TRANSISTORES.pdf</span></span></a></li></ul></div>
+</div>
+</div>
+</article>
+</div></main><div class="nav-buttons">
+<a href="../html/diodos.html" title="Anterior" class="nav-button nav-button-left"><span>Anterior</span></a>
+<a href="../html/circuitos-integrados.html" title="Siguiente" class="nav-button nav-button-right"><span>Siguiente</span></a>
+</div>
+<footer id="siteFooter"><div id="siteFooterContent"> <div id="packageLicense" class="cc cc-by-nc-sa"> <p> <span class="license-label">Licencia: </span><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" class="license">Creative Commons: Reconocimiento - no comercial - compartir igual 4.0</a></p>
+</div>
+</div></footer>
+</div>
+<p id="made-with-eXe"> <a href="https://exelearning.net/" target="_blank" rel="noopener"> <span>Creado con eXeLearning <span>(Ventana nueva)</span></span></a></p>
+
+</body></html>
