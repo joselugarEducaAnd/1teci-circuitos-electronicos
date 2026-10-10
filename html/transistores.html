@@ -14,8 +14,7 @@
 <script src="../idevices/quick-questions/quick-questions.js"></script><link rel="stylesheet" href="../idevices/quick-questions/quick-questions.css">
 <script src="../libs/exe_effects/exe_effects.js"> </script>
 <link rel="stylesheet" href="../libs/exe_effects/exe_effects.css">
-<link rel="stylesheet" href="../content/css/base.css"><script src="../theme/style.js"> </script>
-<script src="../theme/zzz-majuelo.js"> </script><link rel="stylesheet" href="../theme/style.css"><link rel="stylesheet" href="../theme/zzz-majuelo.css">
+<link rel="stylesheet" href="../content/css/base.css"><script src="../theme/style.js"> </script><script src="../theme/zzz-majuelo.js"> </script><link rel="stylesheet" href="../theme/style.css"><link rel="stylesheet" href="../theme/zzz-majuelo.css">
 <script src="../libs/exe_math/tex-mml-svg.js"> </script>
 </head>
 <body class="exe-export exe-web-site">
@@ -134,7 +133,7 @@
 <li><strong class="clave">Colector: </strong>es el tercer terminal que queda, sin flecha.</li>
 </ul>
 <p>En este vídeo tienes una explicación muy buena de cómo funcionan estos tipos de transistores y del aspecto que tienen físicamente:</p>
-<p style="text-align: center;"><iframe width="560" height="314" src="https://www.youtube.com/embed/zh7PeHAZRLY" referrerpolicy="strict-origin-when-cross-origin"></iframe></p>
+<p style="text-align: center;"><iframe title="Vídeo: cómo funciona un transistor" width="560" height="314" src="https://www.youtube.com/embed/zh7PeHAZRLY" referrerpolicy="strict-origin-when-cross-origin"></iframe></p>
 <p>Aunque los dos tipos de transistores de unión funcionan bajo el mismo principio y lo único que los diferencia son los sentidos de los voltajes y corrientes, para no complicar las cosas <strong class="clave">nos vamos a centrar en uno solo de ellos: el transistor NPN.</strong></p></div></div></section></div>
 </div>
 </div>
@@ -156,15 +155,19 @@
 </tbody>
 </table>
 <p>En la práctica,&nbsp;I<sub>C</sub>&nbsp;≈ I<sub>E</sub>, ya que I<sub>B</sub> es muy pequeña en comparación con ambas.</p>
-<p>En un transistor <strong class="clave">la corriente principal es la que circula entre el colector y el emisor (I<sub>C</sub>&nbsp;≈ I<sub>E</sub>)</strong>, activando el dispositivo de salida conectado al circuito. Para que esto suceda <strong class="clave">es necesario que circule una corriente a través de la base del transistor (I<sub>B</sub>)</strong>, si esto no ocurre, el transistor no permitirá el paso de corriente entre el colector y el emisor y por lo tanto el circuito no funcionará. Para comprender mejor el funcionamiento del transistor vamos a analizar el siguiente circuito:</p>
-<p><img alt="El transistor como interruptor: al cerrar el pulsador entra corriente de base IB por la resistencia y pasa la corriente de colector IC por el motor M." src="../content/resources/bjt01.png" width="350" height="270" style="display: block; margin-left: auto; margin-right: auto;">Tenemos una pila que alimenta un circuito con un motor, un transistor, una resistencia y un pulsador. Queremos que la corriente pase por el motor, es decir, que haya intensidad en el colector (I<sub>C</sub>), y tenemos dos posibilidades, que el pulsador esté accionado o no:</p>
+<p>En un transistor <strong class="clave">la corriente principal es la que circula entre el colector y el emisor (I<sub>C</sub>&nbsp;≈ I<sub>E</sub>)</strong>, activando el dispositivo de salida conectado al circuito. Para que esto suceda <strong class="clave">es necesario que circule una corriente a través de la base del transistor (I<sub>B</sub>)</strong>, si esto no ocurre, el transistor no permitirá el paso de corriente entre el colector y el emisor y por lo tanto el circuito no funcionará.</p>
+<p>En el siguiente montaje en 3D puedes ver lo que ocurre dentro del transistor. Sube poco a poco la tensión de la pila de la base (V<sub>BB</sub>) y observa cómo una corriente de base pequeña controla la corriente de colector, mucho mayor, que enciende la lámpara:</p>
+<iframe class="sda07-sim3d" src="../content/resources/sim_transistor_npn.html" title="Transistor NPN en 3D: la corriente de base controla la corriente de colector que enciende una lámpara" width="100%" height="640" loading="lazy" style="display: block; width: 100%; max-width: 980px; margin: 1rem auto .4rem; border: 0; border-radius: 12px; background: #ffffff;"></iframe>
+<p style="text-align: center; font-size: .92em;"><a href="../content/resources/sim_transistor_npn.html" target="_blank" rel="noopener">Abrir a pantalla completa</a></p>
+<p>Para comprender mejor el funcionamiento del transistor vamos a analizar el siguiente circuito:</p>
+<p><img src="../content/resources/transistor_motor_pulsador_iec.svg" alt="El transistor como interruptor: al cerrar el pulsador entra corriente de base IB por la resistencia y pasa la corriente de colector IC por el motor M." width="335" height="243" style="display: block; margin-left: auto; margin-right: auto;"><a class="ampliar-fig" href="../content/resources/transistor_motor_pulsador_iec.svg" target="_blank" rel="noopener" style="display:block;width:max-content;margin:.25rem auto .75rem;font-size:.85em">Ampliar</a>Tenemos una pila que alimenta un circuito con un motor, un transistor, una resistencia y un pulsador. Queremos que la corriente pase por el motor, es decir, que haya intensidad en el colector (I<sub>C</sub>), y tenemos dos posibilidades, que el pulsador esté accionado o no:</p>
 <ul>
 <li>No accionamos el pulsador: como por la base no entra corriente, no es posible que la corriente pase del colector al emisor, y por lo tanto el motor no gira. En este caso se dice que el transistor está en <strong class="clave">corte</strong>.</li>
 <li>Accionamos el pulsador: ahora entra corriente por la base (I<sub>B</sub>) que hará que el transistor permita el paso de corriente del colector al emisor, y por lo tanto que el motor gire, se dice que el transistor está en <strong class="clave">activa</strong>.</li>
 </ul>
 <p>Con este sencillo circuito podemos entender el funcionamiento básico del transistor, aunque no es muy útil, ya que si ponemos el pulsador en serie con el motor el efecto sería exactamente el mismo, realmente el transistor no nos aporta nada útil.</p>
 <p>Hacemos ahora un pequeño cambio, eliminamos el pulsador y la resistencia, y colocamos una LDR (resistencia que cambia su valor óhmico con la luz). Cuando la LDR recibe luz su resistencia disminuye, y cuando la LDR está en oscuridad su resistencia aumenta.</p>
-<p><img src="../content/resources/bjt02.png" alt="Circuito con una LDR en la base del transistor que gobierna un motor M." width="350" height="290" style="display: block; margin-left: auto; margin-right: auto;">Si montamos físicamente este circuito y lo analizamos, encontramos los siguientes casos:</p>
+<p><img src="../content/resources/transistor_motor_ldr_iec.svg" alt="Circuito con una LDR en la base del transistor que gobierna un motor M." width="313" height="243" style="display: block; margin-left: auto; margin-right: auto;"><a class="ampliar-fig" href="../content/resources/transistor_motor_ldr_iec.svg" target="_blank" rel="noopener" style="display:block;width:max-content;margin:.25rem auto .75rem;font-size:.85em">Ampliar</a>Si montamos físicamente este circuito y lo analizamos, encontramos los siguientes casos:</p>
 <div class="exe-fx exe-accordion">
 <h2>Con oscuridad</h2>
 <div class="page" title="Page 19">
@@ -172,7 +175,7 @@
 <div class="layoutArea">
 <div class="column">
 <p><span>La LDR ofrece una <strong class="clave">gran resistencia</strong>, por lo que por la base casi no hay intensidad, <strong class="clave">I</strong></span><strong class="clave"><sub>B </sub>≈ 0</strong><span>, el </span><span>transistor está en <strong class="clave">corte</strong></span><span>, y el motor <strong class="clave">no gira</strong>. La intensidad del colector </span><span>es cero (<strong class="clave">I<sub>C</sub> = 0</strong>): </span></p>
-<p><img src="../content/resources/bjt03.png" alt="El mismo circuito a oscuras: la LDR tiene mucha resistencia, IB = 0 e IC = 0, y el motor no gira." width="350" height="266" style="display: block; margin-left: auto; margin-right: auto;"></p>
+<p><img src="../content/resources/transistor_motor_oscuridad_iec.svg" alt="El mismo circuito a oscuras: la LDR tiene mucha resistencia, IB = 0 e IC = 0, y el motor no gira." width="353" height="242" style="display: block; margin-left: auto; margin-right: auto;"><a class="ampliar-fig" href="../content/resources/transistor_motor_oscuridad_iec.svg" target="_blank" rel="noopener" style="display:block;width:max-content;margin:.25rem auto .75rem;font-size:.85em">Ampliar</a></p>
 </div>
 </div>
 </div>
@@ -183,7 +186,7 @@
 <div class="layoutArea">
 <div class="column">
 <p><span>La LDR disminuye su resistencia, por lo que aumenta la intensidad de la base hasta que el transistor comienza a conducir corriente entre colector y emisor. Ahora el transistor </span><span>está en <strong class="clave">activa</strong></span><span>. Aparece intensidad por el colector y el motor empieza a girar.</span></p>
-<p><span><img src="../content/resources/bjt04.png" alt="El mismo circuito con luz: la LDR conduce, entra IB por la base y pasa IC por el motor." width="350" height="272" style="display: block; margin-left: auto; margin-right: auto;"></span></p>
+<p><span><img src="../content/resources/transistor_motor_luz_iec.svg" alt="El mismo circuito con luz: la LDR conduce, entra IB por la base y pasa IC por el motor." width="335" height="243" style="display: block; margin-left: auto; margin-right: auto;"><a class="ampliar-fig" href="../content/resources/transistor_motor_luz_iec.svg" target="_blank" rel="noopener" style="display:block;width:max-content;margin:.25rem auto .75rem;font-size:.85em">Ampliar</a></span></p>
 <p><span>Si aumentamos más la luz, la resistencia de la LDR disminuye y la I<sub>B</sub> aumenta.&nbsp; Si disminuimos la luz, la resistencia aumenta y la I<sub>B</sub> disminuye. M</span><span>edimos la corriente de base y la corriente de colector en varios momentos y observamos lo siguiente:</span></p>
 <table border="1" style="height: 122px; width: 400px; margin-left: auto; margin-right: auto;" class="exe-table">
 <thead>
@@ -375,22 +378,22 @@
 <dt>Polarización fija</dt>
 <dd>
 <p>Se utilizan solo dos resistencias, una en la base (RB) y otra en el colector (RC). Es el circuito más simple, pero es muy inestable y suele dar problemas con la temperatura.</p>
-<p><img alt="Polarización fija: resistencia de base RB y de colector RC con el transistor Q1 entre VCC y GND." src="../content/resources/polariz01.png" width="200" height="335" style="display: block; margin-left: auto; margin-right: auto;"></p>
+<p><img src="../content/resources/polariz01_iec.svg" alt="Polarización fija: resistencia de base RB y de colector RC con el transistor Q1 entre VCC y GND." width="209" height="324" style="display: block; margin-left: auto; margin-right: auto;"><a class="ampliar-fig" href="../content/resources/polariz01_iec.svg" target="_blank" rel="noopener" style="display:block;width:max-content;margin:.25rem auto .75rem;font-size:.85em">Ampliar</a></p>
 </dd>
 <dt>Polarización por realimentación del emisor</dt>
 <dd>
 <p>Para mejorar la estabilidad del circuito anterior, se puede añadir una resistencia en el emisor (RE). Así, si por alguna razón la corriente aumenta demasiado, la tensión en el emisor aumentará (por la caída de tensión en RE), por lo que VBE será menor y la corriente en la unión base-emisor disminuirá, disminuyendo la corriente del transistor y evitando la saturación.</p>
-<p><img src="../content/resources/polariz02.png" alt="Polarización por realimentación del emisor: RB, RC y una resistencia de emisor RE." width="200" height="378" style="display: block; margin-left: auto; margin-right: auto;"></p>
+<p><img src="../content/resources/polariz02_iec.svg" alt="Polarización por realimentación del emisor: RB, RC y una resistencia de emisor RE." width="209" height="410" style="display: block; margin-left: auto; margin-right: auto;"><a class="ampliar-fig" href="../content/resources/polariz02_iec.svg" target="_blank" rel="noopener" style="display:block;width:max-content;margin:.25rem auto .75rem;font-size:.85em">Ampliar</a></p>
 </dd>
 <dt>Polarización por realimentación del colector</dt>
 <dd>
 <p>Análogamente, podemos realimenta la tensión en el colector si conectamos la resistencia de base directamente al terminal de colector. Si la corriente de colector aumenta, la tensión del colector disminuye (por la caída en la resistencia RC) y, por tanto, la corriente de base también disminuirá, corrigiéndose ese aumento de I<sub>C</sub>.</p>
-<p><img alt="Polarización por realimentación del colector: RB va del colector a la base de Q2; RC al positivo." src="../content/resources/polariz03.png" width="190" height="341" style="display: block; margin-left: auto; margin-right: auto;"></p>
+<p><img src="../content/resources/polariz03_iec.svg" alt="Polarización por realimentación del colector: RB va del colector a la base de Q2; RC al positivo." width="209" height="331" style="display: block; margin-left: auto; margin-right: auto;"><a class="ampliar-fig" href="../content/resources/polariz03_iec.svg" target="_blank" rel="noopener" style="display:block;width:max-content;margin:.25rem auto .75rem;font-size:.85em">Ampliar</a></p>
 </dd>
 <dt>Polarización universal</dt>
 <dd>
-<p>Es el circuito más estable, pues combina la realimentación de emisor y la de colector. Consiste en trasladar a la base tanto la tensión de colector (a través de una RB1) como la de emisor (a través de una RB2).</p>
-<p><img src="../content/resources/polariz04.png" alt="Polarización universal: divisor de tensión R1-R2 en la base, RC en el colector y RE en el emisor." width="180" height="429" style="display: block; margin-left: auto; margin-right: auto;"></p>
+<p>Es el circuito más estable. Un divisor de tensión formado por R1 y R2 fija la tensión de la base, y la resistencia de emisor RE realimenta el circuito como en la polarización por realimentación del emisor: si la corriente aumenta, sube la tensión del emisor, disminuye V<sub>BE</sub> y la corriente se corrige.</p>
+<p><img src="../content/resources/polariz04_iec.svg" alt="Polarización universal: divisor de tensión R1-R2 en la base, RC en el colector y RE en el emisor." width="160" height="381" style="display: block; margin-left: auto; margin-right: auto;"><a class="ampliar-fig" href="../content/resources/polariz04_iec.svg" target="_blank" rel="noopener" style="display:block;width:max-content;margin:.25rem auto .75rem;font-size:.85em">Ampliar</a></p>
 </dd>
 </dl>
 <h3>Configuración de la entrada y la salida</h3>
@@ -399,7 +402,7 @@
 <dt>Base común</dt>
 <dd>
 <p>La señal de entrada se aplica entre el emisor y la base, mientras que la de salida se obtiene entre el colector y la base (la base aparece en las dos, por eso se llama "base común").</p>
-<p><img alt="Amplificador en base común: la entrada se aplica entre emisor y base y la salida se toma entre colector y base." src="../content/resources/amp-base-com.png" width="250" height="278" style="display: block; margin-left: auto; margin-right: auto;"></p>
+<p><img src="../content/resources/amp_base_comun_iec.svg" alt="Amplificador en base común: la entrada se aplica entre emisor y base y la salida se toma entre colector y base." width="324" height="387" style="display: block; margin-left: auto; margin-right: auto;"><a class="ampliar-fig" href="../content/resources/amp_base_comun_iec.svg" target="_blank" rel="noopener" style="display:block;width:max-content;margin:.25rem auto .75rem;font-size:.85em">Ampliar</a></p>
 <p>En esta configuración observamos lo siguiente:</p>
 <p>&nbsp; - <strong class="clave">Prácticamente no obtenemos amplificación de corriente:</strong> como la corriente de entrada es I<sub>E</sub> y la de salida es I<sub>C</sub>, y sabemos que, en un transistor, I<sub>E</sub>&nbsp;≈ I<sub>C</sub>, no tenemos ganancia en corriente de la señal.</p>
 <p>&nbsp; - <strong class="clave">Sí tenemos amplificación de la tensión</strong>, puesto que V<sub>BE</sub> es pequeño (del orden de 0,7 V), mientras que V<sub>CB</sub> puede ser bastante elevada.</p>
@@ -408,16 +411,16 @@
 <dt>Emisor común</dt>
 <dd>
 <p>La señal de entrada se aplica entre la base y el emisor, mientras que la de salida se obtiene entre el colector y el emisor.&nbsp;</p>
-<p><img alt="Amplificador en emisor común: la entrada se aplica entre base y emisor y la salida se toma entre colector y emisor." src="../content/resources/amp-emi-com.png" width="340" height="272" style="display: block; margin-left: auto; margin-right: auto;"></p>
+<p><img src="../content/resources/amp_emisor_comun_iec.svg" alt="Amplificador en emisor común: la entrada se aplica entre base y emisor y la salida se toma entre colector y emisor." width="433" height="387" style="display: block; margin-left: auto; margin-right: auto;"><a class="ampliar-fig" href="../content/resources/amp_emisor_comun_iec.svg" target="_blank" rel="noopener" style="display:block;width:max-content;margin:.25rem auto .75rem;font-size:.85em">Ampliar</a></p>
 <p>En este caso, observamos que:</p>
 <p>&nbsp; - <strong class="clave">Tenemos amplificación de corriente: </strong>al ser la entrada I<sub>B</sub> y la salida I<sub>C</sub>, amplificamos la señal con la ganancia en corriente del transistor (β = I<sub>C</sub>/I<sub>B</sub>)</p>
 <p>&nbsp; - <strong class="clave">También tenemos amplificación en tensión,</strong> pues la entrada es V<sub>BE</sub>, que es pequeña (unos 0,7 V) y la salida es V<sub>CE</sub> que puede ser de varios voltios.</p>
-<p>&nbsp; - El <strong class="clave">ancho de banda es menor</strong> que en la configuración de emisor común, por lo que se utilizan para amplificar frecuencias más concretas.</p>
+<p>&nbsp; - El <strong class="clave">ancho de banda es menor</strong> que en la configuración de base común, por lo que se utilizan para amplificar frecuencias más concretas.</p>
 </dd>
 <dt>Colector común</dt>
 <dd>
 <p>La señal de entrada se aplica entre la base y el colector, mientras que la de salida se obtiene entre el colector y el emisor.&nbsp;</p>
-<p><img alt="Amplificador en colector común: la entrada se aplica en la base y la salida se toma en el emisor." src="../content/resources/amp-col-com.png" width="340" height="302" style="display: block; margin-left: auto; margin-right: auto;"></p>
+<p><img src="../content/resources/amp_colector_comun_iec.svg" alt="Amplificador en colector común: la entrada se aplica en la base y la salida se toma en el emisor." width="397" height="387" style="display: block; margin-left: auto; margin-right: auto;"><a class="ampliar-fig" href="../content/resources/amp_colector_comun_iec.svg" target="_blank" rel="noopener" style="display:block;width:max-content;margin:.25rem auto .75rem;font-size:.85em">Ampliar</a></p>
 <p>En este caso, observamos que:</p>
 <p>&nbsp; - <strong class="clave">Tenemos amplificación de corriente: </strong>al ser la entrada I<sub>B</sub> y la salida I<sub>E</sub>, amplificamos la señal prácticamente con la ganancia en corriente del transistor (β = I<sub>C</sub>/I<sub>B</sub> ≈ I<sub>E</sub>/I<sub>B</sub>)</p>
 <p>&nbsp; - <strong class="clave">No tenemos amplificación en tensión,</strong> pues la entrada es V<sub>CB&nbsp;</sub>y la salida es V<sub>CE</sub>&nbsp;. La diferencia entre estas dos tensiones es V<sub>BE</sub>, que es muy pequeña (0,6-0,7 V), por lo que son prácticamente iguales y no hay amplificación.</p>
@@ -452,7 +455,7 @@
 <div class="exe-udlContent exe-udlContent-representation"><section class="exe-udlContent-block"><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p>Vamos a ver algunos ejemplos de uso de transistores BJT en circuitos, lo que nos ayudará a entender mejor su funcionamiento. Después simularás dos de ellos y los montarás en la protoboard (TAREA 5).</p></div></div></section><section class="exe-udlContent-block js-hidden"><header class="exe-udlContent-header"><h2>Alarma por desconexión</h2></header><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><div class="exe-fx exe-accordion">
 <h2>Montaje 1: alarma visual con LED</h2>
 <p>El esquema del circuito es el siguiente:</p>
-<p><img src="../content/resources/circ-bjt-01.png" alt="Alarma por desconexión con LED: R2 = 6,8 kΩ a la base, R1 = 220 Ω y LED en el colector, transistor Q1, pila de 6 V y un cable entre A y B que une base y emisor." width="350" height="385" style="display: block; margin-left: auto; margin-right: auto;"></p>
+<p><img src="../content/resources/alarma_led_iec.svg" alt="Alarma por desconexión con LED: R2 = 6,8 kΩ a la base, R1 = 220 Ω y LED en el colector, transistor Q1, pila de 6 V y un cable entre A y B que une base y emisor." width="339" height="392" style="display: block; margin-left: auto; margin-right: auto;"><a class="ampliar-fig" href="../content/resources/alarma_led_iec.svg" target="_blank" rel="noopener" style="display:block;width:max-content;margin:.25rem auto .75rem;font-size:.85em">Ampliar</a></p>
 <h3>Funcionamiento</h3>
 <p>Entre los puntos A y B hay un cable que puede soltarse fácilmente. Cuando se corta el cable se dispara la alarma y se enciende el led.&nbsp;</p>
 <ul>
@@ -464,12 +467,12 @@
 <p>Si queremos modificar el circuito para que la alarma sea acústica, podemos usar un zumbador. El problema es que puede que el zumbador necesite una corriente muy alta para funcionar y el transistor no sea capaz de proporcionar tanta corriente.</p>
 <p>En casos como este, podemos utilizar un <strong class="clave">relé</strong>&nbsp;, que puede activarse con una corriente típica del transistor para abrir o cerrar otro circuito por el que circule mucha más corriente para la carga que la demande.</p>
 <p>El montaje quedaría así:</p>
-<p><img alt="Alarma por desconexión acústica: el transistor Q3 activa un relé K1 con un diodo D1 de protección, y el contacto del relé alimenta un zumbador; R1 = 6,8 kΩ, 6 V y cable A-B." src="../content/resources/circ-bjt-02.png" width="440" height="385" style="display: block; margin-left: auto; margin-right: auto;"></p>
+<p><img src="../content/resources/alarma_rele_iec.svg" alt="Alarma por desconexión acústica: el transistor Q3 activa un relé K1 con un diodo D1 de protección, y el contacto del relé alimenta un zumbador; R1 = 6,8 kΩ, 6 V y cable A-B." width="447" height="492" style="display: block; margin-left: auto; margin-right: auto;"><a class="ampliar-fig" href="../content/resources/alarma_rele_iec.svg" target="_blank" rel="noopener" style="display:block;width:max-content;margin:.25rem auto .75rem;font-size:.85em">Ampliar</a></p>
 <p>Funcionamiento</p>
 <p>Cuando se corta el cable entre A y B se dispara la alarma y suena el zumbador.</p>
 <p>El circuito es análogo al del montaje 1, con los siguientes cambios:</p>
 <ul>
-<li>El LED y su resistencia de protección se han sustituido por un <strong class="clave">relé</strong> y un <strong class="clave">diodo</strong> D1. La función del diodo D1 es proteger al transistor de una posible sobrecorriente al activarse el relé. Cuando se activa una bobina magnética puede aparecer una tensión bastante mayor que la de la fuente del circuito (en este caso 6 V). En ese caso el diodo D1 se polariza directamente y conduce la posible corriente hacia arriba, manteniendo el colector del transistor a una tensión controlada. Si en vez de un relé hubiéramos puesto un motor, también tendríamos que haber puesto un diodo de protección.</li>
+<li>El LED y su resistencia de protección se han sustituido por un <strong class="clave">relé</strong> y un <strong class="clave">diodo</strong> D1. La función del diodo D1 es proteger al transistor de una posible sobretensión al desactivarse el relé. Cuando se corta la corriente de una bobina puede aparecer una tensión bastante mayor que la de la fuente del circuito (en este caso 6 V). En ese caso el diodo D1 se polariza directamente y conduce la posible corriente hacia arriba, manteniendo el colector del transistor a una tensión controlada. Si en vez de un relé hubiéramos puesto un motor, también tendríamos que haber puesto un diodo de protección.</li>
 <li>Se ha añadido un zumbador en el circuito del contacto del relé. Cuando el relé está en reposo (tal y como está dibujado su símbolo), el zumbador está apagado. Cuando el relé conmuta, llega corriente al zumbador y suena.</li>
 </ul>
 <p>Por lo tanto, el funcionamiento es igual al caso anterior:</p>
@@ -480,7 +483,7 @@
 </div></div></div></section><section class="exe-udlContent-block js-hidden"><header class="exe-udlContent-header"><h2>Sensor de luz</h2></header><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><div class="exe-fx exe-accordion">
 <h2>Montaje 1: sensor de luminosidad</h2>
 <p>El circuito será el siguiente:</p>
-<p><img src="../content/resources/circ-bjt-03.png" alt="Sensor de luz: LDR entre el positivo y la base, potenciómetro R3 de 10 kΩ entre la base y masa, LED con R1 = 220 Ω en el colector, pila de 5 V." width="300" height="402" style="display: block; margin-left: auto; margin-right: auto;"></p>
+<p><img src="../content/resources/sensor_luz_iec.svg" alt="Sensor de luz: LDR entre el positivo y la base, potenciómetro R3 de 10 kΩ entre la base y masa, LED con R1 = 220 Ω en el colector, pila de 5 V." width="290" height="420" style="display: block; margin-left: auto; margin-right: auto;"><a class="ampliar-fig" href="../content/resources/sensor_luz_iec.svg" target="_blank" rel="noopener" style="display:block;width:max-content;margin:.25rem auto .75rem;font-size:.85em">Ampliar</a></p>
 <h3>Funcionamiento</h3>
 <p>Cuando se ilumina lo suficiente la LDR, el LED se enciende. Si la LDR permanece a oscuras, el LED se apaga.</p>
 <ul>
@@ -490,14 +493,14 @@
 <li>El potenciómetro lo podremos regular para que el LED se ilumine con más o menos luz sobre la LDR. Nos sirve para ajustar la sensibilidad de nuestro circuito (mientras más resistencia tenga, menos luz necesitaremos para que el transistor conduzca).</li>
 </ul>
 <h2>Montaje 2: sensor de oscuridad</h2>
-<p>Si modificamos el circuito anterior y colocamos la LDR en el emisor y el potenciómetro en el colector, el circuito ahora funcionará al revés:</p>
-<p><img src="../content/resources/circ-bjt-04.png" alt="Sensor de oscuridad: el potenciómetro R3 de 10 kΩ arriba y la LDR entre la base y masa; LED con R1 = 220 Ω en el colector, pila de 5 V." width="241" height="335" style="display: block; margin-left: auto; margin-right: auto;"></p>
+<p>Si modificamos el circuito anterior y intercambiamos la LDR y el potenciómetro (el potenciómetro queda entre el positivo y la base, y la LDR entre la base y masa), el circuito ahora funcionará al revés:</p>
+<p><img src="../content/resources/sensor_oscuridad_iec.svg" alt="Sensor de oscuridad: el potenciómetro R3 de 10 kΩ arriba y la LDR entre la base y masa; LED con R1 = 220 Ω en el colector, pila de 5 V." width="290" height="420" style="display: block; margin-left: auto; margin-right: auto;"><a class="ampliar-fig" href="../content/resources/sensor_oscuridad_iec.svg" target="_blank" rel="noopener" style="display:block;width:max-content;margin:.25rem auto .75rem;font-size:.85em">Ampliar</a></p>
 <ul>
 <li>Cuando la LDR está a oscuras, su resistencia es alta y la tensión en la base del transistor es suficiente para que entre en conducción y se encienda el LED.</li>
 <li>Cuando vamos iluminando la LDR su resistencia va disminuyendo, con lo que cada vez se va más corriente a través de ella y entra menos a la base del transistor. El LED cada vez ilumina menos. Cuando la corriente de base sea demasiado pequeña, el transistor se cortará y el LED se apagará del todo.</li>
 </ul>
 </div></div></div></section><section class="exe-udlContent-block js-hidden"><header class="exe-udlContent-header"><h2>Sensor táctil con par Darlington</h2></header><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p>En este caso solo veremos un montaje, que es el de la siguiente figura:</p>
-<p><img src="../content/resources/circ-bjt-05.png" alt="Sensor táctil con par Darlington: al tocar entre A y B entra corriente en la base del primer transistor; dos transistores en cascada, LED con R1 = 220 Ω, condensador C1 de 10 nF y pila de 5 V." width="500" height="493" style="display: block; margin-left: auto; margin-right: auto;"></p>
+<p><img src="../content/resources/darlington_tactil_iec.svg" alt="Sensor táctil con par Darlington: A unido al positivo y B a la base del primer transistor; dos transistores NPN en cascada, LED con R1 de 220 Ω, condensador C1 de 10 nF entre la base y masa, y pila de 5 V." width="480" height="392" style="display: block; margin-left: auto; margin-right: auto;"><a class="ampliar-fig" href="../content/resources/darlington_tactil_iec.svg" target="_blank" rel="noopener" style="display:block;width:max-content;margin:.25rem auto .75rem;font-size:.85em">Ampliar</a></p>
 <h3>Funcionamiento</h3>
 <p>Al tocar con el dedo entre los puntos A y B, el LED se ilumina. Al quitar el dedo, el LED se apaga.</p>
 <ul>
@@ -521,7 +524,7 @@
 </tbody>
 </table>
 <p style="text-align: left;">Si, por ejemplo, las ganancias de los transistores son&nbsp;β<sub>1&nbsp;</sub>= 100 y β<sub>2&nbsp;</sub>= 50, la ganancia del par sería&nbsp;β = 5000.</p></div></div></section><section class="exe-udlContent-block js-hidden"><header class="exe-udlContent-header"><h2>Multivibrador astable</h2></header><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p>Consiste en un circuito como este:</p>
-<p><img alt="Multivibrador astable con dos transistores TR1 y TR2, LED1 y LED2 con R1 y R4 de 330 Ω, R2 y R3 de 22 kΩ, condensadores C1 y C2 de 100 µF cruzados, a 9 V; salida Y." src="../content/resources/multi-astable.png" width="700" height="496" style="display: block; margin-left: auto; margin-right: auto;"></p>
+<p><img src="../content/resources/multivibrador_astable_iec.svg" alt="Multivibrador astable con dos transistores TR1 y TR2, LED1 y LED2 con R1 y R4 de 330 Ω, R2 y R3 de 22 kΩ, condensadores C1 y C2 de 100 µF cruzados, a 9 V; salida Y." width="600" height="598" style="display: block; margin-left: auto; margin-right: auto;"><a class="ampliar-fig" href="../content/resources/multivibrador_astable_iec.svg" target="_blank" rel="noopener" style="display:block;width:max-content;margin:.25rem auto .75rem;font-size:.85em">Ampliar</a></p>
 <p>La salida de este circuito sería la tensión obtenida en el terminal "Y", que será una <strong class="clave">onda cuadrada</strong>. Nosotros le hemos añadido unos LEDs para visualizar bien el funcionamiento cuando lo montemos con elementos reales, pero no son necesarios si usamos el circuito para su función primordial de generar ondas.</p>
 <p>Veamos cómo funciona.</p>
 <p>Cuando lo ponemos en marcha, parece no hacer nada durante los primeros instantes. Esto es porque la configuración del montaje es&nbsp;simétrica&nbsp;por lo que, si los componentes fueran&nbsp;ideales&nbsp;(perfectos, todos iguales, sin tolerancia ninguna), el circuito, efectivamente, se quedaría en reposo indefinidamente. Pero no es así: los componentes, dadas las características de la fabricación, son algo diferentes.</p>
@@ -529,7 +532,7 @@
 <p>Supongamos que es TR1 el que conduce primero. En estas condiciones el voltaje en su colector estará próximo a 0&nbsp;voltios, por lo que C1 comenzará a cargarse a través de R2, creando al principio una muy pequeña diferencia de potencial entre sus placas y, por tanto, trasladando el voltaje próximo a 0 hasta la base de TR2, que se pondrá en <strong class="clave">corte</strong>.</p>
 <p>Cuando el voltaje en C1 alcance los 0,6 V, el transistor TR2 comenzará a conducir, pasando su tensión de colector (salida Y del circuito) a <strong class="clave">nivel bajo</strong> (tensión próxima a 0V). El condensador C2, que se había cargado a través de R4 y de la unión base-emisor de TR1, se descargará ahora provocando el bloqueo de TR1 al bajar la tensión en su base.</p>
 <p>C2 comienza a cargarse vía R3 y, al alcanzar la tensión de 0,6 V, provocará nuevamente la conducción de TR1, la descarga de C1, el bloqueo de TR2 y el pase a <strong class="clave">nivel alto</strong> (tensión próxima a Vcc (+) de la salida Y).</p>
-<p>A partir de aquí la secuencia se repite indefinidamente, dependiendo los tiempos de conducción y bloqueo de cada transistor de las relaciones R2/C1 y R3/C2. Estos tiempos no son necesariamente iguales, por lo que pueden obtenerse distintos ciclos de trabajo actuando sobre los valores de dichos componentes.</p>
+<p>A partir de aquí la secuencia se repite indefinidamente, dependiendo los tiempos de conducción y bloqueo de cada transistor de los productos R2·C1 y R3·C2. Estos tiempos no son necesariamente iguales, por lo que pueden obtenerse distintos ciclos de trabajo actuando sobre los valores de dichos componentes.</p>
 <p>A los pocos segundos el circuito se pone en marcha (se rompe la presunta simetría), y vemos cómo los LEDs se encienden <strong class="clave">alternativamente</strong>. En ningún caso se permanece indefinidamente en un estado, es decir, los estados "decaen" por sí mismos, <strong class="clave">no son estables</strong>&nbsp;(por lo tanto son "astables")</p>
 <p>Es por esto que a este circuito se le llama<strong class="clave">&nbsp;multivibrador astable&nbsp;</strong>u <strong class="clave">oscilador</strong>, y es muy usado en electrónica, especialmente para generar&nbsp;señales PWM. En ese caso no se utilizan LEDs, que aquí están simplemente para que veamos cómo funciona el circuito cuando lo montemos con componentes reales.</p></div></div></section></div>
 </div>
@@ -668,7 +671,7 @@
 <ul>
 <li>Ahora el transistor conducirá, pero no sabemos a priori si estará en activa o en saturación. Tendremos que suponer uno de los dos estados y comprobar luego si estábamos en lo cierto o no.</li>
 <li>Como el problema nos da datos de tensiones de saturación del transistor, vamos a suponer que está en ese estado y ya conoceremos las tensiones de las uniones B-E y C-E. Sería así:</li>
-<li><img src="../content/resources/ej02.png" alt="Ejercicio: fuente de 30 V, R1 = 100 kΩ a la base, R2 = 2 kΩ al colector y un interruptor S1 entre base y masa; VBE = 0,7 V y VCE = 0,2 V marcados." width="350" height="364" style="display: block; margin-left: auto; margin-right: auto;">Para calculas las tres corrientes del transistor vamos a usar tres ecuaciones de Kirchhoff:</li>
+<li><img src="../content/resources/ejemplo_transistor_iec.svg" alt="Ejercicio: fuente de 30 V, R1 = 100 kΩ a la base, R2 = 2 kΩ al colector y un interruptor S1 entre base y masa; VBE = 0,7 V y VCE = 0,2 V marcados." width="355" height="441" style="display: block; margin-left: auto; margin-right: auto;"><a class="ampliar-fig" href="../content/resources/ejemplo_transistor_iec.svg" target="_blank" rel="noopener" style="display:block;width:max-content;margin:.25rem auto .75rem;font-size:.85em">Ampliar</a>Para calculas las tres corrientes del transistor vamos a usar tres ecuaciones de Kirchhoff:</li>
 </ul>
 <p style="padding-left: 60px;">1ª LK en el transistor:</p>
 <table border="0" style="width: 0%; margin-left: auto; margin-right: auto;">
@@ -679,12 +682,12 @@
 </tbody>
 </table>
 <p style="padding-left: 60px;">2ª LK en dos mallas del circuito. Vamos a elegir dos mallas en las que estén las tensiones datos del problema: la malla exterior del circuito y la malla que incluye la unión base-emisor. Las tienes indicadas en esta figura:</p>
-<p style="padding-left: 60px;"><img alt="El mismo ejercicio con las dos mallas dibujadas: la malla de base (por R1 y la unión base-emisor) y la malla exterior (por R2 y el colector-emisor)." src="../content/resources/ej03.png" width="450" height="395" style="display: block; margin-left: auto; margin-right: auto;"></p>
+<p style="padding-left: 60px;"><img src="../content/resources/ejemplo_transistor_mallas_iec.svg" alt="El mismo ejercicio con las dos mallas dibujadas: la malla de base (por R1 y la unión base-emisor) y la malla exterior (por R2 y el colector-emisor)." width="399" height="479" style="display: block; margin-left: auto; margin-right: auto;"><a class="ampliar-fig" href="../content/resources/ejemplo_transistor_mallas_iec.svg" target="_blank" rel="noopener" style="display:block;width:max-content;margin:.25rem auto .75rem;font-size:.85em">Ampliar</a></p>
 <p style="padding-left: 60px;">2ª LK en malla exterior:</p>
 <table border="0" style="width: 0%; margin-left: auto; margin-right: auto;">
 <tbody>
 <tr>
-<td style="width: 100%;">\[30 \ V - 0,2\ V=R2\cdot I_{C}\]</td>
+<td style="width: 100%;">\[30\text{ V} - \text{0,2 V}=R2\cdot I_{C}\]</td>
 </tr>
 </tbody>
 </table>
@@ -692,7 +695,7 @@
 <table border="0" style="width: 0%; margin-left: auto; margin-right: auto;">
 <tbody>
 <tr>
-<td style="width: 100%;">\[I_{C}=\frac{(30 - 0,2)V}{2k\Omega} =14,9 \ mA\]</td>
+<td style="width: 100%;">\[I_{C}=\frac{(30 - \text{0,2})\text{ V}}{2\text{ k}\Omega} =\text{14,9 mA}\]</td>
 </tr>
 </tbody>
 </table>
@@ -700,7 +703,7 @@
 <table border="0" style="width: 0%; margin-left: auto; margin-right: auto;">
 <tbody>
 <tr>
-<td style="width: 100%;">\[30 \ V - 0,7\ V=R1\cdot I_{B}\]</td>
+<td style="width: 100%;">\[30\text{ V} - \text{0,7 V}=R1\cdot I_{B}\]</td>
 </tr>
 </tbody>
 </table>
@@ -708,7 +711,7 @@
 <table border="0" style="width: 0%; margin-left: auto; margin-right: auto;">
 <tbody>
 <tr>
-<td style="width: 100%;">\[I_{B}=\frac{(30 - 0,7)V}{100k\Omega} =0,293 \ mA\]</td>
+<td style="width: 100%;">\[I_{B}=\frac{(30 - \text{0,7})\text{ V}}{100\text{ k}\Omega} =\text{0,293 mA}\]</td>
 </tr>
 </tbody>
 </table>
@@ -718,7 +721,7 @@
 <table border="0" style="width: 0%; margin-left: auto; margin-right: auto;">
 <tbody>
 <tr>
-<td style="width: 100%;">\[\beta \cdot I_{B}= 60\cdot 0,293 \ mA = 17,58 \ mA>14,9 \ mA\]</td>
+<td style="width: 100%;">\[\beta \cdot I_{B}= 60\cdot \text{0,293 mA} = \text{17,58 mA}>\text{14,9 mA}\]</td>
 </tr>
 </tbody>
 </table>
@@ -729,7 +732,7 @@
 <table border="0" style="width: 0%; margin-left: auto; margin-right: auto;">
 <tbody>
 <tr>
-<td style="width: 100%;">\[I_{E} = I_{C}+I_{B}=14,9+0,293= 15,193 \ mA\]</td>
+<td style="width: 100%;">\[I_{E} = I_{C}+I_{B}=\text{14,9}+\text{0,293}= \text{15,193 mA}\]</td>
 </tr>
 </tbody>
 </table>

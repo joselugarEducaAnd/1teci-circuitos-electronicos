@@ -14,8 +14,7 @@
 <script src="../idevices/quick-questions/quick-questions.js"></script><link rel="stylesheet" href="../idevices/quick-questions/quick-questions.css">
 <script src="../libs/exe_effects/exe_effects.js"> </script>
 <link rel="stylesheet" href="../libs/exe_effects/exe_effects.css">
-<link rel="stylesheet" href="../content/css/base.css"><script src="../theme/style.js"> </script>
-<script src="../theme/zzz-majuelo.js"> </script><link rel="stylesheet" href="../theme/style.css"><link rel="stylesheet" href="../theme/zzz-majuelo.css">
+<link rel="stylesheet" href="../content/css/base.css"><script src="../theme/style.js"> </script><script src="../theme/zzz-majuelo.js"> </script><link rel="stylesheet" href="../theme/style.css"><link rel="stylesheet" href="../theme/zzz-majuelo.css">
 <script src="../libs/exe_math/tex-mml-svg.js"> </script>
 </head>
 <body class="exe-export exe-web-site">
@@ -69,10 +68,10 @@
 <td style="width: 54.9369%;">
 <h3></h3>
 <p>Al conectar el <strong class="clave">polo negativo</strong> (cátodo) del generador con la <strong class="clave">parte N</strong> del semiconductor y el <strong class="clave">polo positivo</strong> (ánodo) con la <strong class="clave">parte P</strong> se produce la <strong class="clave">desaparición de la barrera de potencial</strong> y la corriente puede circular.</p>
-<p>Los electrones se ven atraídos por el positivo de la fuente, por lo que abandonan los huecos, que irán llenándose con otros electrones que "huyen" del negativo de la fuente. Se puede mantener este flujo de electrones a través de la unión, por lo que se establece una corriente eléctrica. En la figura se ha mostrado el sentido del movimiento real de los electrones en <span style="color: #00ff00;"><strong>verde</strong></span> y el sentido convencional de la corriente (el que usamos siempre) en <span style="color: #ff0000;"><strong>rojo</strong></span>.</p>
+<p>Los electrones se ven atraídos por el positivo de la fuente, por lo que abandonan los huecos, que irán llenándose con otros electrones que "huyen" del negativo de la fuente. Se puede mantener este flujo de electrones a través de la unión, por lo que se establece una corriente eléctrica. En la figura se ha mostrado el sentido del movimiento real de los electrones en <span style="color: #b0174d;"><strong>rosa</strong></span> y el sentido convencional de la corriente (el que usamos siempre) en <span style="color: #ff0000;"><strong>rojo</strong></span>.</p>
 <p>La unión P-N se comporta como si tuviéramos un <strong class="clave">circuito cerrado</strong> (aunque presenta una ligera caída de tensión), por lo que <strong class="clave">la lámpara se enciende</strong>.</p>
 </td>
-<td style="width: 45.0631%;"><img alt="Polarización directa: el polo + de la pila al lado P y el − al N; la barrera desaparece, circulan los electrones y la bombilla luce. Debajo, el mismo circuito con el símbolo del diodo." src="../content/resources/polarizDirecta.png" width="350" height="445" style="display: block; margin-left: auto; margin-right: auto;"></td>
+<td style="width: 45.0631%;"><img alt="Polarización directa: el polo + de la pila al lado P y el − al N; la barrera desaparece, circulan los electrones y la bombilla luce. Debajo, el mismo circuito con el símbolo del diodo." src="../content/resources/polarizacion_directa_union_pn.svg" width="350" height="461" style="display: block; margin-left: auto; margin-right: auto;"><a class="ampliar-fig" href="../content/resources/polarizacion_directa_union_pn.svg" target="_blank" rel="noopener" style="display:block;width:max-content;margin:.25rem auto .75rem;font-size:.85em">Ampliar</a></td>
 </tr>
 </tbody>
 </table>
@@ -86,14 +85,17 @@
 <p>Ahora, los electrones se ven atraídos por el positivo de la fuente hacia la izquierda, alejándose aún más de la unión, mientras que los huecos se verían atraídos hacia el polo negativo (derecha), alejándose también.</p>
 <p>La unión se hace aún más <strong class="clave">aislante</strong>, por lo que <strong class="clave">se comporta como un circuito abierto</strong> y la corriente no puede circular. <strong class="clave">La lámpara permanecerá apagada.</strong></p>
 </td>
-<td style="width: 45.0631%;"><img src="../content/resources/polarizInversa.png" alt="Polarización inversa: el + al lado N y el − al P; la barrera de potencial se ensancha, no circula corriente y la bombilla no luce. Debajo, el circuito con el símbolo del diodo." width="350" height="452" style="display: block; margin-left: auto; margin-right: auto;"></td>
+<td style="width: 45.0631%;"><img src="../content/resources/polarizacion_inversa_union_pn.svg" alt="Polarización inversa: el + al lado N y el − al P; la barrera de potencial se ensancha, no circula corriente y la bombilla no luce. Debajo, el circuito con el símbolo del diodo." width="350" height="461" style="display: block; margin-left: auto; margin-right: auto;"><a class="ampliar-fig" href="../content/resources/polarizacion_inversa_union_pn.svg" target="_blank" rel="noopener" style="display:block;width:max-content;margin:.25rem auto .75rem;font-size:.85em">Ampliar</a></td>
 </tr>
 </tbody>
 </table>
 </div>
 <p>Resumiendo, un diodo es un componente electrónico que, en polarización directa se comporta como un interruptor cerrado permitiendo el paso de la corriente mientras que en polarización inversa se comporta como un interruptor abierto o como un material aislante.</p>
+<p>En el siguiente montaje en 3D puedes ver qué pasa dentro de la unión P-N. Pulsa «Unir P y N» para ver cómo se forma la zona Z; después, conecta la pila en directa o en inversa y cambia su tensión. Fíjate en cuándo se enciende la lámpara y en cómo se reparte la tensión entre la unión y la lámpara:</p>
+<iframe class="sda07-sim3d" src="../content/resources/sim_union_pn.html" title="Unión P-N en 3D: formación de la zona Z y polarización directa e inversa con una pila y una lámpara" width="100%" height="640" loading="lazy" style="display: block; width: 100%; max-width: 980px; margin: 1rem auto .4rem; border: 0; border-radius: 12px; background: #ffffff;"></iframe>
+<p style="text-align: center; font-size: .92em;"><a href="../content/resources/sim_union_pn.html" target="_blank" rel="noopener">Abrir a pantalla completa</a></p>
 <p>Para tener un imagen más clara y completa de lo que realmente sucede en la unión P-N y como funciona el diodo, puedes ver este vídeo donde, además, se adelanta algún ejemplo de uso y se muestra cómo utilizar el polímetro para comprobar un diodo:</p>
-<p style="text-align: center;"><iframe width="560" height="314" src="https://www.youtube.com/embed/aPY3I8pG478" referrerpolicy="strict-origin-when-cross-origin"></iframe></p></div></div></section></div>
+<p style="text-align: center;"><iframe title="Vídeo: la unión P-N y el diodo" width="560" height="314" src="https://www.youtube.com/embed/aPY3I8pG478" referrerpolicy="strict-origin-when-cross-origin"></iframe></p></div></div></section></div>
 </div>
 </div>
 </article><article id="block-msszgrsw-9qkrg7c50" class="box">
@@ -148,7 +150,7 @@
 <p><span style="font-size: 1.05em;"><iframe src="https://www.falstad.com/circuit/circuitjs.html?lang=es&amp;whiteBackground=true&amp;conventionalCurrent=true&amp;ctz=CQAgjCAMB0l5YCcyWrQDhAZmmA7AGxbIBMW6BY6VWALCAKySMi2YMCmAtGGAFAA3EIgLYsoka0zMItZgyiKYDPgHdhotiBIl6WyGu26pR+rxJQ+AE1PgwFkukz5RWEFY4AzAIYBXADYALta2usyOzoTY7l5+QSFgBDJROmb20R4+AcE2icmiqdpyGbHZhoVhtljiluqF1RKuNQbqeeBRbSR4Fi3aTu1Noi614Ena3WIFEwYAxpNVNV09ULBwYJAWOHgU6FgMjgyIeIi8FCtrhg0DrInXvVdLN1M9fABOT9e0t4-MtFgGAA9WAwIGQLAwGAU9qxRiB-AB7bxWPgAZ3m9Rqw2YzB8-hRHD48MU0lYkEQ7HO8COBEhJAU4UUWEJ4AUJLkyBYMAQdPA2hZ0QAaijvP4AJZWbx8IA" title="Simulación: puente rectificador de onda completa con condensador de filtro conmutable" width="100%" height="560" loading="lazy" style="border: 1px solid #c9d4de; max-width: 900px;"></iframe><br><a href="https://www.falstad.com/circuit/circuitjs.html?lang=es&amp;whiteBackground=true&amp;conventionalCurrent=true&amp;ctz=CQAgjCAMB0l5YCcyWrQDhAZmmA7AGxbIBMW6BY6VWALCAKySMi2YMCmAtGGAFAA3EIgLYsoka0zMItZgyiKYDPgHdhotiBIl6WyGu26pR+rxJQ+AE1PgwFkukz5RWEFY4AzAIYBXADYALta2usyOzoTY7l5+QSFgBDJROmb20R4+AcE2icmiqdpyGbHZhoVhtljiluqF1RKuNQbqeeBRbSR4Fi3aTu1Noi614Ena3WIFEwYAxpNVNV09ULBwYJAWOHgU6FgMjgyIeIi8FCtrhg0DrInXvVdLN1M9fABOT9e0t4-MtFgGAA9WAwIGQLAwGAU9qxRiB-AB7bxWPgAZ3m9Rqw2YzB8-hRHD48MU0lYkEQ7HO8COBEhJAU4UUWEJ4AUJLkyBYMAQdPA2hZ0QAaijvP4AJZWbx8IA" target="_blank" rel="noopener">Abrir la simulación en una pestaña nueva</a><br></span></p>
 <p><span style="font-size: 1.05em;">Fíjate que la tensión de salida es aproximadamente de 3,8 V, mientras que la fuente es de 5 V. Hay que tener en cuenta que la corriente siempre está pasando por dos diodos en serie, por lo que se suman las caidas de tensión que presentan ambos diodos al conducir y supone más de un voltio. Esto hay que tenerlo en cuenta al diseñar una fuente de alimentación y lo comprobaréis al hacer la tarea de esta sección.</span></p>
 <p><span style="font-size: 1.05em;">Como resumen, en este vídeo tienes explicados los circuitos rectificadores con animaciones muy didácticas:</span></p>
-<p style="text-align: center;"><span style="font-size: 1.05em;"><iframe width="560" height="314" src="https://www.youtube.com/embed/jzibrKq4ing" referrerpolicy="strict-origin-when-cross-origin"></iframe><br></span></p></div></div></section></div>
+<p style="text-align: center;"><span style="font-size: 1.05em;"><iframe title="Vídeo: circuitos rectificadores" width="560" height="314" src="https://www.youtube.com/embed/jzibrKq4ing" referrerpolicy="strict-origin-when-cross-origin"></iframe><br></span></p></div></div></section></div>
 </div>
 </div>
 </article><article id="block-msszgrsw-l033htaxj" class="box">
